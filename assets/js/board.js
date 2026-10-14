@@ -818,7 +818,15 @@
       ctx.lineTo(x - r * 0.4, y + r * 0.4);
       ctx.stroke();
     } else if (mk.kind === "letter" || mk.text) {
-      ctx.font = "700 " + Math.max(12, r) + "px Helvetica, Arial, sans-serif";
+      ctx.beginPath();
+      ctx.arc(x, y, r * 0.62, 0, Math.PI * 2);
+      ctx.fillStyle = "#f7f1e4";
+      ctx.fill();
+      ctx.lineWidth = 1.4;
+      ctx.strokeStyle = "#1d4e89";
+      ctx.stroke();
+      ctx.fillStyle = "#1d4e89";
+      ctx.font = "700 " + Math.max(12, r * 0.9) + "px Helvetica, Arial, sans-serif";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(mk.text || "A", x, y + 1);

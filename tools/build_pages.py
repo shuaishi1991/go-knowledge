@@ -485,8 +485,23 @@ def gtp_sgf(mv):
         return ""
     col = COLS.find(mv[0].upper())
     row = int(mv[1:])
+    if col < 0 or row <= 0:
+        return ""
     y = 19 - row
     return "abcdefghijklmnopqrstuvwxyz"[col] + "abcdefghijklmnopqrstuvwxyz"[y]
+
+
+def mark_sgf(step):
+    bits = []
+    for mark in step.get("marks") or []:
+        label = (mark.get("label") or "").strip()
+        coord = gtp_sgf(mark.get("position") or "")
+        if not label or not coord or any(ch in label for ch in "]:\\"):
+            continue
+        bits.append(f"[{coord}:{label}]")
+    if not bits:
+        return ""
+    return "LB" + "".join(bits)
 
 
 def load_joseki_nodes():
@@ -527,7 +542,7 @@ def collect_lines():
         for i, step in enumerate(prefixes):
             color = "B" if i % 2 == 0 else "W"
             coord = gtp_sgf(step.get("mv") or parts[i])
-            chunks.append(f";{color}[{coord}]")
+            chunks.append(f";{color}[{coord}]{mark_sgf(step)}")
             raw = step.get("desc") or ""
             desc = zh[raw] if raw in zh else plain_desc(raw)
             desc = (desc or "").strip()
