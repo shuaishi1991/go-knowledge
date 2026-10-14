@@ -4,9 +4,12 @@
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from utterances import prose_with_speech, speak_button
 GROUPS = [
     ("moves", "行棋手段", "局部手段、接触战和手筋。"),
     ("shape", "棋形与模样", "棋形、点位、模样和定式名称。"),
@@ -157,10 +160,27 @@ def chrome(title, body, depth, current, extra=""):
 </main>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。定式取自 OGS 定式字典。布局取自围棋学研网的布局分类、谱数和黑胜率。棋盘按 GoMagic 的木纹棋盘和落子操作。</footer>
 <script src="{pre}assets/js/board.js"></script>
+<script src="{pre}assets/js/audio.js"></script>
 {extra}
 </body>
 </html>
 """
+
+
+def with_zh_comments(sgf):
+    path = ROOT / "data" / "glossary-zh.json"
+    if not path.exists() or not sgf or "__en:" not in sgf:
+        return sgf
+    zh = json.loads(path.read_text(encoding="utf-8"))
+
+    def repl(match):
+        en = match.group(1).strip()
+        chinese = zh.get(en)
+        if not chinese:
+            return match.group(0)
+        return f"__zh: {chinese}\n__en: {en}"
+
+    return re.sub(r"__en:\s*(.*?)(?=__|\])", repl, sgf, flags=re.S)
 
 
 def board_html(sgf, mode="view", at="", numbers=None):
@@ -267,16 +287,17 @@ document.getElementById("by-name").onclick = () => {{
         bits = []
         stars = "★" * int(term.get("importance") or 0)
         bits.append(f'<p class="crumb"><a href="index.html">术语</a> · {dict((k,t) for k,t,_ in GROUPS).get(term["category"], "")}</p>')
-        bits.append(f'<h1>{html.escape(term["name"])}</h1>')
+        bits.append(f'<h1>{html.escape(term["name"])}{speak_button(term["name"])}</h1>')
         if stars:
             bits.append(f'<p class="stars">{stars}</p>')
         if term.get("meaning"):
-            bits.append(f'<p class="lead">{html.escape(term["meaning"])}</p>')
+            bits.append(f'<p class="lead">{html.escape(term["meaning"])}{speak_button(term["meaning"])}</p>')
         for block in term.get("blocks") or []:
             if block["type"] == "html":
-                bits.append(f'<div class="prose">{block["html"]}</div>')
+                prose, _ = prose_with_speech(block["html"])
+                bits.append(f'<div class="prose">{prose}</div>')
             elif block["type"] == "board" and block.get("sgf"):
-                bits.append(board_html(block["sgf"], mode="view", at="end", numbers=True))
+                bits.append(board_html(with_zh_comments(block["sgf"]), mode="view", at="end", numbers=True))
         write(ROOT / "glossary" / f'{term["slug"]}.html', chrome(f'{term["name"]} · 术语', "\n".join(bits), 1, "glossary"))
     return len(terms)
 
@@ -301,7 +322,7 @@ def build_fuseki():
         label = html.escape(item.get("name") or item.get("code") or "")
         return (
             f'<article class="card" data-name="{html.escape(item.get("name","") + item.get("en",""), quote=True)}">'
-            f"{board}<h3>{label}</h3>"
+            f"{board}<h3>{label}{speak_button(item.get('name') or '')}</h3>"
             f'<p>{" · ".join(stats)}</p>{extra}</article>'
         )
 
@@ -318,7 +339,7 @@ def build_fuseki():
             stats.append(f'黑胜 {item["win"]}%')
         cards.append(
             f'<article class="card" data-name="{html.escape(item.get("name",""), quote=True)}">'
-            f'{board}<h3><a href="{html.escape(href)}">{html.escape(item.get("name") or "")}</a></h3>'
+            f'{board}<h3><a href="{html.escape(href)}">{html.escape(item.get("name") or "")}</a>{speak_button(item.get("name") or "")}</h3>'
             f'<p>{" · ".join(stats)}</p></article>'
         )
     body = f"""
@@ -338,7 +359,7 @@ def build_fuseki():
         parent = '<p class="crumb"><a href="index.html">布局</a></p>'
         body = f"""
 {parent}
-<h1>{page.get('name') or code}</h1>
+<h1>{html.escape(page.get('name') or code)}{speak_button(page.get('name') or '')}</h1>
 <p class="lead">{len(items)} 型。手数标在棋子上，也可以用下面的按钮一手一手看。</p>
 <div class="tools"><input type="search" data-filter placeholder="在本类中搜索" aria-label="搜索"></div>
 <div class="grid">{grid}</div>

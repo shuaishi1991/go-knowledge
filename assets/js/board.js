@@ -628,9 +628,21 @@
 
   GoBoard.prototype.renderComment = function () {
     if (!this.commentEl) return;
-    const text = this.status || (this.position && this.position.comment) || "";
-    this.commentEl.innerHTML = esc(text).replace(/\n/g, "<br>");
-    this.commentEl.style.display = text ? "" : "none";
+    const raw = (this.position && this.position.comment) || "";
+    const status = this.status || "";
+    const shown = status || raw;
+    const spoken = raw.replace(/\s+/g, " ").trim();
+    this.commentEl.innerHTML = esc(shown).replace(/\n/g, "<br>");
+    if (spoken && !status) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "speak";
+      button.setAttribute("data-speak", spoken);
+      button.setAttribute("aria-label", "朗读");
+      button.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 9v6h4l5 4V5L8 9H4zm11.5 3a3.5 3.5 0 0 0-1.8-3.1v6.2A3.5 3.5 0 0 0 15.5 12z"/></svg>';
+      this.commentEl.appendChild(button);
+    }
+    this.commentEl.style.display = shown ? "" : "none";
   };
 
   GoBoard.prototype.draw = function () {

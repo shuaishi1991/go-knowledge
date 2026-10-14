@@ -24,6 +24,25 @@ body {
   min-height: 100vh;
 }
 
+.speak {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.28em;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--seal);
+  vertical-align: -0.15em;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.speak:hover,
+.speak.playing { color: #6e2c22; }
+
+.speak svg { display: block; width: 18px; height: 18px; }
+
 a { color: var(--seal); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { color: #6e2c22; }
 
