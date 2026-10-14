@@ -1,6 +1,5 @@
 /* GoMagic-style board.
-   Problem mode matches Problem_Clean: try the move, step back, hint, pass.
-   View mode matches the record bar: first, jump, previous, next, end. */
+   View mode is the shared record bar: first, jump, previous, next, end. */
 
 (function () {
   const COLS = "ABCDEFGHJKLMNOPQRST";
@@ -260,8 +259,8 @@
     this.opts = opts || {};
     this.mode = opts.mode || "view";
     this.settings = readSettings();
-    this.showCoords = !!this.settings.coordinates;
-    this.showNumbers = opts.numbers != null ? !!opts.numbers : !!this.settings.numbers;
+    this.showCoords = this.settings.coordinates != null ? !!this.settings.coordinates : false;
+    this.showNumbers = this.settings.numbers != null ? !!this.settings.numbers : !!opts.numbers;
     this.menuOpen = false;
     this.hint = null;
     this.status = "";
@@ -292,13 +291,19 @@
     const problem = this.mode === "problem";
     const view = this.mode === "view" || this.mode === "explore";
     const still = this.mode === "still";
+    const menu = '<div class="gm-menu" hidden>' +
+      '<button type="button" data-act="coords" aria-pressed="false">坐标</button>' +
+      '<button type="button" data-act="numbers" aria-pressed="false">手数</button>' +
+      (problem ? '<button type="button" data-act="restart">重做本题</button>' : "") +
+      "</div>";
+    const more = '<div class="gm-more">' + btn("more", "more", "菜单") + menu + "</div>";
     let bar = "";
     if (problem) {
       bar = '<div class="gm-problembar">' +
         btn("back", "back", "后退一手") +
         btn("hint", "hint", "查看答案") +
         btn("pass", "pass", "虚手") +
-        btn("more", "more", "菜单") +
+        more +
         "</div>";
     } else if (view) {
       bar = '<div class="gm-navbar">' +
@@ -308,18 +313,13 @@
         btn("next", "next", "下一手") +
         btn("fnext", "fastNext", "快进") +
         btn("end", "end", "最后一手") +
-        btn("more", "more", "菜单") +
+        more +
         "</div>";
     }
-    const menu = '<div class="gm-menu" hidden>' +
-      '<button type="button" data-act="coords">坐标</button>' +
-      '<button type="button" data-act="numbers">手数</button>' +
-      (problem ? '<button type="button" data-act="restart">重做本题</button>' : "") +
-      "</div>";
     return '<div class="gm">' +
-      '<div class="gm-stage"><canvas></canvas><div class="gm-flash"></div>' + menu + "</div>" +
-      (still ? "" : '<div class="gm-comment"></div>') +
+      '<div class="gm-stage"><canvas></canvas><div class="gm-flash"></div></div>' +
       bar +
+      (still ? "" : '<div class="gm-comment"></div>') +
       "</div>";
   };
 
@@ -335,10 +335,32 @@
         self.onControl(b);
       });
     });
-    this.menuEl.querySelectorAll("button").forEach(function (b) {
-      b.addEventListener("click", function () { self.onMenu(b.dataset.act); });
+    if (this.menuEl) {
+      this.menuEl.querySelectorAll("button").forEach(function (b) {
+        b.addEventListener("click", function () { self.onMenu(b.dataset.act); });
+      });
+      this.syncMenu();
+    }
+    document.addEventListener("pointerdown", function (e) {
+      if (!self.menuOpen || !self.menuEl) return;
+      const wrap = self.menuEl.parentElement;
+      if (wrap && wrap.contains(e.target)) return;
+      self.closeMenu();
     });
     bindKeys();
+  };
+
+  GoBoard.prototype.closeMenu = function () {
+    this.menuOpen = false;
+    if (this.menuEl) this.menuEl.hidden = true;
+  };
+
+  GoBoard.prototype.syncMenu = function () {
+    if (!this.menuEl) return;
+    const coords = this.menuEl.querySelector('[data-act="coords"]');
+    const numbers = this.menuEl.querySelector('[data-act="numbers"]');
+    if (coords) coords.setAttribute("aria-pressed", this.showCoords ? "true" : "false");
+    if (numbers) numbers.setAttribute("aria-pressed", this.showNumbers ? "true" : "false");
   };
 
   GoBoard.prototype.onMenu = function (act) {
@@ -350,9 +372,9 @@
       writeSettings({ numbers: this.showNumbers });
     } else if (act === "restart") {
       this.restart();
+      this.closeMenu();
     }
-    this.menuOpen = false;
-    this.menuEl.hidden = true;
+    this.syncMenu();
     this.draw();
   };
 

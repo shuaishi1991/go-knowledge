@@ -194,7 +194,7 @@ def build_home(counts):
 <h1>围棋书房</h1>
 <p class="colophon">三卷分开查阅。术语按中文分类，定式每条变化单独成页，布局按四十个大类收各型。</p>
 <div class="chapters">
-  <a class="chapter" href="glossary/index.html"><span class="num">壹</span><strong>术语</strong><span>{counts['terms']} 条中文术语，分成六类。带谱的条目可以在棋盘上试下。</span></a>
+  <a class="chapter" href="glossary/index.html"><span class="num">壹</span><strong>术语</strong><span>{counts['terms']} 条中文术语，分成六类。带谱的条目可以一手一手翻看。</span></a>
   <a class="chapter" href="joseki/index.html"><span class="num">贰</span><strong>定式</strong><span>{counts['lines']} 条变化，每条单独成页，只含这一条手顺。</span></a>
   <a class="chapter" href="fuseki/index.html"><span class="num">叁</span><strong>布局</strong><span>{counts['fuseki']} 个大类，其下 {counts['patterns']} 个开局型，附谱数和黑胜率。</span></a>
 </div>
@@ -232,7 +232,7 @@ def build_glossary():
         sections.append(f'<section id="{key}"><h2>{title}</h2><p class="colophon">{blurb}</p><ul class="terms">{"".join(rows)}</ul></section>')
     body = f"""
 <h1>术语</h1>
-<p class="lead">只收中文名和中文释义。重要的条目星更多。点进去可以按原谱试下。</p>
+<p class="lead">只收中文名和中文释义。重要的条目星更多。点进去可以一手一手翻看原谱。</p>
 <div class="tools">
   <input type="search" id="q" placeholder="搜索术语" aria-label="搜索术语">
   <button type="button" id="by-star">按重要性</button>
@@ -276,8 +276,7 @@ document.getElementById("by-name").onclick = () => {{
             if block["type"] == "html":
                 bits.append(f'<div class="prose">{block["html"]}</div>')
             elif block["type"] == "board" and block.get("sgf"):
-                mode = "problem" if block.get("mode") == "Problem_Clean" else "view"
-                bits.append(board_html(block["sgf"], mode=mode, at="start"))
+                bits.append(board_html(block["sgf"], mode="view", at="end", numbers=True))
         write(ROOT / "glossary" / f'{term["slug"]}.html', chrome(f'{term["name"]} · 术语', "\n".join(bits), 1, "glossary"))
     return len(terms)
 
@@ -453,6 +452,13 @@ def plain_desc(text):
     return text.strip()
 
 
+def load_zh_comments():
+    path = ROOT / "data" / "joseki-zh.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def gtp_sgf(mv):
     if not mv or mv == "pass":
         return ""
@@ -477,6 +483,7 @@ def load_joseki_nodes():
 
 def collect_lines():
     nodes = load_joseki_nodes()
+    zh = load_zh_comments()
     lines = []
     for play, node in nodes.items():
         if node.get("next"):
@@ -500,7 +507,8 @@ def collect_lines():
             color = "B" if i % 2 == 0 else "W"
             coord = gtp_sgf(step.get("mv") or parts[i])
             chunks.append(f";{color}[{coord}]")
-            desc = plain_desc(step.get("desc") or "")
+            raw = step.get("desc") or ""
+            desc = zh.get(raw) or plain_desc(raw)
             if desc and "Empty Goban" not in desc:
                 chunks.append(f"C[{sgf_escape(desc)}]")
         first = parts[0]
