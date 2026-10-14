@@ -529,7 +529,8 @@ def collect_lines():
             coord = gtp_sgf(step.get("mv") or parts[i])
             chunks.append(f";{color}[{coord}]")
             raw = step.get("desc") or ""
-            desc = zh.get(raw) or plain_desc(raw)
+            desc = zh[raw] if raw in zh else plain_desc(raw)
+            desc = (desc or "").strip()
             if desc and "Empty Goban" not in desc:
                 chunks.append(f"C[{sgf_escape(desc)}]")
         first = parts[0]
