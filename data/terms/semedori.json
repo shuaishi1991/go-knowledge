@@ -1,0 +1,19 @@
+{
+  "slug": "semedori",
+  "name": "收气吃",
+  "meaning": "被迫提子",
+  "importance": 1,
+  "category": "rules",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>收气吃说的是这样一种局面：对方把公气（单官）填掉之后，你除了提掉他的棋子别无选择。在围棋里提子通常是好事，但收气吃往往是被逼出来的一手，对提子的一方未必有利——提完之后可能留下效率很低的棋形，也可能让原本能成空的地方缩水。正因如此，它反倒成了对方手里一件好用的战略工具。</p><p>中盘的战斗里，一块棋的气可能被紧到不够用，只好先提掉对方的棋子，而没法继续打下去。到了收官阶段，一手好棋可以破掉对方的眼位，或者添出一个断点，最后逼出收气吃，压缩对方的空间。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-17]AB[ar][bq][cq][dr][er][ds][fr][cp][dp]AW[br][cr][dq][eq][fq][gq][gr][bs]AE[bp][bn][co][aq][fs]C[__en: Even though the three white stones have lost the capturing race, White can play at A to force Black to fill the neutral points to capture them. This is an example of semedori.\n__ru:]TR[br][bs][cr]LB[fs:A])",
+      "goto": "0",
+      "mode": "View_Static"
+    }
+  ]
+}

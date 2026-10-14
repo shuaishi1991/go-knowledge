@@ -1,0 +1,23 @@
+{
+  "slug": "yosumi",
+  "name": "试应手 (試應手)",
+  "meaning": "试探对方应手的一手",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>试应手（日语 <em>yosumi</em>，也作 <em>yosumiru</em>）不是为了眼前的便宜，而是为了看对方怎么应。它常常决定后续的战略方向，在局面不明朗时尤其有力。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-05-26]AB[qd][oc]AW[rd]LB[rd:1]C[__en: White 1 is a classic probing move, or a \"yosumi\", testing Black’s response so White can decide on the next move accordingly.\n__ru:])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>这背后是围棋一贯的道理：先看清，再动手。逼对方先表态，自己却不必把话说死，既把风险控制住，全局的余地也更大。</p><p>想把试应手学透，可以看 Alexander Dinerstein 职业三段的课程<em>《试应手：从常规到不可思议》。</em><em>。</em></p>"
+    }
+  ]
+}

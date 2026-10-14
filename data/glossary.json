@@ -1,0 +1,1308 @@
+{
+  "groups": {
+    "moves": "行棋手段",
+    "shape": "棋形与模样",
+    "life": "死活对杀",
+    "rules": "规则胜负",
+    "rank": "段位赛事",
+    "history": "历史头衔"
+  },
+  "terms": [
+    {
+      "slug": "weiqi",
+      "name": "围棋",
+      "meaning": "围棋的中文名称",
+      "importance": 0,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "baduk",
+      "name": "围棋的韩语",
+      "meaning": "围棋的韩语",
+      "importance": 0,
+      "category": "moves",
+      "boards": 0
+    },
+    {
+      "slug": "nuki",
+      "name": "提子",
+      "meaning": "提掉一颗子或一块棋",
+      "importance": 0,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "tesuji",
+      "name": "手筋",
+      "meaning": "局部最佳着法",
+      "importance": 3,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "tenuki",
+      "name": "脱先",
+      "meaning": "不应对方，转投他处",
+      "importance": 3,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "watari",
+      "name": "渡",
+      "meaning": "搭桥，从底下渡过去",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "uchikomi",
+      "name": "打入",
+      "meaning": "打进对方的阵地",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "tsugi",
+      "name": "连接 (連接)",
+      "meaning": "把棋子连起来的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 3
+    },
+    {
+      "slug": "tedomari",
+      "name": "收后 (收後)",
+      "meaning": "最后一手有价值的棋",
+      "importance": 0,
+      "category": "rules",
+      "boards": 1
+    },
+    {
+      "slug": "yose",
+      "name": "收官, 官子",
+      "meaning": "一盘棋的最后阶段",
+      "importance": 2,
+      "category": "rules",
+      "boards": 1
+    },
+    {
+      "slug": "tsuke",
+      "name": "靠 / 碰",
+      "meaning": "紧贴对方棋子的接触手段",
+      "importance": 1,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "tengen",
+      "name": "天元",
+      "meaning": "棋盘正中央的交叉点",
+      "importance": 2,
+      "category": "rules",
+      "boards": 1
+    },
+    {
+      "slug": "tsumego",
+      "name": "诘棋",
+      "meaning": "围绕一块棋能否做活而设计的题目",
+      "importance": 2,
+      "category": "life",
+      "boards": 2
+    },
+    {
+      "slug": "tobi",
+      "name": "跳",
+      "meaning": "隔着一路向前跳出的一手",
+      "importance": 1,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "yosumi",
+      "name": "试应手 (試應手)",
+      "meaning": "试探对方应手的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "zokusuji",
+      "name": "俗手",
+      "meaning": "粗笨、不讲究的下法",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "wariuchi",
+      "name": "分投",
+      "meaning": "打散对方阵势的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "utte-gaeshi",
+      "name": "倒扑 (倒撲)",
+      "meaning": "弃一子，反提对方一块",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "uchisugi",
+      "name": "过分",
+      "meaning": "走得太过的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "tewari",
+      "name": "手割",
+      "meaning": "一种复盘分析的方法",
+      "importance": 0,
+      "category": "moves",
+      "boards": 0
+    },
+    {
+      "slug": "takamoku",
+      "name": "高目",
+      "meaning": "五四位的开局点，重外势轻实地",
+      "importance": 0,
+      "category": "shape",
+      "boards": 2
+    },
+    {
+      "slug": "warikomi",
+      "name": "挖",
+      "meaning": "从对方两子之间挖进去的一手",
+      "importance": 1,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "shicho",
+      "name": "征子",
+      "meaning": "连续打吃的追杀手段",
+      "importance": 1,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "shimari",
+      "name": "守角",
+      "meaning": "用两颗子把角围起来的棋形",
+      "importance": 2,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "semeai",
+      "name": "对杀",
+      "meaning": "两块棋互相紧气，比谁先吃掉谁",
+      "importance": 2,
+      "category": "life",
+      "boards": 1
+    },
+    {
+      "slug": "tagai-sen",
+      "name": "互先",
+      "meaning": "轮流执黑的对局",
+      "importance": 0,
+      "category": "rank",
+      "boards": 0
+    },
+    {
+      "slug": "shin-fuseki",
+      "name": "新布局 (新佈局)",
+      "meaning": "“新布局”——1933 年始于日本的一场布局观念变革",
+      "importance": 0,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "shikatsu",
+      "name": "死活",
+      "meaning": "一块棋的生与死",
+      "importance": 0,
+      "category": "life",
+      "boards": 1
+    },
+    {
+      "slug": "sen-ai-sen",
+      "name": "先相先",
+      "meaning": "下手三局执两盘黑的手合",
+      "importance": 0,
+      "category": "rank",
+      "boards": 0
+    },
+    {
+      "slug": "shinogi",
+      "name": "治孤",
+      "meaning": "把被围攻的孤棋救活",
+      "importance": 0,
+      "category": "life",
+      "boards": 2
+    },
+    {
+      "slug": "sente",
+      "name": "先手",
+      "meaning": "主动权",
+      "importance": 3,
+      "category": "rules",
+      "boards": 3
+    },
+    {
+      "slug": "suji",
+      "name": "筋",
+      "meaning": "合乎棋理的正着",
+      "importance": 1,
+      "category": "moves",
+      "boards": 0
+    },
+    {
+      "slug": "shibori",
+      "name": "滚包; 滚打",
+      "meaning": "一路滚打，把对方挤成愚形",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "semedori",
+      "name": "收气吃",
+      "meaning": "被迫提子",
+      "importance": 1,
+      "category": "rules",
+      "boards": 1
+    },
+    {
+      "slug": "taisha",
+      "name": "大斜",
+      "meaning": "大斜，也叫大斜定式",
+      "importance": 0,
+      "category": "shape",
+      "boards": 2
+    },
+    {
+      "slug": "suteishi",
+      "name": "弃子",
+      "meaning": "主动舍弃的棋子",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "susoaki",
+      "name": "袖空",
+      "meaning": "模样底部未封的空当",
+      "importance": 0,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "sumi",
+      "name": "角",
+      "meaning": "棋盘四角",
+      "importance": 0,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "suberi",
+      "name": "飞",
+      "meaning": "二路滑下的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "shudan",
+      "name": "手谈 (手談)",
+      "meaning": "以手交谈，以棋对话",
+      "importance": 0,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "shodan",
+      "name": "初段",
+      "meaning": "第一个段位，也就是 1 段",
+      "importance": 0,
+      "category": "rank",
+      "boards": 0
+    },
+    {
+      "slug": "shiro",
+      "name": "白棋",
+      "meaning": "白棋、执白的一方",
+      "importance": 0,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "seki",
+      "name": "共活",
+      "meaning": "谁也吃不掉谁的共存局面",
+      "importance": 3,
+      "category": "life",
+      "boards": 2
+    },
+    {
+      "slug": "ponnuki",
+      "name": "开花",
+      "meaning": "提一子后留下的拔花棋形",
+      "importance": 3,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "sanrensei",
+      "name": "三连星 (三連星)",
+      "meaning": "在同一边连占三个星位",
+      "importance": 0,
+      "category": "shape",
+      "boards": 2
+    },
+    {
+      "slug": "oza",
+      "name": "王座",
+      "meaning": "日本职业围棋七大头衔之一",
+      "importance": 0,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "oshitsubushi",
+      "name": "胀牯牛 / 胀死牛",
+      "meaning": "挤得对方连也连不上",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "oogeima-jimari",
+      "name": "大飞守角",
+      "meaning": "用大飞的步子守住角",
+      "importance": 0,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "oogeima-gakari",
+      "name": "大桂馬掛",
+      "meaning": "用大飞的步子挂角",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "oozaru",
+      "name": "大伸腿",
+      "meaning": "从二路大飞插进对方的空",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "sabaki",
+      "name": "腾挪",
+      "meaning": "轻灵而有弹性的下法",
+      "importance": 3,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "rengo",
+      "name": "联棋",
+      "meaning": "两人一队、轮流落子的对局形式",
+      "importance": 2,
+      "category": "rank",
+      "boards": 0
+    },
+    {
+      "slug": "sagari",
+      "name": "立",
+      "meaning": "朝边线方向向下走一手",
+      "importance": 2,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "ryou-sente",
+      "name": "双先",
+      "meaning": "双方在同一处各有先手",
+      "importance": 0,
+      "category": "rules",
+      "boards": 2
+    },
+    {
+      "slug": "ryou-gakari",
+      "name": "双挂 (雙掛)",
+      "meaning": "从两边同时挂角",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "ryou-atari",
+      "name": "双吃 / 双打 / 双打吃",
+      "meaning": "一手同时打吃两块棋",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "oshi",
+      "name": "压",
+      "meaning": "从上方紧贴住对方的棋",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "osae",
+      "name": "挡 (擋)",
+      "meaning": "拦住对方的去路",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "oomoyo",
+      "name": "大模样 (大模樣)",
+      "meaning": "铺开一大片的模样",
+      "importance": 0,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "ooba",
+      "name": "大场",
+      "meaning": "盘面上价值很大的一点",
+      "importance": 0,
+      "category": "shape",
+      "boards": 2
+    },
+    {
+      "slug": "oki",
+      "name": "透点 (透點)",
+      "meaning": "往对方阵地里点的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "sansan",
+      "name": "三三",
+      "meaning": "角上三线与三线的交叉点",
+      "importance": 2,
+      "category": "shape",
+      "boards": 2
+    },
+    {
+      "slug": "ogeima",
+      "name": "大飞",
+      "meaning": "比小飞多跨一路的大跨度飞",
+      "importance": 2,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "nakade",
+      "name": "点眼",
+      "meaning": "往对方眼位里落子，破掉两只眼",
+      "importance": 2,
+      "category": "life",
+      "boards": 2
+    },
+    {
+      "slug": "nigiri",
+      "name": "猜先",
+      "meaning": "决定谁执黑的流程",
+      "importance": 3,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "moyo",
+      "name": "模样",
+      "meaning": "尚未成形的大片潜在地盘",
+      "importance": 3,
+      "category": "shape",
+      "boards": 3
+    },
+    {
+      "slug": "nadare",
+      "name": "雪崩",
+      "meaning": "雪崩定式",
+      "importance": 0,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "myoshu",
+      "name": "妙手",
+      "meaning": "出人意料的精彩一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "meijin",
+      "name": "名人",
+      "meaning": "日本职业围棋七大头衔之一\n历史上则指日本棋界地位最高的棋手",
+      "importance": 1,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "nozoki",
+      "name": "觑",
+      "meaning": "瞄着对方断点的试探一手",
+      "importance": 2,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "moku",
+      "name": "目",
+      "meaning": "计算胜负时的一目\n让子棋中的一子",
+      "importance": 1,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "nihon-ki-in",
+      "name": "日本棋院",
+      "meaning": "日本的全国性围棋组织",
+      "importance": 1,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "oiotoshi",
+      "name": "接不归 (接不歸)",
+      "meaning": "接上反而被吃",
+      "importance": 0,
+      "category": "life",
+      "boards": 1
+    },
+    {
+      "slug": "nirensei",
+      "name": "二连星",
+      "meaning": "在同一边连占两个星位",
+      "importance": 0,
+      "category": "shape",
+      "boards": 2
+    },
+    {
+      "slug": "niken-tobi",
+      "name": "二间跳 (二間跳)",
+      "meaning": "隔两路的跳",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "nigan",
+      "name": "两眼",
+      "meaning": "两只真眼",
+      "importance": 0,
+      "category": "life",
+      "boards": 1
+    },
+    {
+      "slug": "nidanbane",
+      "name": "连扳 (連扳)",
+      "meaning": "连续两次扳",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "mokuhazushi",
+      "name": "外目",
+      "meaning": "角上的 5-3（3-5）点",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "me-ari-me-nashi",
+      "name": "有眼杀无眼 (有眼殺無眼)",
+      "meaning": "有眼一方对无眼一方的对杀",
+      "importance": 0,
+      "category": "life",
+      "boards": 1
+    },
+    {
+      "slug": "magari",
+      "name": "拐 / 曲",
+      "meaning": "棋形转折、拐弯的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "nobi",
+      "name": "长",
+      "meaning": "顺着同一路向前接出一手",
+      "importance": 2,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "miai",
+      "name": "见合",
+      "meaning": "价值相等、可以互换的两点",
+      "importance": 3,
+      "category": "rules",
+      "boards": 2
+    },
+    {
+      "slug": "kyu",
+      "name": "级",
+      "meaning": "学棋阶段的等级",
+      "importance": 3,
+      "category": "moves",
+      "boards": 0
+    },
+    {
+      "slug": "komi",
+      "name": "贴目",
+      "meaning": "给白方的补偿目数",
+      "importance": 3,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "kisei",
+      "name": "棋圣",
+      "meaning": "日本职业围棋七大头衔之一",
+      "importance": 0,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "ki",
+      "name": "棋",
+      "meaning": "围棋\n棋类游戏的统称（东亚语境中的泛指）",
+      "importance": 0,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "keima-shimari",
+      "name": "小飞守角",
+      "meaning": "用小飞把角守住的棋形",
+      "importance": 0,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "kosumi",
+      "name": "小尖",
+      "meaning": "在自己棋子的斜对角落一手",
+      "importance": 2,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "kifu",
+      "name": "棋谱",
+      "meaning": "把一盘棋每一手都记下来的记录",
+      "importance": 2,
+      "category": "moves",
+      "boards": 0
+    },
+    {
+      "slug": "ko",
+      "name": "劫",
+      "meaning": "双方可以轮流提取对方棋子的情况",
+      "importance": 3,
+      "category": "life",
+      "boards": 3
+    },
+    {
+      "slug": "keima-kogeima",
+      "name": "小飞",
+      "meaning": "隔一路斜跳的马步走法",
+      "importance": 2,
+      "category": "moves",
+      "boards": 3
+    },
+    {
+      "slug": "komoku",
+      "name": "小目",
+      "meaning": "角上三线与四线的交叉点",
+      "importance": 2,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "kikashi",
+      "name": "先手利",
+      "meaning": "逼对方必应的一手",
+      "importance": 1,
+      "category": "rules",
+      "boards": 2
+    },
+    {
+      "slug": "kuro",
+      "name": "黑",
+      "meaning": "黑棋、执黑的一方",
+      "importance": 0,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "koudate",
+      "name": "劫材",
+      "meaning": "劫争中的先手威胁",
+      "importance": 0,
+      "category": "rules",
+      "boards": 1
+    },
+    {
+      "slug": "korigatachi",
+      "name": "重复 (重複)",
+      "meaning": "过于集中、效率偏低的棋形",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "kirichigai",
+      "name": "扭断 (扭斷)",
+      "meaning": "互相切断的扭十字",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "kido",
+      "name": "棋道",
+      "meaning": "“围棋之道”",
+      "importance": 0,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "kiai",
+      "name": "气合 (氣合)",
+      "meaning": "主动、强硬的下法",
+      "importance": 0,
+      "category": "moves",
+      "boards": 0
+    },
+    {
+      "slug": "keshi",
+      "name": "淺消, 侵消",
+      "meaning": "从外面消减对方的模样",
+      "importance": 0,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "keima-kakari",
+      "name": "飞挂",
+      "meaning": "以小飞的距离挂角",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "kiri",
+      "name": "断 / 切断",
+      "meaning": "切断对方的联络",
+      "importance": 1,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "katatsuki",
+      "name": "尖冲 (尖衝)",
+      "meaning": "在对方棋子的斜上方落子",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "judan",
+      "name": "十段",
+      "meaning": "日本职业围棋七大头衔之一",
+      "importance": 0,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "josen",
+      "name": "定先",
+      "meaning": "下手固定执黑的手合，相当于让先",
+      "importance": 0,
+      "category": "rank",
+      "boards": 0
+    },
+    {
+      "slug": "igo",
+      "name": "围棋",
+      "meaning": "围棋的日语名称",
+      "importance": 0,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "horikomi",
+      "name": "扑 (撲)",
+      "meaning": "往对方棋形里送一子的弃子手筋",
+      "importance": 0,
+      "category": "moves",
+      "boards": 4
+    },
+    {
+      "slug": "jigo",
+      "name": "和棋, 持棋",
+      "meaning": "平局",
+      "importance": 1,
+      "category": "rules",
+      "boards": 1
+    },
+    {
+      "slug": "ishi-no-shita",
+      "name": "倒脱靴 / 脱骨",
+      "meaning": "在对方提子之后反击",
+      "importance": 1,
+      "category": "rules",
+      "boards": 1
+    },
+    {
+      "slug": "insei",
+      "name": "院生",
+      "meaning": "在棋院接受职业训练的学生",
+      "importance": 2,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "honinbo",
+      "name": "本因坊",
+      "meaning": "既是历史上的围棋名门，也是当今的顶级头衔",
+      "importance": 2,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "joseki",
+      "name": "定式",
+      "meaning": "标准次序与固定的下法",
+      "importance": 3,
+      "category": "shape",
+      "boards": 3
+    },
+    {
+      "slug": "honte",
+      "name": "本手",
+      "meaning": "扎实的正着",
+      "importance": 2,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "kansai-ki-in",
+      "name": "关西棋院",
+      "meaning": "日本关西地区的职业棋院",
+      "importance": 0,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "kaketsugi",
+      "name": "虎接",
+      "meaning": "虎接，用虎口连回的补法",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "kadoban",
+      "name": "角番",
+      "meaning": "输不起的一局、决定命运的一局",
+      "importance": 0,
+      "category": "rank",
+      "boards": 0
+    },
+    {
+      "slug": "jubango",
+      "name": "十番棋",
+      "meaning": "两人对下十盘的番棋",
+      "importance": 0,
+      "category": "rank",
+      "boards": 0
+    },
+    {
+      "slug": "ji",
+      "name": "地, 地盘 (地盤)",
+      "meaning": "地、实地",
+      "importance": 0,
+      "category": "shape",
+      "boards": 0
+    },
+    {
+      "slug": "ichigomasu",
+      "name": "斗方 (鬥方)",
+      "meaning": "金柜角，角上著名的死活形",
+      "importance": 0,
+      "category": "life",
+      "boards": 2
+    },
+    {
+      "slug": "kakari",
+      "name": "挂角 (掛角)",
+      "meaning": "逼近对方角上棋子的一手",
+      "importance": 1,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "ikken-tobi",
+      "name": "单关 (單關), 跳",
+      "meaning": "隔一路的跳",
+      "importance": 1,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "hoshi",
+      "name": "星位",
+      "meaning": "棋盘上用小圆点标出的交叉点",
+      "importance": 2,
+      "category": "rules",
+      "boards": 2
+    },
+    {
+      "slug": "gote",
+      "name": "后手",
+      "meaning": "失去先手，只能被动应对。",
+      "importance": 3,
+      "category": "rules",
+      "boards": 2
+    },
+    {
+      "slug": "hiki",
+      "name": "退",
+      "meaning": "往自己一方退回的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "hayago",
+      "name": "快棋",
+      "meaning": "快棋、限时很短的对局",
+      "importance": 0,
+      "category": "rank",
+      "boards": 0
+    },
+    {
+      "slug": "hanmoku",
+      "name": "半目",
+      "meaning": "半目胜负的对局",
+      "importance": 0,
+      "category": "rules",
+      "boards": 1
+    },
+    {
+      "slug": "gyaku-sente",
+      "name": "逆先 (逆先手)",
+      "meaning": "逆先手：抢先消掉对方先手的一着",
+      "importance": 0,
+      "category": "rules",
+      "boards": 2
+    },
+    {
+      "slug": "goishi",
+      "name": "棋石 / 棋子 / 子",
+      "meaning": "围棋用的黑白棋子",
+      "importance": 0,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "hasami",
+      "name": "夹",
+      "meaning": "从旁边夹住对方的一手",
+      "importance": 1,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "hamete",
+      "name": "骗着",
+      "meaning": "引对方走错的圈套",
+      "importance": 1,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "hane",
+      "name": "扳",
+      "meaning": "从外侧斜着绕过对方棋子的一手",
+      "importance": 3,
+      "category": "moves",
+      "boards": 3
+    },
+    {
+      "slug": "goban",
+      "name": "棋盘",
+      "meaning": "围棋棋盘",
+      "importance": 2,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "hiraki",
+      "name": "开拆 (開拆)",
+      "meaning": "沿边展开的一手",
+      "importance": 1,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "hazama",
+      "name": "象飞 (象飛)",
+      "meaning": "对角线方向的跳，也叫象步",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "hasami-tsuke",
+      "name": "夹",
+      "meaning": "夹住对方一子的手筋",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "hanami-ko",
+      "name": "无忧劫 (無憂劫)",
+      "meaning": "打输了损失很小打赢了收获极大的劫",
+      "importance": 0,
+      "category": "life",
+      "boards": 1
+    },
+    {
+      "slug": "gyaku-komi",
+      "name": "倒贴",
+      "meaning": "倒贴目、负的贴目",
+      "importance": 0,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "guzumi",
+      "name": "愚形妙手",
+      "meaning": "看着难看却很管用的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "goke",
+      "name": "棋盒",
+      "meaning": "装棋子的棋盒",
+      "importance": 0,
+      "category": "rules",
+      "boards": 0
+    },
+    {
+      "slug": "gokaku",
+      "name": "互角",
+      "meaning": "均势对局、势均力敌",
+      "importance": 0,
+      "category": "moves",
+      "boards": 0
+    },
+    {
+      "slug": "godokoro",
+      "name": "碁所",
+      "meaning": "江户幕府的围棋最高官职",
+      "importance": 0,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "gokaisho",
+      "name": "俱乐部 (俱樂部)",
+      "meaning": "棋社、围棋沙龙",
+      "importance": 0,
+      "category": "history",
+      "boards": 0
+    },
+    {
+      "slug": "fuseki",
+      "name": "布局",
+      "meaning": "对局的开局阶段",
+      "importance": 2,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "butsukari",
+      "name": "顶 (頂)",
+      "meaning": "迎面撞上去的接触手段",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "atsumi",
+      "name": "厚",
+      "meaning": "向外发挥影响力的厚实棋形",
+      "importance": 0,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "ate",
+      "name": "打吃 / 叫吃",
+      "meaning": "紧气打吃的一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 1
+    },
+    {
+      "slug": "amarigatachi",
+      "name": "余形",
+      "meaning": "攻击落空后留下的多余棋形",
+      "importance": 0,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "akisankaku",
+      "name": "空三角",
+      "meaning": "三颗子围出的典型愚形",
+      "importance": 0,
+      "category": "shape",
+      "boards": 2
+    },
+    {
+      "slug": "geta",
+      "name": "枷吃",
+      "meaning": "不与对方棋子接触、但可以阻止对方棋子出逃的吃子方法",
+      "importance": 1,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "damezumari",
+      "name": "气紧",
+      "meaning": "气不够用",
+      "importance": 1,
+      "category": "life",
+      "boards": 2
+    },
+    {
+      "slug": "dan",
+      "name": "段",
+      "meaning": "高水平棋手的段位等级",
+      "importance": 3,
+      "category": "rank",
+      "boards": 0
+    },
+    {
+      "slug": "atari",
+      "name": "打吃",
+      "meaning": "眼前的提子威胁",
+      "importance": 3,
+      "category": "rules",
+      "boards": 2
+    },
+    {
+      "slug": "aji",
+      "name": "餘味",
+      "meaning": "潜藏的机会与弱点",
+      "importance": 3,
+      "category": "moves",
+      "boards": 3
+    },
+    {
+      "slug": "degiri",
+      "name": "冲断",
+      "meaning": "先冲一手，再断一手",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "daidaigeima",
+      "name": "超大飞",
+      "meaning": "比大飞还要远一路的飞",
+      "importance": 0,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "chosei",
+      "name": "长生",
+      "meaning": "永远循环、无法打破的局面",
+      "importance": 0,
+      "category": "life",
+      "boards": 1
+    },
+    {
+      "slug": "dame",
+      "name": "单官, 气",
+      "meaning": "与棋子相邻的空交叉点",
+      "importance": 1,
+      "category": "rules",
+      "boards": 2
+    },
+    {
+      "slug": "chuban",
+      "name": "中盤",
+      "meaning": "棋局的中间阶段",
+      "importance": 1,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "boshi",
+      "name": "镇头",
+      "meaning": "从上方罩住对方的一手",
+      "importance": 1,
+      "category": "moves",
+      "boards": 2
+    },
+    {
+      "slug": "aji-keshi",
+      "name": "解消余味",
+      "meaning": "把自己留下的后续手段提前消掉",
+      "importance": 1,
+      "category": "shape",
+      "boards": 1
+    },
+    {
+      "slug": "furikawari",
+      "name": "转换",
+      "meaning": "地与势的交换",
+      "importance": 2,
+      "category": "rules",
+      "boards": 2
+    },
+    {
+      "slug": "byoyomi",
+      "name": "读秒",
+      "meaning": "基本用时之后的读秒阶段",
+      "importance": 3,
+      "category": "rules",
+      "boards": 0
+    }
+  ]
+}

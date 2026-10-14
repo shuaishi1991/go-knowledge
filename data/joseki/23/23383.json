@@ -1,0 +1,1 @@
+{"id":"23383","play":".root.Q16.pass.R14.R17.Q17.R16.R15","mv":"R15","cat":"IDEAL","lb":"1","desc":"White continues with <A:Q18>.\n\n<B:S15> is a fatal mistake.","marks":[{"label":"A","position":"Q18"},{"label":"B","position":"S15"}],"see":[],"tags":[],"next":[{"id":"23423","mv":"Q18","cat":"IDEAL","lb":"1"},{"id":"23384","mv":"S15","cat":"MISTAKE","lb":"2"}]}

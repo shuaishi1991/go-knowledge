@@ -1,0 +1,13 @@
+{
+  "slug": "suji",
+  "name": "筋",
+  "meaning": "合乎棋理的正着",
+  "importance": 1,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>筋是一个很宽的概念，涵盖了行棋效率和逻辑次序的方方面面。它说的不是某一手棋本身，而是在具体局面里，一手棋与另一手棋之间的关系。 </p><h2><strong>筋的种类</strong></h2><ul><li><strong>手筋（Tesuji）</strong>：局部最巧妙、最有效的战术手段。</li><li><strong>俗手（Zokusuji）</strong>：效率低下的庸俗下法，往往是想都没想就下出来的。</li><li><strong>行马（Haengma）</strong>：韩语里的对应说法，指局部战斗中恰当的行棋方向与棋形。</li></ul><p>能看出好筋，就能更好地掌控全局，把自己的棋形走得高效。职业棋手夸一手棋“有筋”，夸的正是它在效率、美感和力量之间取得的平衡。</p>"
+    }
+  ]
+}

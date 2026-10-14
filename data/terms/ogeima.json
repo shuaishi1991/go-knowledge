@@ -1,0 +1,29 @@
+{
+  "slug": "ogeima",
+  "name": "大飞",
+  "meaning": "比小飞多跨一路的大跨度飞",
+  "importance": 2,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><em>大飞</em>（日语：Ogeima）指从已有的棋子出发，从已有的棋子出发，斜着跨出去，比小飞再多拉开一路，连起来正是“目”字形（小飞是“日”字形，大飞就多拉开一路）。它的跨度比标准的<em>小飞</em>更大，因此展开更快，对棋盘的影响面也更广。</p><p>从战略上看，大飞进攻时能快速逼近或包抄对方的棋，施加压力；防守时则用来守角、张开模样，在实地和外势之间取得平衡。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-23]AB[pd][pf][oc][kc][fc][cp][cq][bo][cn][bm][an][pq][po]AE[qf][lf]AW[nc][nd][dd][cf][ec][fd][dq][dp][bp][bq][co][do]LB[lf:A]C[__en: Black playing at A next will form an ōgeima, severely attacking White's weak stones.\n__ru:];B[lf])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>不过这个棋形比<em>小飞</em>更容易被断——间隔更大，联络也更松。实战中用<em>大飞</em>时，往往要先算清楚变化，或者在附近多留几颗接应的子，才站得稳。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-23]C[__en: Several ways to cut an ogeima.\n__ru:]AB[qd][pd][nc][od][ld][jd][nd][rc][re][pj][qp][oq][jp][cd][ce][cf][ch][dg]AW[sc][rb][qc][pc][oc][nb][mb][ph][mg][dp][fq][cc][dc][dd][hc][df][de][ck]AE[cl]LB[nh:A][oh:B](;B[nh]C[__Solution: true];W[ng](;B[og];W[oh];B[ni])(;B[oh];W[og];B[pg]))(;B[oh]C[__Solution: true];W[og];B[nh];W[ng];B[pg]))",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    }
+  ]
+}

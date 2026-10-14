@@ -1,0 +1,1 @@
+{"id":"16321","play":".root.Q16.R14.O17.R17.R16.S16.S15.S17.R15.P18","mv":"P18","cat":"IDEAL","lb":"1","desc":"If White has a position on top, then <A:O18>, leaving a cutting point behind, is a mistake.","marks":[{"label":"A","position":"O18"}],"see":[],"tags":[],"next":[{"id":"16322","mv":"O18","cat":"IDEAL","lb":"1"},{"id":"16330","mv":"P17","cat":"IDEAL","lb":"2"}]}

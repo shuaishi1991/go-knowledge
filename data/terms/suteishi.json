@@ -1,0 +1,23 @@
+{
+  "slug": "suteishi",
+  "name": "弃子",
+  "meaning": "主动舍弃的棋子",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>弃子（日语 suteishi，字面就是“丢掉的子”）是围棋里的一种手法：有意舍掉一颗或几颗棋子，去换取更大的战略收获。目的可能是抢到先手，可能是断开对方的联络，也可能是削减对方的实地，或者把别处的棋形走厚。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-05-26]AB[dp][fp][gq][gr][ep]AW[fq][gp][jq][hq][hr][eq]AE[dq][er][fo]C[__en: Those marked stones can be sacrificed to gain strategic sente. In Japanese this sacrifice technique is called \"suteishi\".\n__ru: ]LB[go:A]TR[gq][gr];B[go]C[__Solution: true];W[hp];B[dq];W[fr];B[er];W[gs])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>弃子体现了围棋更深一层的道理：灵活和长远的眼光，往往胜过眼前的实惠。舍掉一颗看起来很要紧的子，可以留下味道，可以逼对方走出低效的应手，也可以把战场转到对自己更有利的一边。</p>"
+    }
+  ]
+}

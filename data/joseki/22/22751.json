@@ -1,0 +1,1 @@
+{"id":"22751","play":".root.Q16.R17.R16.Q17.P17.P18.O17.O18.N17.pass.N18","mv":"N18","cat":"IDEAL","lb":"2","desc":"If White tenukis this becomes a forcing move.","marks":null,"see":["22756"],"tags":[],"next":[{"id":"22752","mv":"S16","cat":"IDEAL","lb":"1"},{"id":"22756","mv":"pass","cat":"MISTAKE","lb":"1"}]}

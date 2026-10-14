@@ -1,0 +1,23 @@
+{
+  "slug": "myoshu",
+  "name": "妙手",
+  "meaning": "出人意料的精彩一手",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>围棋里的<em>妙手</em>，是一手超出常规预期的棋。它乍看可能违反直觉，甚至显得软弱，细想之后才发现效果惊人。这样的一手常常改变全局的走向：形势因此翻转，或者在看似无路的地方生出机会。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;PB[Kuwahara Shusaku 4d]PW[Gennan Inseki 8d]SZ[19]AW[cc][cf][ck][cn][dc][gq][hr][ic][io][iq][is][jr][ka][kb][kq][kr][la][lc][lq][ls][mb][mc][mj][mm][mn][mo][mp][mr][ng][ni][nj][np][ob][oc][og][oi][ok][ol][om][on][oo][pb][pg][ph][pp][qf][qh][ql][qm][qo][qp][qq][rf][rh][rj][rk][rm][rq][rr]AB[cp][db][ep][fc][fe][fq][go][gr][hp][hq][ja][jb][jc][ji][jn][kc][ke][ld][ln][lo][lp][md][mi][mq][nd][no][nq][nr][ns][oh][oj][op][oq][or][pc][pe][pf][pi][pk][pl][pm][pn][po][pq][ps][qb][qd][qe][qg][qi][qj][qk][qr][rg][ri][rl][rs][sg][sh]PL[W]C[__en: Black 1 is the famous move from the game between Honinbo Shusaku and Gennan Inseki. This brilliant move, or \"myoshu\", influenced the entire board at once and ultimately turned the tide in Shusaku’s favor.\n__ru:]AP[Sabaki:0.52.2]CA[UTF-8]LB[ji:1])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>妙手为人称道的地方，在于创意、效率和时机。它可能是弃子，可能是巧妙的手筋，也可能是把味道用在意想不到的地方。常见的手筋大家都练过、都认得，而真正的妙手总带着几分独创，或者与眼前这个局面严丝合缝。</p>"
+    }
+  ]
+}

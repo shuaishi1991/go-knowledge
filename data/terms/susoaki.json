@@ -1,0 +1,23 @@
+{
+  "slug": "susoaki",
+  "name": "袖空",
+  "meaning": "模样底部未封的空当",
+  "importance": 0,
+  "category": "shape",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>漏风说的是模样的底部——一侧或者两侧的二、三路一带没有封住，留着口子。这样的空当，等于在招呼对方来滑、来打入。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-05-26]AB[pp][np][nq][op][qp][qk]AW[qq][pq][oq][nr][mq][rq]C[__en: Black's territory isn't fully secured, as White can later play at A to reduce it, thanks to the marked stone. This local weakness is metaphorically called an 'open skirt', or susoaki.\n__ru:]AE[pj][ok]LB[ro:A]TR[rq]PL[W];W[ro]C[__Solution: true])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>模样看上去挺厚实，可底下一虚，对方轻轻一掏就少了一大块空，严重时连这块棋的死活都要动摇。</p><p>这个概念在中盘尤其有用——中盘正是削减对方模样、压住对方成空的阶段。棋力还不高的人容易小看漏风的杀伤力：补起来通常要走一步后手。</p><p>我们的频道上有一期分成两集的视频，专门细讲漏风：</p><i></i>×<h3></h3>"
+    }
+  ]
+}

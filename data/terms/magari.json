@@ -1,0 +1,23 @@
+{
+  "slug": "magari",
+  "name": "拐 / 曲",
+  "meaning": "棋形转折、拐弯的一手",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>拐是围棋里用途很广的一个词，指棋形上转折、拐弯的一手。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;SZ[19]AW[be][bf][cf][cl][dc][de][dg][di][dm][do][dp][dq][eg][el][en][fn][go][ho][lq][lr][pn][qk][qn][ri][rj]AB[bm][ce][cg][cn][cp][cq][df][dn][ef][em][ff][fm][gk][gm][gn][id][mr][np][oc][pp][qd][qh][qi][qo][rh]PL[B]AP[Sabaki:0.52.2]CA[UTF-8]LB[fg:A]C[__en: Black's turn (magari) at A is an effective move to restrict White's access to the center while reinforcing Black's influence.\n__ru:];B[fg]C[__Solution: true])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>战略价值特别大的一拐，日语里有时叫 <em>senryo-magari</em>（千両曲がり），直译就是“价值千两的一拐”，用来形容它非同寻常的分量。“両”（两）在当时是很值钱的货币单位：一两大约够买一个人一年吃的米——这样一手棋有多重，可想而知。</p>"
+    }
+  ]
+}

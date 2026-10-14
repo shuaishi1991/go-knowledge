@@ -1,0 +1,43 @@
+{
+  "slug": "keima-kogeima",
+  "name": "小飞",
+  "meaning": "隔一路斜跳的马步走法",
+  "importance": 2,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>小飞（日语：Keima）指这样一手：新落的子与原有的棋子横向隔两路、纵向隔一路（或者反过来），连起来正好是个“日”字形。它和国际象棋里马的走法一模一样；中文管这一手叫“马步”。小飞攻守两用，既能高效地把棋子铺开，又不至于走重。</p><p>在日语里它有时写作 Kogeima，也就是小飞，用来跟 Ogeima，也就是大飞，区分开来。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-23]AB[pd][qf])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p><em>空棋盘上的小飞</em></p><h2><strong>用法</strong></h2><p>小飞让两颗子形成斜向的呼应，虽然没有直接相连，却在速度和厚度之间找到了平衡。进攻时用它逼近对方、施加压力，压缩对方的发展空间；防守时用它加固自己的棋，一边围空，一边把薄弱处补上。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-23]AB[pp][qo][np][kq][qi][qd][pd][od][co][ep][fp][dk]AW[qn][pn][qk][qc][pc][nb][dq][eq][gq][dd][cf]AE[lq][dp][cp][bd][fc][dj][ck]LB[oj:A]C[__en: Black can play a keima at A next to attack White.\n__ru:];B[oj]C[__Solution: true];W[ok];B[nk];W[ol])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>小飞好用又常见，但也要留心它带来的隐患——比如留下断点，被对手抓住就麻烦了。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-23]AE[jq][lp][po][dp][pi][md][mf][ep]AW[jp][in][rn][qp][qq][qr][pr][ro][pd][nd][dd][cj][cd][ed][gc][qe][oc][pc]AB[hp][or][nq][pq][pp][qn][qm][qo][cp][cc][dc][fb][qf][oe][od][pf][pj][fp]LB[io:B][jo:A]C[__en: Black can cut keima by playing at A or B.\n__ru:](;B[jo]C[__Solution: true];W[io];B[ip])(;B[io]C[__Solution: true];W[jo];B[jn]))",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>用小飞之前先把变化算清楚、把对手的应手想在前头，这一手才能真正为整盘棋出力。</p><p>想了解更多关于小飞的内容，可以看我们围棋棋形：第一阶课程中的“基础构件”一章。</p>"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "keshi",
+  "name": "淺消, 侵消",
+  "meaning": "从外面消减对方的模样",
+  "importance": 0,
+  "category": "shape",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><em>侵消</em>是围棋里的基本战略概念，指在不发动全面打入的前提下，削减对方模样的规模。打入是要在对方阵地里做出一块活棋，侵消不同：它只压缩对方的潜力，逼对方少捞一些。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;BR[3p]DT[2019-11-22]EV[Year 2019 Korean League, round 8]PB[Moon Yubin]PW[Lee Changho]RE[B+R]SO[Go4Go.net]WR[9p]AW[bp][bq][cd][cp][dd][dj][dp][ed][ep][fc][fq][gc][hc][ho][qo]AB[br][cc][cq][dc][dq][ec][eq][fb][fr][gb][gk][gr][op][pd][pq][ql]PL[W]LB[gk:1]C[__en: To counter White’s moyo, Black plays a reduction move (keshi) rather than invading deeply into White’s territory.\n__ru:]AP[Sabaki:0.52.2]CA[UTF-8])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>什么时候该侵消：<br></strong></p><ul><li>对方的模样已经厚实，打入风险太大的时候。</li><li>想保持局面安定，不愿冒打入之险的时候。</li></ul><h2>侵消与打入的区别</h2><strong>对比项</strong><strong>侵消</strong><strong>打入</strong>目的压缩对方的潜力在对方阵地里做出一块棋风险低到中等高（多数情况下）常见时机中盘，模样成形时中盘或布局后期效果削弱对方的模样直接引发冲突<p>纵观职业围棋史，侵消一直是关键概念，在比拼外势的对局里尤其如此——双方都要在实地和厚势之间找平衡。到了今天，面对 AI 带来的新式布局所围出的大空，高效地消减大模样往往是必修课。</p><p>想更深入地了解侵消，可以看看<em>“侵消一下就够了！”</em>这一课，它在我们的无畏打入课程里。</p>"
+    }
+  ]
+}

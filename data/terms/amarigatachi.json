@@ -1,0 +1,23 @@
+{
+  "slug": "amarigatachi",
+  "name": "余形",
+  "meaning": "攻击落空后留下的多余棋形",
+  "importance": 0,
+  "category": "shape",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>在围棋里，余形说的是这样一种情况：一波凶狠的攻击最后什么便宜也没占到，反倒让进攻的一方陷入被动。它多半出自过分手——想把对方压得太狠，结果自己露出了破绽，被对方抓住。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;PL[W]C[__en: Black 1 is an overly aggressive move, or 'amarigatachi,' aiming to press White into a lower position. However, White can easily punish it with A.\n__ru:]DT[2025-03-17]SZ[19]AB[co][dd][dg][ep][fq]AW[dq][eq][pd][pp]LB[dp:A][fq:1]AP[Sabaki:0.52.2]CA[UTF-8];W[dp]C[__Solution: true];B[do];W[fp];B[eo];W[gq];B[fr];W[gr])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>余形这个词由日语的 amari（“剩余”“多余”）和 katachi（“棋形”）组成，字面就是攻击一无所获之后剩下来的那个形。它指的是那种乍看厚实有力、实际上因为攻得过头而暗藏毛病的棋形——攻击落空，攻方的棋子反倒变成了一堆凝形。</p><p>弄懂余形，能帮你判断一次攻击大概率会不会落空，也提醒你：保持棋形的弹性，比硬去争一个本来就不存在的便宜更重要。</p>"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"id":"20377","play":".root.Q16.R14.pass.O16.O15.N15.O14.N14.Q14","mv":"Q14","cat":"IDEAL","lb":"1","desc":"<A:O13>, <B:R17>, or <C:R15> are possible continuations.","marks":[{"label":"A","position":"O13"},{"label":"B","position":"R17"},{"label":"C","position":"R15"}],"see":[],"tags":[],"next":[{"id":"20378","mv":"O13","cat":"IDEAL","lb":"1"}]}

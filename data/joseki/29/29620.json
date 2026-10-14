@@ -1,0 +1,1 @@
+{"id":"29620","play":".root.R16.pass.O16.M17.pass","mv":"pass","cat":"IDEAL","lb":"2","desc":"If Black doesn't respond locally, White has a follow-up move at <A:Q16>.","marks":[{"label":"A","position":"Q16"}],"see":["29593"],"tags":[],"next":[{"id":"33405","mv":"Q17","cat":"GOOD","lb":"2"},{"id":"29621","mv":"Q16","cat":"IDEAL","lb":"1"}]}

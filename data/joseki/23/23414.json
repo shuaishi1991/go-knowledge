@@ -1,0 +1,1 @@
+{"id":"23414","play":".root.Q16.pass.R14.R17.Q17.R16.R15.S15.S14.T16.Q18.S18.T14.T17.R18.S19.S16","mv":"S16","cat":"IDEAL","lb":"1","desc":"<A:T15> or <B:S17> don't help.","marks":[{"label":"A","position":"T15"},{"label":"B","position":"S17"}],"see":[],"tags":[],"next":[{"id":"23415","mv":"S17","cat":"MISTAKE","lb":"2"},{"id":"23417","mv":"T15","cat":"MISTAKE","lb":"1"}]}

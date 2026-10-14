@@ -1,0 +1,39 @@
+{
+  "slug": "hane",
+  "name": "扳",
+  "meaning": "从外侧斜着绕过对方棋子的一手",
+  "importance": 3,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><strong>扳</strong>（日语：Hane）是围棋中重要的战术手段，指绕着对方一颗或几颗棋子伸展出去的一手。它常在接触战中作为应手出现，能在周围一带扩张影响，占到战术上的便宜。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-17]AB[cp][dp]AW[cq][dq]AE[er][eq]LB[eq:A]C[__en: A is the hane commonly played in this joseki, pressing White down to the second line.\n__ru:];B[eq]C[__Solution: true];W[er]C[__en: Following the hane, Black can extend to A to build outside influence or play another hane at B to secure the corner.\n__ru:]LB[fq:A][fr:B](;B[fq];W[fr];B[gq])(;B[fr];W[fq];B[ep];W[gr];B[dr];W[fs];B[cr]))",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<h2><strong>扳的几个要点</strong></h2><ol><li>扳可以打乱对方的阵形、扩张自己的外势，也为攻防创造机会。绕到对方棋子外侧的一扳，直接动摇了他对这一带的控制。</li><li>扳虽有力，却也有风险。时机不对或者扳得过分，容易招来反击，走出薄形甚至丢子。</li><li><strong>实战中的用法</strong>：<ul><li><strong>进攻性</strong>的扳<strong>，</strong>可以侵入对方的实地，或者把他的棋分断开。</li></ul></li></ol>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-17]AB[dp][dq]AE[fq]AW[eq][ep]LB[eo:A]C[__en: White stones are slightly vulnerable. Black should hane at A to launch an attack on the white stones.\n__ru:];B[eo]C[__Solution: true\n__en: As the hane removed a liberty, White feels difficult to respond locally.\n__ru:];W[fo]C[__en: If White tries to resist...\n__ru:];B[fn]C[__en: Black plays another hane, pushing White to the limit.\n__ru:];W[go];B[en]C[__en: Black successfully gains advantage.\n__ru:])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<ul><li><strong>防守性</strong>的扳能加固自己的阵形，减少破绽。</li></ul>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-17]AW[cq][dq][er][fr]AE[gp][fp][ep][hq]C[__en: Hane at A is the correct move to defend the corner for White.\n__ru:]AB[dp][cp][eq][fq][gq][gr]PL[W]LB[bp:A][bq:B];W[bp]C[__Solution: true];B[bo];W[bq]C[__en: This hane simultaneously enlarges the eye space in the corner and creates a potential cutting point to exploit later.\n__ru:];B[cn])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    }
+  ]
+}

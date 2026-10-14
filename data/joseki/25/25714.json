@@ -1,0 +1,1 @@
+{"id":"25714","play":".root.R16.P17.M16.Q15.R15.Q14.S13","mv":"S13","cat":"IDEAL","lb":"1","desc":"## Joseki\n\nThis is AlphaGo's preference, likely to avoid White pushing along Q13 and expanding the wall in sente.","marks":null,"see":["25715"],"tags":[],"next":[{"id":"25715","mv":"pass","cat":"IDEAL","lb":"2"},{"id":"25717","mv":"K17","cat":"IDEAL","lb":"1"}]}

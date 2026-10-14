@@ -1,0 +1,23 @@
+{
+  "slug": "ikken-tobi",
+  "name": "单关 (單關), 跳",
+  "meaning": "隔一路的跳",
+  "importance": 1,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>一间跳（日语：Ikken Tobi）是围棋最基本的一手：在自己棋子隔一路的位置落子。这个棋形常用来向中腹进军、从攻击中逃出，或者高效地扩张外势，同时还留有余地。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-15]AB[fq]AE[kp][fo][dn]AW[dp][hq]LB[fo:A]C[__en: Black's next move at A is an 'ikken tobi,' a one-point jump.\n__ru:];B[fo])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>一间跳的可贵之处，在于速度与坚实之间的平衡。小飞、二间跳这类走得更快的手段容易留下断点，一间跳则相对安全，同时还能带着整块棋往前走。</p><p>棋谚说“一间跳无恶手”，正说明即便在复杂局面里，它也是一手可靠的通用好棋。不过，周围子力配置不同，这一跳也可能被对方刺一手，或者干脆断开。</p><p>想进一步了解一间跳，可以看我们的免费视频，它出自围棋棋形课程。</p><i></i>×<h3></h3>"
+    }
+  ]
+}

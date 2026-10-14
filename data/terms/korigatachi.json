@@ -1,0 +1,23 @@
+{
+  "slug": "korigatachi",
+  "name": "重复 (重複)",
+  "meaning": "过于集中、效率偏低的棋形",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><em>凝形</em>指一块棋下得太密、太挤，和它在盘上真正创造的价值不相称。这样的棋形往往很结实、很安全，却没有把空间和外势用足，战略上的潜力因此受限。比起薄，凝形被认为是更隐蔽也更伤人的低效：棋一旦凝了，后面几乎没机会补救。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-04-09]AB[pd][pp][fq][pc][pe][cn][cq][dq][ep][bp][bq]AW[dp][dd][rf][eo][cp][dm][do][bo][qc][qd][co]AE[nc][lc][cj][bn][ck][kc][fo][fn][hp][go]TR[bo][co][cp][do][dp][eo]C[__en: White marked stones are overconcentrated and inefficient. We call them \"korigatachi\".\n__ru:])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>这个词来自日语动词 <em>koru</em>，意思是变硬、凝固，或者过于执着——正好点出这种棋形的僵硬和不灵活。讲棋形效率时常常提到凝形，它也是<em>手割</em>引出的核心概念之一：手割就是把落子顺序假设性地重新排一遍，用来判断局面得失的方法。</p>"
+    }
+  ]
+}

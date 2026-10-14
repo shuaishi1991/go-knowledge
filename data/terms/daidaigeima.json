@@ -1,0 +1,33 @@
+{
+  "slug": "daidaigeima",
+  "name": "超大飞",
+  "meaning": "比大飞还要远一路的飞",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>超大飞是一种走得非常远的飞，比标准的大飞（Ogeima）还要多跨出一路。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-03-17]AB[qk][pg]C[__en: These two black stones form a \"daidaigeima\".\n__ru:])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>多跨出这一路，速度和外势就更足，因此在布局和中盘初期都是很有力的武器。不过步子迈得越大，风险也越大——这一手更容易被对方断开，周围没有接应的话，很容易变成负担。</p><p>超大飞的用法有好几种。比如在布局阶段，常常从已经很坚固的角上或边上拆出去，图的是快速展开；到了中盘，它有助于围出大模样，但也要提防对方来侵消。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-03-17]AW[dp][dd][cn]AB[pd][pp][fq]LB[jp:A]C[__en: This pattern can be seen in professional games. Next, Black plays a \"daidaigeima\" at A to continue, aiming to create influence later.\n__ru:];B[jp]C[__Solution: true])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>超大飞是把好刀，却不是给胆小的人准备的。它更适合高手：既能预判并补掉它留下的毛病，又能借着它的速度掌控全局。随手乱用会自食其果，但用在行家手里，这一手足以给整盘棋定下基调。</p><p>想知道怎么妥善处理超大飞的打入，可以看看我们讲这个的免费视频！ </p><i></i>×<h3></h3>"
+    }
+  ]
+}

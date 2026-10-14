@@ -1,0 +1,166 @@
+category	importance	name	meaning	slug
+rules	0	围棋	围棋的中文名称	weiqi
+moves	0	围棋的韩语	围棋的韩语	baduk
+rules	0	提子	提掉一颗子或一块棋	nuki
+moves	3	手筋	局部最佳着法	tesuji
+moves	3	脱先	不应对方，转投他处	tenuki
+moves	0	渡	搭桥，从底下渡过去	watari
+moves	0	打入	打进对方的阵地	uchikomi
+moves	0	连接 (連接)	把棋子连起来的一手	tsugi
+rules	0	收后 (收後)	最后一手有价值的棋	tedomari
+rules	2	收官, 官子	一盘棋的最后阶段	yose
+moves	1	靠 / 碰	紧贴对方棋子的接触手段	tsuke
+rules	2	天元	棋盘正中央的交叉点	tengen
+life	2	诘棋	围绕一块棋能否做活而设计的题目	tsumego
+moves	1	跳	隔着一路向前跳出的一手	tobi
+moves	0	试应手 (試應手)	试探对方应手的一手	yosumi
+moves	0	俗手	粗笨、不讲究的下法	zokusuji
+moves	0	分投	打散对方阵势的一手	wariuchi
+moves	0	倒扑 (倒撲)	弃一子，反提对方一块	utte-gaeshi
+moves	0	过分	走得太过的一手	uchisugi
+moves	0	手割	一种复盘分析的方法	tewari
+shape	0	高目	五四位的开局点，重外势轻实地	takamoku
+moves	1	挖	从对方两子之间挖进去的一手	warikomi
+moves	1	征子	连续打吃的追杀手段	shicho
+shape	2	守角	用两颗子把角围起来的棋形	shimari
+life	2	对杀	两块棋互相紧气，比谁先吃掉谁	semeai
+rank	0	互先	轮流执黑的对局	tagai-sen
+history	0	新布局 (新佈局)	“新布局”——1933 年始于日本的一场布局观念变革	shin-fuseki
+life	0	死活	一块棋的生与死	shikatsu
+rank	0	先相先	下手三局执两盘黑的手合	sen-ai-sen
+life	0	治孤	把被围攻的孤棋救活	shinogi
+rules	3	先手	主动权	sente
+moves	1	筋	合乎棋理的正着	suji
+moves	0	滚包; 滚打	一路滚打，把对方挤成愚形	shibori
+rules	1	收气吃	被迫提子	semedori
+shape	0	大斜	大斜，也叫大斜定式	taisha
+moves	0	弃子	主动舍弃的棋子	suteishi
+shape	0	袖空	模样底部未封的空当	susoaki
+shape	0	角	棋盘四角	sumi
+moves	0	飞	二路滑下的一手	suberi
+history	0	手谈 (手談)	以手交谈，以棋对话	shudan
+rank	0	初段	第一个段位，也就是 1 段	shodan
+rules	0	白棋	白棋、执白的一方	shiro
+life	3	共活	谁也吃不掉谁的共存局面	seki
+moves	3	开花	提一子后留下的拔花棋形	ponnuki
+shape	0	三连星 (三連星)	在同一边连占三个星位	sanrensei
+history	0	王座	日本职业围棋七大头衔之一	oza
+moves	0	胀牯牛 / 胀死牛	挤得对方连也连不上	oshitsubushi
+shape	0	大飞守角	用大飞的步子守住角	oogeima-jimari
+moves	0	大桂馬掛	用大飞的步子挂角	oogeima-gakari
+moves	0	大伸腿	从二路大飞插进对方的空	oozaru
+moves	3	腾挪	轻灵而有弹性的下法	sabaki
+rank	2	联棋	两人一队、轮流落子的对局形式	rengo
+moves	2	立	朝边线方向向下走一手	sagari
+rules	0	双先	双方在同一处各有先手	ryou-sente
+moves	0	双挂 (雙掛)	从两边同时挂角	ryou-gakari
+moves	0	双吃 / 双打 / 双打吃	一手同时打吃两块棋	ryou-atari
+moves	0	压	从上方紧贴住对方的棋	oshi
+moves	0	挡 (擋)	拦住对方的去路	osae
+shape	0	大模样 (大模樣)	铺开一大片的模样	oomoyo
+shape	0	大场	盘面上价值很大的一点	ooba
+moves	0	透点 (透點)	往对方阵地里点的一手	oki
+shape	2	三三	角上三线与三线的交叉点	sansan
+moves	2	大飞	比小飞多跨一路的大跨度飞	ogeima
+life	2	点眼	往对方眼位里落子，破掉两只眼	nakade
+rules	3	猜先	决定谁执黑的流程	nigiri
+shape	3	模样	尚未成形的大片潜在地盘	moyo
+shape	0	雪崩	雪崩定式	nadare
+moves	0	妙手	出人意料的精彩一手	myoshu
+history	1	名人	日本职业围棋七大头衔之一
+历史上则指日本棋界地位最高的棋手	meijin
+moves	2	觑	瞄着对方断点的试探一手	nozoki
+rules	1	目	计算胜负时的一目
+让子棋中的一子	moku
+history	1	日本棋院	日本的全国性围棋组织	nihon-ki-in
+life	0	接不归 (接不歸)	接上反而被吃	oiotoshi
+shape	0	二连星	在同一边连占两个星位	nirensei
+moves	0	二间跳 (二間跳)	隔两路的跳	niken-tobi
+life	0	两眼	两只真眼	nigan
+moves	0	连扳 (連扳)	连续两次扳	nidanbane
+moves	0	外目	角上的 5-3（3-5）点	mokuhazushi
+life	0	有眼杀无眼 (有眼殺無眼)	有眼一方对无眼一方的对杀	me-ari-me-nashi
+moves	0	拐 / 曲	棋形转折、拐弯的一手	magari
+moves	2	长	顺着同一路向前接出一手	nobi
+rules	3	见合	价值相等、可以互换的两点	miai
+moves	3	级	学棋阶段的等级	kyu
+rules	3	贴目	给白方的补偿目数	komi
+history	0	棋圣	日本职业围棋七大头衔之一	kisei
+rules	0	棋	围棋
+棋类游戏的统称（东亚语境中的泛指）	ki
+shape	0	小飞守角	用小飞把角守住的棋形	keima-shimari
+moves	2	小尖	在自己棋子的斜对角落一手	kosumi
+moves	2	棋谱	把一盘棋每一手都记下来的记录	kifu
+life	3	劫	双方可以轮流提取对方棋子的情况	ko
+moves	2	小飞	隔一路斜跳的马步走法	keima-kogeima
+shape	2	小目	角上三线与四线的交叉点	komoku
+rules	1	先手利	逼对方必应的一手	kikashi
+rules	0	黑	黑棋、执黑的一方	kuro
+rules	0	劫材	劫争中的先手威胁	koudate
+moves	0	重复 (重複)	过于集中、效率偏低的棋形	korigatachi
+moves	0	扭断 (扭斷)	互相切断的扭十字	kirichigai
+history	0	棋道	“围棋之道”	kido
+moves	0	气合 (氣合)	主动、强硬的下法	kiai
+shape	0	淺消, 侵消	从外面消减对方的模样	keshi
+moves	0	飞挂	以小飞的距离挂角	keima-kakari
+moves	1	断 / 切断	切断对方的联络	kiri
+moves	0	尖冲 (尖衝)	在对方棋子的斜上方落子	katatsuki
+history	0	十段	日本职业围棋七大头衔之一	judan
+rank	0	定先	下手固定执黑的手合，相当于让先	josen
+rules	0	围棋	围棋的日语名称	igo
+moves	0	扑 (撲)	往对方棋形里送一子的弃子手筋	horikomi
+rules	1	和棋, 持棋	平局	jigo
+rules	1	倒脱靴 / 脱骨	在对方提子之后反击	ishi-no-shita
+history	2	院生	在棋院接受职业训练的学生	insei
+history	2	本因坊	既是历史上的围棋名门，也是当今的顶级头衔	honinbo
+shape	3	定式	标准次序与固定的下法	joseki
+moves	2	本手	扎实的正着	honte
+history	0	关西棋院	日本关西地区的职业棋院	kansai-ki-in
+moves	0	虎接	虎接，用虎口连回的补法	kaketsugi
+rank	0	角番	输不起的一局、决定命运的一局	kadoban
+rank	0	十番棋	两人对下十盘的番棋	jubango
+shape	0	地, 地盘 (地盤)	地、实地	ji
+life	0	斗方 (鬥方)	金柜角，角上著名的死活形	ichigomasu
+moves	1	挂角 (掛角)	逼近对方角上棋子的一手	kakari
+moves	1	单关 (單關), 跳	隔一路的跳	ikken-tobi
+rules	2	星位	棋盘上用小圆点标出的交叉点	hoshi
+rules	3	后手	失去先手，只能被动应对。	gote
+moves	0	退	往自己一方退回的一手	hiki
+rank	0	快棋	快棋、限时很短的对局	hayago
+rules	0	半目	半目胜负的对局	hanmoku
+rules	0	逆先 (逆先手)	逆先手：抢先消掉对方先手的一着	gyaku-sente
+rules	0	棋石 / 棋子 / 子	围棋用的黑白棋子	goishi
+moves	1	夹	从旁边夹住对方的一手	hasami
+moves	1	骗着	引对方走错的圈套	hamete
+moves	3	扳	从外侧斜着绕过对方棋子的一手	hane
+rules	2	棋盘	围棋棋盘	goban
+moves	1	开拆 (開拆)	沿边展开的一手	hiraki
+moves	0	象飞 (象飛)	对角线方向的跳，也叫象步	hazama
+moves	0	夹	夹住对方一子的手筋	hasami-tsuke
+life	0	无忧劫 (無憂劫)	打输了损失很小打赢了收获极大的劫	hanami-ko
+rules	0	倒贴	倒贴目、负的贴目	gyaku-komi
+moves	0	愚形妙手	看着难看却很管用的一手	guzumi
+rules	0	棋盒	装棋子的棋盒	goke
+moves	0	互角	均势对局、势均力敌	gokaku
+history	0	碁所	江户幕府的围棋最高官职	godokoro
+history	0	俱乐部 (俱樂部)	棋社、围棋沙龙	gokaisho
+shape	2	布局	对局的开局阶段	fuseki
+moves	0	顶 (頂)	迎面撞上去的接触手段	butsukari
+shape	0	厚	向外发挥影响力的厚实棋形	atsumi
+moves	0	打吃 / 叫吃	紧气打吃的一手	ate
+shape	0	余形	攻击落空后留下的多余棋形	amarigatachi
+shape	0	空三角	三颗子围出的典型愚形	akisankaku
+moves	1	枷吃	不与对方棋子接触、但可以阻止对方棋子出逃的吃子方法	geta
+life	1	气紧	气不够用	damezumari
+rank	3	段	高水平棋手的段位等级	dan
+rules	3	打吃	眼前的提子威胁	atari
+moves	3	餘味	潜藏的机会与弱点	aji
+moves	0	冲断	先冲一手，再断一手	degiri
+moves	0	超大飞	比大飞还要远一路的飞	daidaigeima
+life	0	长生	永远循环、无法打破的局面	chosei
+rules	1	单官, 气	与棋子相邻的空交叉点	dame
+moves	1	中盤	棋局的中间阶段	chuban
+moves	1	镇头	从上方罩住对方的一手	boshi
+shape	1	解消余味	把自己留下的后续手段提前消掉	aji-keshi
+rules	2	转换	地与势的交换	furikawari
+rules	3	读秒	基本用时之后的读秒阶段	byoyomi

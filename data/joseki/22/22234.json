@@ -1,0 +1,1 @@
+{"id":"22234","play":".root.Q16.R17.R16.Q17.P16.O17.pass.N18.N15","mv":"N15","cat":"IDEAL","lb":"1","desc":"###Continuation\n<A:Q12> or <B:R10> blocks Black's extension.","marks":[{"label":"A","position":"Q12"},{"label":"B","position":"R10"}],"see":["22122"],"tags":[],"next":[{"id":"22235","mv":"Q12","cat":"IDEAL","lb":"1"}]}

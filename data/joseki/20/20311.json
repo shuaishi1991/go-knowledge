@@ -1,0 +1,1 @@
+{"id":"20311","play":".root.Q16.R14.pass.O16.Q14.Q13.P14.R15.P16.S17.pass","mv":"pass","cat":"IDEAL","lb":"2","desc":"###Continuation\n<A:O17> or <B:O18>","marks":[{"label":"A","position":"O17"},{"label":"B","position":"O18"}],"see":["20310"],"tags":[],"next":[{"id":"20312","mv":"O17","cat":"IDEAL","lb":"1"}]}

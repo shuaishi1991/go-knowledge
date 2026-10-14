@@ -1,0 +1,29 @@
+{
+  "slug": "kikashi",
+  "name": "先手利",
+  "meaning": "逼对方必应的一手",
+  "importance": 1,
+  "category": "rules",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>先手利（日语：Kikashi）指逼对方不得不应的一手，它图的往往不是眼前的实地，而是日后的便宜。kikashi 在日语里有“见效”“得利”的意思，强调的正是它对后续变化的影响。</p><p>普通的先手也要对方来应，但常常伴随着直接的收获；先手利则含蓄得多。它改变对方的姿态，把对方的棋形下重、下凝，让走先手利的一方悄悄占到便宜。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-17]AB[dp][dn][co]AW[cn][dm][fq][fo]C[__en: Before protecting the marked stone, playing at A is a good kikashi move for White. It forces Black to connect in an awkward way while also helping White strengthen their position.\n__ru:]TR[cn]LB[en:A]PL[W];W[en];B[do];W[cm])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>一手到位的先手利，能够：</p><ul><li><strong>创造后续机会</strong>：为以后的攻击埋下伏笔，或者压缩对方的选择。</li><li><strong>破坏对方的棋形</strong>：逼对方走出效率不高的形状。</li><li><strong>影响全局</strong>：作用不止于局部。</li><li><strong>随时可以舍弃</strong>：日后有需要，弃掉也损失不大。</li></ul><p>不过，先手利用得不是时候也会适得其反：要么解消余味（把自己原本留着的味道消掉），要么白白帮对方补强，自己却没得到相应的补偿。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-17]AB[dp][dq][do][co]AW[cp][cq][bn]LB[bo:A][co:1]C[__en: Black 1 is a poor kikashi move because it allows White to naturally strengthen their shape by playing A.\n__ru:]PL[W];W[bo])",
+      "goto": "0",
+      "mode": "View_Static"
+    }
+  ]
+}

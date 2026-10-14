@@ -1,0 +1,29 @@
+{
+  "slug": "ponnuki",
+  "name": "开花",
+  "meaning": "提一子后留下的拔花棋形",
+  "importance": 3,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><strong>开花</strong>是围棋中提掉对方一颗子之后留下的棋形：四颗子围着一个空点，像一朵张开的花。这个形向四面八方都放出力量，能让自己的阵势一下子厚实起来，因此被视为极有价值的好形。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;C[__en: The 4 black stones are forming a ponnuki.\n__ru:]DT[2024-12-18]SZ[19]AB[cn][dm][do][en]AW[co][cp]PL[W]AP[Sabaki:0.52.2]CA[UTF-8])",
+      "goto": "end",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>提掉一子之后，围在这个点周围的四颗子正好摆成一朵花的形状。这个形以效率高、控制面广著称。</p><p>围棋谚语<strong>“开花三十目”</strong>说的就是它的分量。它未必真值三十目，但这句话点出了开花在圈地和控盘上的厚度与影响力。</p><p>开花攻守两利：既可以当作向外发展的根据地，也可以用来安定一块孤棋。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-18]C[__en: This joseki ends with a ponnuki. Let's start with A.\n__ru:]LB[dp:A];B[dp]C[__Solution: true];W[cq];B[cp];W[dq];B[eq];W[er];B[fr];W[fq];B[ep];W[gr];B[dr];W[fs];B[cr]C[__en: At the end of the joseki, White builds a ponnuki.\n__ru:]TR[er][fq][fs][gr])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    }
+  ]
+}

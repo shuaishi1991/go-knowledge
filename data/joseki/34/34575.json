@@ -1,0 +1,1 @@
+{"id":"34575","play":".root.Q16.R14.R12.O17.O16.N16.O15.R17.R16.Q17","mv":"Q17","cat":"IDEAL","lb":"1","desc":"<A:N17> is possible if Black has [this ladder](34580).\n","marks":[{"label":"A","position":"N17"}],"see":["34588"],"tags":[],"next":[{"id":"34576","mv":"N17","cat":"IDEAL","lb":"1"},{"id":"34595","mv":"S17","cat":"IDEAL","lb":"2"}]}

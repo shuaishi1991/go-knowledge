@@ -1,0 +1,23 @@
+{
+  "slug": "kiri",
+  "name": "断 / 切断",
+  "meaning": "切断对方的联络",
+  "importance": 1,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>断（日语：Kiri）就是不让对方的棋连成一片的一手。把两块棋之间的联络切开，对方就得同时照顾两头，攻击的机会往往由此而来。kiri 在日语里正是“切”“断”的意思，直白地说明了它的作用。</p><p>断得成立，对方的阵势就被分开，每一块都变薄、变弱。不过断也要看时机——它固然能给对方施加压力，但周围子力接应不上的话，断的这几颗子自己反而会陷入困境。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-17]AW[dc][dd][ce]AE[cd]LB[cd:A]AB[de][df][cf]C[__en: If Black plays at A next, it’s a kiri move, cutting off a White stone.\n__ru:];B[cd])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>断是进攻的利器，但同样重要的是知道什么时候该回头补强自己，别让对方先断了。</p><p>想更深入地了解断，可以看<strong>切断与连接</strong>这节课，它在我们的 13×13 课程里。</p>"
+    }
+  ]
+}

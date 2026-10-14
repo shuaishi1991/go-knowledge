@@ -1,0 +1,1 @@
+{"id":"27910","play":".root.R16.P16.Q14","mv":"Q14","cat":"GOOD","lb":"8","desc":"##  Knight's Move\n\nThis maps out territory on the right side.","marks":null,"see":["27911","15405"],"tags":[],"next":[{"id":"27911","mv":"pass","cat":"IDEAL","lb":"2"},{"id":"27914","mv":"R17","cat":"IDEAL","lb":"1"}]}

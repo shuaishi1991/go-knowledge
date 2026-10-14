@@ -1,0 +1,23 @@
+{
+  "slug": "warikomi",
+  "name": "挖",
+  "meaning": "从对方两子之间挖进去的一手",
+  "importance": 1,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>挖，就是把一颗棋子下进对方两颗棋子之间的那一路空隙，制造断点，或者把对方的棋切成两块。这一手逼着对方必须应，往往由此引出一场战斗，或者局部的战术交换。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-18]AB[dq][dp][do][ho][hp][hq]AW[fo][fq]LB[fp:A]C[__en: Black’s next move at A is a warikomi, separating White’s stones.\n__ru:];B[fp])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>挖是一手锋利而有效的战术棋，时机抓得准，足以扭转整盘棋的形势。想在各种局面里用好它，就得同时看清它的威力和它的风险。</p>"
+    }
+  ]
+}

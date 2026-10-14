@@ -1,0 +1,33 @@
+{
+  "slug": "sansan",
+  "name": "三三",
+  "meaning": "角上三线与三线的交叉点",
+  "importance": 2,
+  "category": "shape",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>围棋里的<em>三三</em>（日语：Sansan），指角上第三线与第三线相交的那个点。它在布局阶段的战略价值很高，重心全在把角上的实地牢牢收住。开局早早占住<em>三三</em>，往往就是为了先把根据地立稳。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-24]CR[qc]C[__en: The marked point is called \"Sansan\".\n__ru:];B[qc]C[__Solution: true])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>“三三”这个名字直接点明了它在棋盘上的位置——三线与三线的交叉点。英文里通常叫它“3-3 point”。</p><p>占三三，图的是马上把角里的实地拿到手，代价是放弃朝中腹发展外势的可能。反过来，三三也是常见的打入目标——尤其是对方占了星位时，点三三能直接削掉他的实地潜力。围绕三三有一整套成型的定式，给出了双方常见的走法，在实地和外势之间找平衡。AI 进入围棋之后，早早点三三变得流行起来，因为 AI 反复证明了这一手在某些局面下确实有效。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-24]AB[pd]LB[qc:A]PL[W]C[__en: White playing at A will start a common sansan invasion joseki.\n__ru:];W[qc]C[__Solution: true];B[qd];W[pc];B[od];W[nb])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>想把点三三研究透，我们有一套由韩国职业棋手 Cho Yeonwoo 主讲的完整课程，点这里就能看到。另外，如果你想学三三定式，可以看我们定式入门课程中的“三三的安全性”一章。</p>"
+    }
+  ]
+}

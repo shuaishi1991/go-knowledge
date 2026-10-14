@@ -1,0 +1,43 @@
+{
+  "slug": "joseki",
+  "name": "定式",
+  "meaning": "标准次序与固定的下法",
+  "importance": 3,
+  "category": "shape",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><strong>定式</strong>（日语：Joseki）指一套标准的着法次序：双方按它走完，局部（多半是角上）能得到大致均衡的结果。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-17]AE[cn][dp][fq]LB[cp:A]C[__en: Let's see what joseki is. Play A.\n__ru:];B[cp]C[__Solution: true];W[ep];B[eq];W[fq];B[dq];W[fp];B[cn];W[jp])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<h2><strong>定式的几个特点</strong></h2><ul><li>多数定式都从角上开始——最初的几手对全局走向影响很大。角上气少，战术上格外要紧，也最适合用定式来处理。</li><li>定式虽然常和角上联系在一起，边上同样有定式，布局、中盘乃至官子阶段也都有定型的下法。</li><li>定式的核心是均衡。但要明白，这种均衡只在局部，并不保证那是全局的最佳一手，也不保证你能占到便宜。选哪个定式，得看全局的配置。</li><li>定式不是死的，它随着新发现和潮流不断变化。过去被奉为定式的次序，如今可能因为有了更好的下法而被冷落。</li></ul><p>围棋的定式多得数不清，从简单的几手到极其复杂的变化都有。把这些变化记下来固然有帮助，但更要紧的是弄懂每一手的用意和适用的场合。真正吃透了定式，你才能随机应变，而不是死记硬背。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-17]AE[dp]LB[dp:A]C[__en: Another simple joseki. Please start with A.\n__ru:];B[dp]C[__Solution: true];W[cq];B[dq];W[cp];B[do];W[bn]C[__en: The result is equal. Black takes influence outside, while White gets the corner.\n__ru:])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p><em>一个简单定式的例子</em></p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-17]AE[dp]C[__en: An example of a difficult joseki. Start with A.\n__ru:]LB[dp:A];B[dp]C[__Solution: true];W[cq];B[dq];W[cp];B[cn];W[bn];B[bm];W[co];B[dn]C[__en: This is known as \"The Flying Dagger\"—one of the most complex modern joseki.\n__ru:];W[do];B[eo];W[ep];B[er];W[fp];B[fo];W[go];B[gn];W[gq];B[ho];W[gp];B[cr];W[bo];B[cl];W[br];B[bs];W[bq];B[gr];W[hr];B[fr];W[hn];B[gm];W[iq];B[ap];W[ar];B[an];W[ao];B[am];W[gs];B[fs];W[hs];B[cs];W[dr];B[eq];W[ds];B[es];W[hm];B[aq];W[dr];B[gl];W[io])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p><em>一个吓人的定式，几十手才走完</em></p><p>顺便一提，我们还有一整门专门讲定式的课程。 </p>"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "dame",
+  "name": "单官, 气",
+  "meaning": "与棋子相邻的空交叉点",
+  "importance": 1,
+  "category": "rules",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>围棋里的<strong>气</strong>（日语：dame）首先指紧挨着一颗棋子或一块棋的空点。一块棋的死活全看气：想把它提掉，就得把它剩下的气一口口填满。这层含义与气紧（damezumari）以及各种吃子手段密切相关。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-15]AE[ar][dq][er][dr][cr][ds][bq][aq][bp][bs][ap][ao][bo][dp][eq][eo][fp][fr][fs][es]C[__en: The marked points are called liberties or dame.\n__ru:]AB[cq][cp][co]TR[bo][bp][bq][cn][cr][do][dp][dq])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>单官</strong>则是它的另一层意思：棋盘上不属于任何一方的空交叉点。这些点通常不影响死活，双方一般也没什么兴趣去下。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-15]AE[ar][dq][es][cp]AB[aq][bq][cq][cr][bs][dr][ds][er][bp]AW[ap][dp][eq][fp][eo][fr][fs][co][bo][ao]TR[cp][dq][es]C[__en: Dame also refers to the neutral points, which are here marked with triangles. \n__ru:])",
+      "goto": "0",
+      "mode": "View_Static"
+    }
+  ]
+}

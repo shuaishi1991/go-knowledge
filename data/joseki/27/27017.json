@@ -1,0 +1,1 @@
+{"id":"27017","play":".root.R16.P16.P17.Q16.Q17.R15.S16.O16.O17.N16.N17.M16","mv":"M16","cat":"IDEAL","lb":"1","desc":"Black can continue with <A:R14> or **tenuki**.","marks":[{"label":"A","position":"R14"}],"see":["27027"],"tags":[],"next":[{"id":"27027","mv":"pass","cat":"IDEAL","lb":"3"},{"id":"27018","mv":"R14","cat":"IDEAL","lb":"1"}]}

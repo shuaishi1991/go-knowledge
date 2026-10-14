@@ -1,0 +1,33 @@
+{
+  "slug": "sagari",
+  "name": "立",
+  "meaning": "朝边线方向向下走一手",
+  "importance": 2,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>立（日语：Sagari）指在自己已有的棋子正下方再落一子，把阵形朝棋盘边上延伸。这一手在角上和边上的作战里分量很重：既能多围出实地，又能把棋子连得更紧，把破绽补掉。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-24]AB[co][dq]AW[ep][eq]LB[dr:A]C[__en: Black playing at A next is called a sagari.\n__ru:];B[dr])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>日语 sagari 的本意是“垂下”“下降”。这一手看着简单，作用却不小，攻守两头都用得上，出场机会非常多。</p><p>立最常见的用处，是把边上的目稳稳收进自己口袋，把地盘撑开一点。同时它还让自己的棋子联络得更紧，对手想打入或者侵消都更难下手。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-24]AB[bs][br][bq][dr][aq]AW[bp][ap][cp][eq][er][gr][dq]AE[as][ar][dp]LB[ds:A]C[__en: Sagari at \"A\" is the only way to save Black here.\n__ru:];B[ds]C[__Solution: true];W[cq];B[cr])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>立虽然朴实无华，用途却极广，从刚入门的新手到高手，谁都离不开它。</p>"
+    }
+  ]
+}

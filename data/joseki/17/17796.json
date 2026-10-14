@@ -1,0 +1,1 @@
+{"id":"17796","play":".root.Q16.R14.R15.Q14.O16.R10.R12.pass","mv":"pass","cat":"IDEAL","lb":"2","desc":"Black can fight with <A:P12> or <B:Q10>.","marks":[{"label":"A","position":"P12"},{"label":"B","position":"Q10"}],"see":["17793","17992"],"tags":[],"next":[{"id":"17797","mv":"Q10","cat":"IDEAL","lb":"1"}]}

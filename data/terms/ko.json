@@ -1,0 +1,43 @@
+{
+  "slug": "ko",
+  "name": "劫",
+  "meaning": "双方可以轮流提取对方棋子的情况",
+  "importance": 3,
+  "category": "life",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><strong>劫</strong>（日语：Ko）是围棋里一条很特别的规则，用来处理双方反复提回一子、棋盘无休止地回到同一形状的局面。它既避免了死循环，也带来了战略上的深度——你得仔细安排次序，才能在劫里周旋，甚至借劫得利。</p><h2><strong>劫的规则</strong></h2><ol><li>一方提掉一子之后，另一方不能立刻提回来、让棋盘恢复成原样，必须先在别处走一手，把循环打断。这样棋局就不会陷入死循环，僵持也有了解开的办法。</li><li>先提的一方则可以选择：或者把劫补掉，不让对方再提；或者去应对方插进来的那一手。一来一往之间，各种交换的机会就出来了。</li></ol>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-17]AB[dr][ds][cq][bq][br][bs][bp][co][bo][aq]AW[dq][do][ep][eq][er][es][dn][cn][bn][eo][cp][ao][an][ap]AE[fo][dp][ar]LB[dp:A]C[__en: Let's start the ko fight by playing A.\n__ru:];B[dp]C[__Solution: true\n__en: White can't immediately recapture the ko; they must play elsewhere first before recapturing.\n__ru:];W[cr]C[__en: White fights the ko by playing a ko threat, forcing Black to respond by capturing it. This move allows White to get points without losing anything.\n__ru:];B[cs];W[cp]C[__en: White can finally recapture the ko. And now, Black needs to find a ko threat somewhere else to fight back.\n__ru:])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<h2><strong>劫争与劫材</strong></h2><p>像上面这样简单的劫，提不提影响不大。但很多时候，劫的胜负关系着全局。打劫时，双方常在别处制造与劫无关的威胁，逼对方来应，自己好回头把劫提回来。 </p><p>劫争往往左右整盘棋：赢下一个劫，通常意味着实地或形势上的收获；反过来，输掉一个劫，代价也同样惨重。</p><h2><strong>双劫与三劫</strong></h2><p><strong>双劫</strong>是更复杂的情形：两个劫互相牵连，能演出许多高级手段，劫争也拖得更长。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-20]AW[dq][dp][fr][gr][gs][gq][fp][go][hp][ho][hq][fn][en][cq][cr][dn][do][es]AB[dr][ds][er][eq][fq][ep][eo][fo][gn][hn][in][io][ip][iq][hr][hs][ir]AE[gp][bq][br][bs][cp][fs][jr]C[__en: A double ko situation. If it's Black to play, Black will definitely win this capturing race. Let's start with A.\n__ru:];B[gp]C[__Solution: true\n__en: White needs to find a ko threat now.\n__ru:];W[gm]C[__en: Let's pretend this is a ko threat and Black is forced to answer.\n__ru:];B[hm];W[fp]C[__en: Even if White recaptures the ko, Black doesn't have to look for a ko threat since Black can just capture the other ko.\n__ru:];B[fs];W[gl]C[__en: Let's assume this is another ko threat, forcing Black to answer.\n__ru:];B[hl];W[es]C[__en: No matter how much White tries to fight the ko, Black can always capture the other one. White will never be able to capture Black. \n__ru:];B[gp]C[__en: Hence, Black wins this capturing race, thank to the double ko.\n__ru: ])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>三劫：</strong>盘上三个不同的地方形成提来提去的循环，就是三劫。双方轮流在这三处提子，谁也占不到便宜，理论上可以无限循环下去。三劫之所以要紧，是因为它通常只能靠规则来收场，而各家规则的处理并不一样：有的判作无胜负，有的另有专门的裁定或处罚。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;BR[9p]DT[2024-09-11]PB[Shin Jinseo]PW[Lee Changho]RE[Draw]SZ[19]WR[9p]AB[aa][ab][ac][ae][ag][ba][bc][bd][bg][bp][cb][cc][cd][cg][ci][co][cp][cq][cr][df][dg][do][eg][ei][ep][fa][fb][fc][ff][fg][fi][fp][fq][gc][gd][gh][gi][hd][he][hi][hj][hq][ic][if][ih][ii][ij][jd][je][jf][jh][kd][kg][ki][ko][kp][kq][lb][lc][lh][lj][lk][lq][mc][mf][mg][mh][mm][nb][nf][nh][ni][nk][nl][no][nq][ob][od][og][om][op][oq][pd][pj][pk][pl][qc][qm][qo][qp][rc][rm]AW[af][an][be][bf][bi][bm][bo][ca][ce][cf][cj][cn][db][dc][dd][de][di][dj][dn][dp][dq][dr][ea][eb][ec][ed][ef][eh][ej][en][eo][fd][fe][fj][fr][ge][gf][gj][hc][hf][hg][hh][hk][ho][ie][ig][ik][jg][ji][jj][kb][ke][kf][kk][km][ld][lf][ll][ln][lo][lp][mb][md][me][mi][ml][mp][nc][nd][ne][np][oe][of][oh][oi][oj][ok][ol][oo][pe][pg][pi][pm][pn][po][qd][qe][ql][rd][rj][rl]PL[B]C[__en: Lee Changho vs Shin Jinseo (2024): A triple ko is happening in the top left corner. Next move, Black captures at A. Let's continue.\n__ru:]LB[ee:A]AP[Sabaki:0.52.2]CA[UTF-8];B[ee]C[__Solution: true];W[ad];B[da];W[ef]C[__en: This position will repeat forever. Neither of players can kill the other.\n__ru:];B[ae]C[__en: The loop continues. As no one is willing to give up their group, the game ends in a draw.\n__ru:])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>我们的 <strong>19×19 围棋进阶</strong>课程里介绍了劫争的基础。如果你已经知道劫是怎么回事，还想更进一步，一定要看看<strong>《打劫：掌控混乱》</strong><strong>课程</strong>——作者是 Stanisław Frejlak 职业初段。 </p>"
+    }
+  ]
+}

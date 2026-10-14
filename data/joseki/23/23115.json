@@ -1,0 +1,1 @@
+{"id":"23115","play":".root.Q16.pass.Q10.R14","mv":"R14","cat":"IDEAL","lb":"2","desc":"<A:R15> keeps White from settling.<br>\n<B:Q14> misses a chance to attack.","marks":[{"label":"A","position":"R15"},{"label":"B","position":"Q14"}],"see":["19221","19220"],"tags":[],"next":[{"id":"23116","mv":"Q14","cat":"GOOD","lb":"2"},{"id":"23125","mv":"R15","cat":"IDEAL","lb":"1"}]}

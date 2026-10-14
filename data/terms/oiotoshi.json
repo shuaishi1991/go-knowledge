@@ -1,0 +1,23 @@
+{
+  "slug": "oiotoshi",
+  "name": "接不归 (接不歸)",
+  "meaning": "接上反而被吃",
+  "importance": 0,
+  "category": "life",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>接不归（日语：Oiotoshi，字面意思是“追着打下去”）是一种威力很大的手筋：用连续的打吃把对方的棋一路追着走。中文名说得更直白——接是接上了，可这块棋再也回不了家。</p><p>常见的套路是引诱对方去接：接完之后棋子仍然处在打吃状态，下一手就被整块提掉。于是出现了看似矛盾的局面——接上不但没能活棋，反而立刻丢了一大块。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[7.5]SZ[19]DT[2025-04-10]AW[fr][gr][hs][ir][iq][ip]AB[er][fq][gq][hr][hq][fs]AE[jr][jp][js][jq][kr]C[__en: These two white stones are dead in connect-and-die (oiotoshi) situation. Play at A to see what will happen if White connects.\n__ru:]TR[fr][gr]LB[gs:A]PL[W];W[gs]C[__Solution: true];B[is])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>它和倒扑、扑、气紧这些概念关系很近。接不归的特别之处在于那种必然性——第一手一落，对方的选择就迅速归零了。</p>"
+    }
+  ]
+}

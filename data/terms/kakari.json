@@ -1,0 +1,23 @@
+{
+  "slug": "kakari",
+  "name": "挂角 (掛角)",
+  "meaning": "逼近对方角上棋子的一手",
+  "importance": 1,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>挂角（日语：Kakari）是冲着对方角上棋子逼近的一手，目的是打乱对方经营角地的计划，同时扩张自己的势力。kakari 在日语里有“挂上去”“贴上去”的意思，正好描述了逼近对方角部、与之接火的动作。</p><p>挂角最主要的作用，是不让对方轻轻松松守住角。根据全局配置和自己的构思，可以选择不同的挂法：</p><ul><li><strong>小飞挂（keima-kakari）</strong>：安定与弹性兼顾。</li><li><strong>一间高挂</strong>：着眼于向外的外势，而不是就地取根据地。</li><li><strong>大飞挂（ogeima-kakari）</strong>：在保持联络的同时扩张势力。</li><li><strong>二间高挂</strong>：意在挑起战斗，重视中腹的主导权。</li></ul>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-17]AE[dp][fp][fq][eq][dq][ep]AB[cp]LB[ep:A][eq:B][fp:C][fq:D]C[__en: A, B, C, and D are 'kakari,' moves used to defend the corner.\n__ru:]PL[W](;W[ep]C[__Solution: true])(;W[eq]C[__Solution: true])(;W[fp]C[__Solution: true])(;W[fq]C[__Solution: true]))",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>挂在好点上，往往会引出复杂的变化，其中不少就是定式：双方在角上就实地、外势和安定程度讨价还价。</p><p>想更多了解挂角，可以看<strong>如果对手先动手呢？</strong>这节课，它在我们的 19×19 课程里。</p>"
+    }
+  ]
+}

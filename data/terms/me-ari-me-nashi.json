@@ -1,0 +1,23 @@
+{
+  "slug": "me-ari-me-nashi",
+  "name": "有眼杀无眼 (有眼殺無眼)",
+  "meaning": "有眼一方对无眼一方的对杀",
+  "importance": 0,
+  "category": "life",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>有眼杀无眼说的是围棋里常见又关键的一种局面：双方两块棋在对杀，但只有一方做出了一只完整的真眼。这时通常是有眼的一方获胜——对方要提掉它，还得先填掉自己的眼，这一手之差往往就是胜负。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-04-09]AE[bq][br][ar][sq][pp][np][oq][mr][mq]AB[rs][rr][sr][qq][pq][nq][qs][op][nr][mp]AW[qr][pr][rq][rp][or][qo][os][ql]C[__en: This capturing race situation is called \"eye vs no eye\" (me ari me nashi). With one eye advantage, Black wins the capturing race even if it is White's turn. Play at A to see why.\n__ru:]LB[sq:A]PL[W];W[sq]C[__Solution: true];B[ns];W[ps];B[oq])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>这条道理在死活判断里分量很重，局面越紧越明显：哪怕只有一只眼，也可能就是生与死的分界。没有眼的那块棋只能更快地填掉自己的气，最后被提掉。</p><p>日语原文直译过来就是“有眼、无眼”，棋手常用它一句话说清对杀的形势。</p><p>想更了解对杀，可以看“这是对杀！”这一课，它在我们的 19×19 围棋进阶课程里。</p>"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"id":"23465","play":".root.Q16.pass.R14.pass.O17.R17","mv":"R17","cat":"IDEAL","lb":"1","desc":"##Probe\n<A:R16> leads to ko.<br> \n<B:S15> kills White locally but leaves bad aji.","marks":[{"label":"A","position":"R16"},{"label":"B","position":"S15"}],"see":[],"tags":[],"next":[{"id":"23466","mv":"R16","cat":"IDEAL","lb":"2"},{"id":"23474","mv":"S15","cat":"GOOD","lb":"1"}]}

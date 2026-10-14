@@ -1,0 +1,13 @@
+{
+  "slug": "moku",
+  "name": "目",
+  "meaning": "计算胜负时的一目\n让子棋中的一子",
+  "importance": 1,
+  "category": "rules",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><strong>目在计算胜负时的含义</strong></p><p>在计算胜负时，moku（<strong>目</strong>）就是一目实地，也就是棋盘上的一个交叉点。 </p><p>日语里还用另一个汉字（<strong>子</strong>）来表示 moku 的第二层意思——<strong>让子</strong>。让子棋中，moku 指的是让给弱方的子数。</p><p>moku 还出现在一些特定着点的名称里：</p><ul><li><strong>小目（Komoku）</strong>：角上三线与四线的交点，实地与外势兼顾。</li><li><strong>高目（Takamoku）</strong>：四线与五线的交点，着眼于向外的外势。</li><li><strong>目外（Mokuhazushi）</strong>：三线与五线的交点，比较少见的角上下法。</li></ul>"
+    }
+  ]
+}

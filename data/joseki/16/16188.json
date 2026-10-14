@@ -1,0 +1,1 @@
+{"id":"16188","play":".root.Q16.R14.O17.R16.R17.S17.R15.S16.Q15","mv":"Q15","cat":"IDEAL","lb":"1","desc":"<A:S15> takes the right side.<br>\n<B:Q17> takes the corner.","marks":[{"label":"A","position":"S15"},{"label":"B","position":"Q17"}],"see":[],"tags":[],"next":[{"id":"16189","mv":"Q17","cat":"IDEAL","lb":"2"},{"id":"16207","mv":"S15","cat":"IDEAL","lb":"1"}]}

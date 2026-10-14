@@ -1,0 +1,29 @@
+{
+  "slug": "damezumari",
+  "name": "气紧",
+  "meaning": "气不够用",
+  "importance": 1,
+  "category": "life",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>气紧（日语：Damezumari）指的是一块棋气太少的局面：回旋的余地被压缩，做活也变得困难。气一少，往往就顾不上应对对方的手段，这块棋很容易被吃。</p><p>damezumari 在日语里是“堵塞”“拥挤”的意思。 </p><p>在对杀中，气紧指的是一块棋的气太少，该走的手段走不出来——比如想去紧对方的气，自己反而先被打吃——结果赢不下这场对杀。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-15]AB[sr][rr][qr][pr][rs][oq][nq][mq][lr][lq][kq][jq][ir][hq]AW[or][ps][rq][qq][pq][nr][mr][ls][qo][oo][kr][ns][ks][sq][jr]AE[op][ms][js][iq]C[__en: Due to the shortage of liberties, 'damezumari,' White is guaranteed to die in this semeai, as they can't play the atari at A to capture Black.\n__ru:]LB[qs:A])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>还有一个与气紧有关的经典棋形，叫<strong>金鸡独立</strong>。在这个棋形里，一块棋只剩下一口真正管用的气，随时可能被吃。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-26]AW[er][fr][gq][hq][ir][jr][lq][lp][ks][lr][is]AB[iq][jq][hp][gp][fq][eq][dq][dr][kq][kr][ip]AE[js]LB[gr:A]C[__en: A special case of shortage of liberties or the \"damezumari\". Black can capture some stones at A.\n__ru:];B[gr]C[__Solution: true];W[hr];B[gs]MA[fs][hs]C[__en: Due to double shortage of liberties, White can't play at neither spot to resist Black's attack. This situation is also called \"Golden chicken standing on one leg\".\n__ru:])",
+      "goto": "0",
+      "mode": "View_Static"
+    }
+  ]
+}

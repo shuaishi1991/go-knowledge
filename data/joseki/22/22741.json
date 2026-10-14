@@ -1,0 +1,1 @@
+{"id":"22741","play":".root.Q16.R17.R16.Q17.P17.P18.O17.O18.N17.Q10.pass","mv":"pass","cat":"IDEAL","lb":"1","desc":"White aims at <A:P15>, which can connect effectively to White's initial play on the right side.","marks":[{"label":"A","position":"P15"}],"see":["22740"],"tags":[],"next":[{"id":"22742","mv":"P15","cat":"IDEAL","lb":"1"}]}

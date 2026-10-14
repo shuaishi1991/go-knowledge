@@ -1,0 +1,1 @@
+{"id":"22723","play":".root.Q16.R17.R16.Q17.P17.P18.O18.O17.P16.N18.Q18.O19.R18.O16.O15.N15.N14","mv":"N14","cat":"MISTAKE","lb":"_","desc":"##Mistake\nWhen white has <A:O16>, a move at <B:P15> will be sente.","marks":[{"label":"A","position":"O16"},{"label":"B","position":"P15"}],"see":[],"tags":[],"next":[{"id":"22724","mv":"S17","cat":"IDEAL","lb":"1"}]}

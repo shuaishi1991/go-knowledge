@@ -1,0 +1,23 @@
+{
+  "slug": "wariuchi",
+  "name": "分投",
+  "meaning": "打散对方阵势的一手",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>分投是下在边上的一手，通常插在对方相距很远的两子之间。这一手打断了对方沿边发展的势头，自己却进退自如——对方从哪边逼过来，就朝另一边拆。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-05-26]AB[qd][oc][pp]AW[dp][dd][qj]LB[qj:1]C[__en: White 1 is a splitting move, or a \"wariuchi\", preventing Black from playing a stone along the right side to connect both corners.\n__ru:])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>分投的用意，是把对方的棋分开、不让它们连成一片，同时削弱模样的势力。它既能限制对方的实地，也能限制对方的战略构想；配合准确的形势判断，效果尤其明显。 </p><p>在 AI 的影响下，现代围棋的布局里分投已经不那么常见——AI 更偏爱直接的下法或挂角。但只要时机对路，它依然是一手好棋，有时威力不小，在人与人的对局里尤其如此：形势判断和行棋方向始终举足轻重。</p>"
+    }
+  ]
+}

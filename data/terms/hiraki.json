@@ -1,0 +1,23 @@
+{
+  "slug": "hiraki",
+  "name": "开拆 (開拆)",
+  "meaning": "沿边展开的一手",
+  "importance": 1,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>拆（日语：Hiraki）是沿着边路展开的一手：在已有的棋子或阵形旁边隔几路落子。它既能发展实地，也能加强防守。向外拆开，一边圈住潜在的地，一边压缩对方扩张的空间。</p><p>按照与原有棋子的距离，拆有以下几种：</p><ul><li><strong>拆二</strong>：最稳的一种，能把局部的棋形下厚。</li><li><strong>拆三</strong>：兼顾安定与弹性，是扩张实地的常用手段。</li><li><strong>拆四及更宽</strong>：着眼于外势和长远发展，但容易被打入。</li></ul>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-15]AB[qp][po]AW[oq]AE[kq]C[__en: A and B are two common hiraki moves for White in response to Black 1.\n__ru:]LB[kq:B][lq:A][po:1]PL[W](;W[lq]C[__Solution: true])(;W[kq]C[__Solution: true]))",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>拆可以从一颗子拆出，也可以从守角或一堵连成片的墙上拆出。它和跳不同：跳是往中腹走，拆是沿着边路走。至于紧挨着自己棋子的那一手，叫长。</p><h2><strong>战略意义</strong></h2><p>拆是布局阶段的基本手段，用来在开局就占住要点。间距拿捏得当，防守和扩张才能两全，对方也不容易打入。拆得好不好，取决于对方可能怎么应，这就需要准确的形势判断。把拆练熟，棋形会更有效率，全局也更有回旋余地。</p><p>想多了解布局阶段的拆，可以看看拆边：<strong>拆多远才不算过分</strong>这节课，它在我们的 19×19 课程里；此外还可以看我们的布局课程。</p>"
+    }
+  ]
+}

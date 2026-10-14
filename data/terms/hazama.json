@@ -1,0 +1,23 @@
+{
+  "slug": "hazama",
+  "name": "象飞 (象飛)",
+  "meaning": "对角线方向的跳，也叫象步",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>象飞（日语：Hazama）指的是<em>沿对角线方向跳出的一手</em>，与原来的子之间空开一路。因为走法像中国象棋里的“象”，它也被称作象步。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2006-04-27]AW[dc][pp][dh]AB[qd][dp][ce][eg]C[__en: Black 1 is a diagonal jump, or a \"hazama\".\n__ru:]PB[Sonoda Yuichi]BR[9p]PW[O Rissei]WR[9p]EV[62nd Japanese Honinbo]RE[B+R]LB[eg:1])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>这一手在速度和坚实之间取了个平衡：既能扩张模样，又能在受攻时脱身，棋形还留得灵活。</p><p>好不好用，全看周围的配置。有时象飞走出的是好形，能把一块棋走厚；有时对方一穿象眼，中间那个空档就成了断点。</p><p>象飞用途很广，攻防两端都使得上，但下之前要想清楚：它成不成立，取决于你能不能预判并挡住对方的反击。</p><p>想更系统地了解象飞和其他基本棋形，可以看看 Vadim 的基础棋形课程。象飞正是他在第 3 课里细讲的“参差的棋形”之一。</p>"
+    }
+  ]
+}

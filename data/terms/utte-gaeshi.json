@@ -1,0 +1,33 @@
+{
+  "slug": "utte-gaeshi",
+  "name": "倒扑 (倒撲)",
+  "meaning": "弃一子，反提对方一块",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>倒扑是围棋里的经典手筋：主动送上一颗子，引对方来提，提完之后自己立刻反提回一块更大的棋。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-05-26]AE[cr][br][ar][ea][ac]AB[ab][ca][cb][gb][dc][ec][gc][cc][bb][fc]AW[da][eb][db][fb][ga][ha][ib][ic][bc][bd][cd][dd][ed][fd][gd][hd]LB[fa:A]C[__en: Black playing at A can create a snapback (\"utte-gaeshi\") to secure an eye.\n__ru:];B[fa]C[__Solution: true];W[ea];B[fa])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>关键在于：对方提子之后，那几颗棋只剩一口气，于是马上就能被反提。</p><p>日语 utte-gaeshi 字面是“打回去”，恰好道出这一手翻转之快。初学者常常中招，高手也会用倒扑来逼对方交换、赢下劫争，或者铺垫更复杂的次序。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-05-26]AB[dd][cq][cp][co][do][en][dr][cr][em][dl][cm][qd]AW[dp][pp][dq][cn][dn][eo][fo][er][fq][cl][ck][bm]LB[bm:1][bn:A]C[__en: After White 1, Black can play A to form a snapback and capture two white stones.\n__ru:]AE[pd];B[bn]C[__Solution: true];W[dm];B[cm])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>想深入了解倒扑，可以看我们的技巧视频： </p><i></i>×<h3></h3>"
+    }
+  ]
+}

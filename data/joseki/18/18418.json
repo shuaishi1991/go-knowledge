@@ -1,0 +1,1 @@
+{"id":"18418","play":".root.Q16.R14.R12.O17.R17","mv":"R17","cat":"GOOD","lb":"3","desc":"###An Attacking Move\nThis can be considered when Black has a position(usually on the third line) near <X:K17>.","marks":[{"label":"X","position":"K17"}],"see":[],"tags":[],"next":[{"id":"18419","mv":"P15","cat":"IDEAL","lb":"2"},{"id":"18420","mv":"Q12","cat":"IDEAL","lb":"1"}]}

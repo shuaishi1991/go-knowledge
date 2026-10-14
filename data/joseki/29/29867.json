@@ -1,0 +1,1 @@
+{"id":"29867","play":".root.R16.pass.O17.P17.P16.Q17","mv":"Q17","cat":"IDEAL","lb":"1","desc":"<A:O16> is correct.<br>\n<B:Q16> is slack and reverts to <position: 30183>.","marks":[{"label":"A","position":"O16"},{"label":"B","position":"Q16"}],"see":[],"tags":[],"next":[{"id":"29868","mv":"O16","cat":"IDEAL","lb":"1"}]}

@@ -1,0 +1,1 @@
+{"id":"23492","play":".root.Q16.pass.R14.pass.P17.R17.S15.P18.O18.Q18.S18.S17","mv":"S17","cat":"IDEAL","lb":"1","desc":"<A:T18> tries to kill.<br>\n<B:N17> leads to ko.","marks":[{"label":"A","position":"T18"},{"label":"B","position":"N17"}],"see":[],"tags":[],"next":[{"id":"23494","mv":"N17","cat":"MISTAKE","lb":"2"},{"id":"23493","mv":"T18","cat":"IDEAL","lb":"2"}]}

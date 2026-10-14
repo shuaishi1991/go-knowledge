@@ -1,0 +1,29 @@
+{
+  "slug": "miai",
+  "name": "见合",
+  "meaning": "价值相等、可以互换的两点",
+  "importance": 3,
+  "category": "rules",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><strong>见合</strong>是围棋里的一个概念，指两个点或两种下法的战略价值完全相当：一方走了其中一个，另一方顺势占住另一个，谁也不吃亏。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-17]AB[fr][hq][iq][ir][jr][hs][gr]AW[hp][ip][jp][kq][kr][eq][er][gq][fq]AE[fp][gp]LB[fs:A][js:B]C[__en: Black is alive regardless of who plays first, as A and B are miai.\n__ru:]PL[W](;W[fs]C[__Solution: true];B[js];W[es];B[gs])(;W[js]C[__Solution: true];B[fs];W[ks];B[is]))",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>见合让你的选择变得从容：对手走哪边，你就跟着调整，既守住全局的平衡，又能高效地化解对方的威胁。</p><p>看出见合关系，就能更快地掂量一手棋的价值——不必在一个地方投入过多，也能在别处留住余地。</p><p>官子与死活中的见合</p><p>判断一块棋的死活时，见合尤其关键。做活或杀棋常常有两个点互为见合，能不能找到这两点，直接决定你算得准不准。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-17]C[__en: This is a simple miai scenario featuring the \"bamboo joint\" connection. Since A and B are miai, the black stones can't be separated. \n__ru:]AB[dq][do][eo][eq][cq]AE[gn][fn][gp]AW[co][cp][dn][fq][fp][cm]LB[dp:A][ep:B]PL[W](;W[dp]C[__Solution: true];B[ep])(;W[ep]C[__Solution: true];B[dp]))",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"id":"17506","play":".root.Q16.R14.O16.P15.pass.P16.P17","mv":"P17","cat":"IDEAL","lb":"1","desc":"<A:Q17> is good.<br>\n<B:O17> is reckless.","marks":[{"label":"A","position":"Q17"},{"label":"B","position":"O17"}],"see":[],"tags":[],"next":[{"id":"17507","mv":"O17","cat":"MISTAKE","lb":"2"},{"id":"17514","mv":"Q17","cat":"IDEAL","lb":"1"}]}

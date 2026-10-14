@@ -1,0 +1,33 @@
+{
+  "slug": "hoshi",
+  "name": "星位",
+  "meaning": "棋盘上用小圆点标出的交叉点",
+  "importance": 2,
+  "category": "rules",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>星位（日语：Hoshi）就是棋盘上用小圆点标出的那几个交叉点，平时大家直接叫它们“星”，下棋时可以拿来当方位的参照。 </p><p>标准的 19×19 棋盘上一共有九个<em>星位</em>：中央一个，就是天元；四角各一个，落在四四；四条边上还有四个，位于距边第四线的交叉点。13×13 和 9×9 棋盘则各只有五个星位。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-23]C[__en: All marked points are called \"hoshi\"\n__ru:]CR[dd][dj][dp][jd][jj][jp][pd][pj][pp](;B[pd]C[__Solution: true])(;B[jd]C[__Solution: true])(;B[dd]C[__Solution: true])(;B[dj]C[__Solution: true])(;B[jj]C[__Solution: true])(;B[pj]C[__Solution: true])(;B[pp]C[__Solution: true])(;B[jp]C[__Solution: true])(;B[dp]C[__Solution: true]))",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p><em>标出全部星位的空棋盘</em></p><h2><strong>冷知识</strong></h2><ul><li>中央那个星位叫天元。 </li><li>平常说“占星位”，一般指占住四角的星位，也就是四四。</li><li><em>星位</em>常被用作开局的第一手，一子就能对大片棋盘施加影响。 </li><li>让子棋里，让子就摆在<em>星位</em>上。</li></ul>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-23]AB[pd][dd][jd][dj][dp][pp][jp][pj]PL[W]C[__en: 8 handicap stones.\n__ru:])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p><em>让八子的棋盘</em></p><p>想深入了解星位布局，一定要看看我们《精彩布局的核心原则》课程中的“布局：从前与现在”一章。想把星位定式练到家？那就去看我们定式入门课程里的“星位的外势优势”一章！</p>"
+    }
+  ]
+}

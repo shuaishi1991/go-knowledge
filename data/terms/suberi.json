@@ -1,0 +1,23 @@
+{
+  "slug": "suberi",
+  "name": "飞",
+  "meaning": "二路滑下的一手",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>滑，也叫小飞下，一般下在棋盘的二路，从对方三路的子底下钻过去。它可以在边上稳稳地占住实地，也能让一块被压得很紧的棋透口气。这一手看着平常，却是边角一带最要紧的手段之一。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-05-26]AB[dp][dn][ip]AW[fq][fo]LB[dr:A]C[__en: This is an old joseki that involves two common sliding moves, or \"suberi\". Start with A.\n__ru: ]PL[W];W[dr];B[cq];W[ir]TR[dr][ir]C[__en: These are the two common sliding moves.\n__ru:])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>最常见的是小飞滑下，既安全又有进展。滑得更远自然多占地方，但棋形松散，往往留有隐患。时机最关键——一手恰到好处的滑，既能把外势坐实，也能掏空对方的阵地。</p>"
+    }
+  ]
+}

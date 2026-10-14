@@ -1,0 +1,23 @@
+{
+  "slug": "chosei",
+  "name": "长生",
+  "meaning": "永远循环、无法打破的局面",
+  "importance": 0,
+  "category": "life",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>长生又叫“无限循环”，是围棋里极为罕见的一种局面：双方陷在一串不断重复的着法里，谁也走不出来。它和<em>劫</em>不一样——打劫时可以先去别处找劫材，用来打破重复；而长生没有这条路可走：循环无法避免，除非有一方肯吃亏、主动改变着法，否则棋局根本没法继续。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-03-17]AB[ar][aq][bq][cq][dq][eq][er][fr][gs][ds]AW[dr][cr][br][bs][ap][bp][cp][dp][ep][fq][gr][hr][gp][fs]AE[fp]LB[cs:A]C[__en: To save the group, Black playing at A is the only way to create eternal life, or \"chosei,\" as other moves won’t lead to a positive result for Black locally.\n__ru:];B[cs]C[__Solution: true];W[es];B[ds];W[fs];B[cs];W[es];B[ds]C[__en: And the infinite loop goes on forever.\n__ru:])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>这种局面实在太罕见了，与其说是实战里会碰上的东西，不如说是一种理论上的奇观。不过它确实很有意思，让人看到围棋规则背后的深度和复杂。</p>电影《神之一手》结尾处出现的长生<p>日本规则和韩国规则通常把长生判为无胜负：这盘棋作废，双方既不算赢也不算输。中国规则则允许对这类循环做特殊处理，往往需要裁判介入，判出一个公平的结果。而现在许多赛制采用的超级劫规则，直接禁止棋盘上出现完全相同的局面，从根本上杜绝了长生。<br></p>"
+    }
+  ]
+}

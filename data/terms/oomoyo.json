@@ -1,0 +1,23 @@
+{
+  "slug": "oomoyo",
+  "name": "大模样 (大模樣)",
+  "meaning": "铺开一大片的模样",
+  "importance": 0,
+  "category": "shape",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>大模样（日语：Oomoyo）指的是让棋子在盘上大范围呼应，通常连着好几条边，撑起一片极大的潜在地盘。和那种一手一手抠实地的下法不同，大模样赌的是长远的潜力，而不是眼前拿得准的目数。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-04-11]AW[dc][fd][di][dp][fq][qc][pc][nb][nc]AB[lc][me][od][pd][qd][pj][mk][qp][oq][kp]PB[Seo Bongsoo]BR[9p]PW[Choi Myunghoon ]WR[3p]C[__en: Black is creating a huge moyo (oomoyo) on the right.\n__ru:])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>大模样和取势的路数天然相配：自己有厚势时最好用，可以逼着对方在不利的条件下进来侵消。它的短处也很明显——身后没有强子接应，模样就容易被打入打散。</p><p>大模样往往来自重外势、轻实地的布局。走大模样的人，等于用局部的安定换取全局的潜力；而对手通常会赶在模样兑现成实地之前打入或侵消。</p><p>在<em>“模样的打入与防守”</em>这一节里（出自<em>碰的艺术</em><em></em>课程），职业三段棋手 Alexander Dinerstein 讲解了防守和打入大模样的各种思路。</p>"
+    }
+  ]
+}

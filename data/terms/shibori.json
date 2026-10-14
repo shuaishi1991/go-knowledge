@@ -1,0 +1,23 @@
+{
+  "slug": "shibori",
+  "name": "滚包; 滚打",
+  "meaning": "一路滚打，把对方挤成愚形",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>滚打包收（日语：Shibori）是一种手筋：逼着对方走出一连串效率极低的棋，自己从中得利。日语原词的意思是“拧”“绞”，中文叫“滚打包收”，说的正是这个过程——对方被越挤越紧，你却借机走厚或者围空。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[5.5]SZ[19]DT[2025-05-26]AB[qb][pb][qc][qd][pe][oe][ne][mc]AW[pc][pd][od][ob][qe][rd][rb][rc][qf]AE[oa][re]LB[oc:A]C[__en: Black can throw in at A to start a squeeze (\"shibori\") to capture White and rescue the four stones.\n__ru:];B[oc]C[__Solution: true];W[nc];B[nd];W[oc];B[nb])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>常见的手法是弃子、打吃、先手交换连成一串，把对方的气收干净，棋形挤成愚形。滚打包收既可能直接吃掉一块棋，也可能让整场战斗彻底倒向自己一边。 </p>"
+    }
+  ]
+}

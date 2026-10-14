@@ -1,0 +1,33 @@
+{
+  "slug": "furikawari",
+  "name": "转换",
+  "meaning": "地与势的交换",
+  "importance": 2,
+  "category": "rules",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>转换是围棋里的一种战略交换：双方互相让出地盘或外势，各取所需。它常常意味着聪明地弃掉一些东西，去换取之后更大的便宜——平衡感和提前谋划的眼光，在这里体现得最清楚。</p><h2><strong>转换的例子</strong></h2><ol><li>一方把角上或边上的实地做净，另一方则取得中腹的外势，各自拿到自己想要的那一半。</li></ol>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;BR[9p]DT[1991-01-26]EV[30th Ch'oegowi Final]PB[Cho Hun-hyeon]PW[Yi Ch'ang-ho]RE[W+4.5]SZ[19]WR[4p]AW[cn][dd][dp][qn]AB[fq][ip][pd][pp][ql]PL[W]AP[Sabaki:0.52.2]CA[UTF-8]LB[qq:A]C[__en: Black lets White take the corner in exchange for outside influence.\n__ru:];W[qq]C[__Solution: true];B[pq];W[qp];B[po];W[rn];B[om])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<ol><li>弃掉一块棋，换来别处一片更可观的模样。</li></ol>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;BR[9p]DT[2024-12-17]EV[15th Chunlan Cup, round 3]PB[Park Junghwan]PW[Gu Zihao]RE[B+R]SO[Go4Go.net]WR[9p]AB[bn][cb][cc][cd][cf][cm][cp][cq][db][gd][hc][hd][id][iq][ir][je][jf][jp][jr][kp][le][lq][me][nc][nd][od][pd][pn][po][pp][qd][qm][qq][rk][rl][rm]AW[dc][dd][de][do][dp][dq][eb][ec][fb][fd][gc][hf][hp][hq][ic][ie][ip][jd][jq][kd][mc][md][nb][no][nq][oc][ol][on][pc][pm][pr][qc][qj][qk][ql][qn][rc]PL[B]AP[Sabaki:0.52.2]CA[UTF-8]C[__en: Black sacrifices some stones to get a thicker position.\n__ru:]LB[ld:A];B[ld]C[__Solution: true];W[lc]LB[ke:A];B[ke];W[jc]LB[if:A];B[if];W[he]LB[hg:A];B[hg];W[ge];B[pi])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>转换考的是全局眼光，而不是某一块的得失。一次交换往往会让整盘棋的走势为之一变，所以你得提前看到后面的发展和机会。什么时候转换、怎么转换，是进阶棋手的一项核心本领，也最能看出一个人的应变与谋划能力。</p>"
+    }
+  ]
+}

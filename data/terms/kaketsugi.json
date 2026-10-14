@@ -1,0 +1,23 @@
+{
+  "slug": "kaketsugi",
+  "name": "虎接",
+  "meaning": "虎接，用虎口连回的补法",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>虎（日语：Kaketsugi）是围棋里的关键棋形，走出来就是一个<em>虎口</em>——防断特别有效率的形状。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]SZ[19]DT[2025-03-18]AB[br][co][cp][cq][bn][dr]AE[bo]AW[bm][cn][do][dp][dq][cr][dm]LB[dm:1]C[__en: White 1 creates a hanging connection, or a \"Kaketsugi\", providing flexibility and efficiency.\n__ru:])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>和实接不同，虎接中间留了一点空隙，却同样能把一块棋补厚，更经得起对方的进攻。</p><p>虎接看着松一些，胜在灵活、有效率，是防守时少不了的手段。，但胜在灵活、有效率，是防守时少不了的手段。</p>"
+    }
+  ]
+}

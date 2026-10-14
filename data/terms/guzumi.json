@@ -1,0 +1,33 @@
+{
+  "slug": "guzumi",
+  "name": "愚形妙手",
+  "meaning": "看着难看却很管用的一手",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>愚形妙手（日语：Guzumi）指的是乍看别扭、效率不高，放到具体局面里却恰恰是好棋的一着。这类棋往往不合通行的棋形原则，显得笨拙又迟缓，但用来达成某个战术或战略目的时，效果好得出人意料。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-03-17]AB[bb][cb][cc][bd][be][ac][bl][bm][cn][do][bp][bq][hp][iq][jq][kp][lp][nq][pq][pr][qr][ql][qn][ro][pk][pj][qi][nj][nk][rb][rc][rd][qd][pc][oc][od][nc][md][ne][mf][mg][me][kf][ie][he][id][ic][jb][kc][gf]AW[db][dc][cd][ce][bf][df][ae][di][ck][bk][cl][el][br][cq][dp][fq][ip][lo][mo][mm][qq][qp][rr][po][pn][pl][ol][qh][ph][qc][qb][pb][pd][pe][oe][qe][re][nf][ng][mh][ni][kh][le][ib][hb][hc][hd][ge][fe]AE[cp]LB[cp:A]C[__en: White to play. Next, playing a guzumi move at A is important, as it disrupts Black's weak group while gaining White extra endgame points.\n__ru:]PL[W];W[cp]C[__Solution: true];B[bo];W[fo])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>愚形妙手有时就是走出一个空三角——通常被视作效率低下的形，在特定场合却结实得出奇。它甚至可能走成<em>团子</em>（四颗子挤成一团），样子谈不上漂亮，却能派上关键的战术用场，比如做活，或者堵死对方的选择。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;C[__en: White 1 creates an inefficient-looking shape, or \"Guzumi,\" but it’s actually effective in this situation as it threatens to cut off the black stones.\n__ru:  ]LB[pj:1]BR[7p]DT[1835-08-13]EV[Matsudaira Family Go Tournament]PB[Akaboshi Intetsu]PW[Honinbo Jowa]RE[W+R]SZ[19]WR[9p]AB[af][bg][bp][bq][bs][ch][cm][co][cp][cr][dc][di][dj][dl][do][ec][ek][el][fd][fj][gc][go][hm][hn][ho][hp][il][iq][lq][nq][oc][oi][ok][ol][pd][qd][qi][qo]AW[ar][bf][bi][br][cc][cd][cf][ck][cq][dk][dn][dp][dq][dr][ed][eh][en][eo][eq][fo][fq][gl][gm][gn][gp][gr][hl][ic][io][lc][nf][op][pj][pk][pn][pq][qe][qg][qk][qn]PL[B]AP[Sabaki:0.52.2]CA[UTF-8])",
+      "goto": "0",
+      "mode": "View_Static"
+    },
+    {
+      "type": "html",
+      "html": "<p>愚形妙手会让自己的棋形不那么好看，但它解决的是盘面上实实在在的难题。想下出这样的棋，需要对局面有很深的理解，也需要能越过表面的美丑去判断。时机对了，一手愚形妙手足以扭转整盘棋——难看的棋，有时恰恰是最有效的棋。</p>"
+    }
+  ]
+}

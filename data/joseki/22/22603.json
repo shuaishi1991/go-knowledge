@@ -1,0 +1,1 @@
+{"id":"22603","play":".root.Q16.R17.R16.Q17.P17.P18.Q18.O18.R18.S17.S18.S16.O17.P16","mv":"P16","cat":"IDEAL","lb":"1","desc":"<A:O16>, <B:N18>, and <C:N17> are all possible continuations.","marks":[{"label":"A","position":"O16"},{"label":"B","position":"N18"},{"label":"C","position":"N17"}],"see":["22598"],"tags":[],"next":[{"id":"22604","mv":"O16","cat":"IDEAL","lb":"1"}]}

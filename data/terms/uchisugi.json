@@ -1,0 +1,23 @@
+{
+  "slug": "uchisugi",
+  "name": "过分",
+  "meaning": "走得太过的一手",
+  "importance": 0,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>过分指的是走得太过头的一手——野心太大，最后反而成了自己的包袱。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-05-26]AW[cn][dp][eq][cp]AB[fp][fq][cq][jq]AE[dq][jp]LB[cp:1][dq:B][er:A]C[__en: After White 1, Black is supposed to play A. But it's common to see novice players play at B, hoping White will connect and gain an extra point. But B is an overplay, or an \"uchisuji\"\n__ru:](;B[er]C[__Solution: true];W[dq];B[dr];W[cr])(;B[dq]C[__Solution: true];W[er];B[ep];W[bq];B[fr];W[cr]))",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>过分手多半出于贪心，或者是在没有足够援军的情况下，想从局部捞取太多。</p><p>过分的一手，乍看往往又勇又妙，可只要对方应得对，局部多半就此崩掉，全局也跟着落后。能不能看出一手棋过分，是棋感成熟的标志，中盘战斗和打入的时候尤其如此。</p><p>碰上棋力较弱或者没有准备的对手，这类棋有时确实能得逞，但在正式对局里既冒险又不可靠。老下过分手的人，阵形往往站不稳，等于把反击的机会送到对方手上。</p>"
+    }
+  ]
+}

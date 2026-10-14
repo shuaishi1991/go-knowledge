@@ -1,0 +1,29 @@
+{
+  "slug": "tenuki",
+  "name": "脱先",
+  "meaning": "不应对方，转投他处",
+  "importance": 3,
+  "category": "moves",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><strong>脱先</strong>指的是不理会对方的上一手，转身到棋盘的别处落子。 </p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-18]AB[pq][op][qd][oc][fq]AW[dp][cn][dc][qo][ql]AE[fr][cp][dd][pp][qp][pn][pd][de][aq][hq][er][dr][dq][cr][fp][ep][eq][cq][bq]LB[dq:A]C[__en: Play A to see the appropriate timing for a tenuki.\n__ru:];B[dq]C[__Solution: true];W[cq];B[cr];W[eq];B[dr];W[ep];B[er];W[bq];B[hq]C[__en: This move is the end of a joseki. White should play tenuki now, as the bottom left corner doesn't have any valuable strategic moves.\n__ru:];W[de]C[__en: For example, this is one of the valuable places to play tenuki.\n__ru:])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    },
+    {
+      "type": "html",
+      "html": "<p>脱先体现的是一种判断：别处那手棋的价值，比在这里应一手更大。它往往意味着先把局部的问题挂起来，去抢更要紧的机会。</p><p>脱先能把局面拉向对自己有利的一边，但也有风险——万一那手棋非应不可，一直拖着会越来越难受，代价可能不小。</p><p>用好脱先，关键在时机：走早了，局部会留下毛病，也可能白白丢掉本该到手的便宜。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2024-12-18]AB[qd][oc][pq][qp][nq][cc][dc][qi]AW[dp][dd][qo][po][pk][cd][ec][fq]AE[pp][pc][pd][dq][qn][ql][cn][op]C[__en: White just played 1. See what happens if Black plays tenuki A now.\n__ru:]LB[cj:A][ec:1];B[cj]C[__Solution: true\n__en: Normally, Black is expected to continue the standard joseki by playing A. However, since Black chose to tenuki...\n__ru:]LB[eb:A];W[eb]C[__en: White happily takes this point, leaving Black's corner dead. Playing tenuki at the wrong time can lead to disastrous consequences.\n__ru:])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    }
+  ]
+}

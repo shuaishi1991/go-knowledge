@@ -1,0 +1,19 @@
+{
+  "slug": "ishi-no-shita",
+  "name": "倒脱靴 / 脱骨",
+  "meaning": "在对方提子之后反击",
+  "importance": 1,
+  "category": "rules",
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>倒脱靴（日语：Ishi no Shita，意为“在棋子底下”）是一种战术手段：先弃掉几颗子，等对方提走之后，再在腾出来的空点上落子，反过来把对方的棋吃掉。它和单纯的点眼、扑不同——一定要等对方先提子，圈套才会显形。</p><p>在我们的一段免费视频里，Vadim 讲解了电影《棋盘斩》（Gobangiri）中出现的倒脱靴（7:53）。</p><i></i>×<h3></h3><p>这个手段常见于死活题和手筋的变化里。倒脱靴走成功，局部的胜负会整个翻过来，眼看要输的棋反而绝处逢生。</p>"
+    },
+    {
+      "type": "board",
+      "sgf": "(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-02-15]AW[er][dr][fq][gq][hq][hr][hs][gs]AB[fr][fs][gr][eq][dq][cq][cr][cs]AE[ds][es]TR[dr][er]LB[es:A]C[__en: There is a way to miraculously capture two white stones using the 'ishi no shita' technique.\n__ru:];B[es]C[__Solution: true];W[ds];B[fr])",
+      "goto": "0",
+      "mode": "Problem_Clean"
+    }
+  ]
+}
