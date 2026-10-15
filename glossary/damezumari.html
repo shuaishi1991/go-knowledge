@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 死活对杀</p>
 <h1>气紧</h1>
 <p class="stars">★</p>
@@ -25,6 +30,7 @@ __en: Due to the shortage of liberties, 'damezumari,' White is guaranteed to die
 __en: A special case of shortage of liberties or the "damezumari". Black can capture some stones at A.__ru:];B[gr]C[__Solution: true];W[hr];B[gs]MA[fs][hs]C[__zh: 因为双方都气紧，白在两处都不能应，挡不住黑的进攻。这种形状也叫金鸡独立。
 __en: Due to double shortage of liberties, White can't play at neither spot to resist Black's attack. This situation is also called "Golden chicken standing on one leg".__ru:])</script></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

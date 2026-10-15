@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/star.html">星位</a> · <a href="../open/star-keima.html">白小飞挂</a></p>
 <h1>星位 · 白小飞挂</h1>
@@ -37,6 +42,7 @@ C（N16）与D（N17）想要更大的角地，但会留下恶味。];B[nd]C[黑
 中国谚语“狡兔三窟”正好形容这手打入。这手看起来奇怪的棋，既能连向上边，也能连向下边。白几乎防不住。（第98页）];W[qh]C[这手靠是合理的应手。（第98页。）];B[qi];W[qc];B[re];W[pi]LB[qc:A][re:B][qg:C]C[白做 A（R17）与 B（S15）的交换，是因为这样会使黑在 C（R13）的自然后续变得不那么重要。];B[qg];W[ph];B[rf]LB[re:X]C[X（S15）这子效率不高，而且角上的子还没死。])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

@@ -8,16 +8,22 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 规则胜负</p>
 <h1>互角</h1>
 <p class="lead">均势对局、势均力敌</p>
 <div class="prose"><p>两分（日语：Gokaku）指双方势均力敌、谁都没有明显领先的局面。棋手和解说员常用这个词来判断盘面形势，尤其是在实地、外势和战略要点都不相上下的时候。</p><p>布局和中盘阶段，棋手会尽量让全盘的势力保持均衡，把局面下成两分。这种平衡往往让官子变得格外紧张：哪怕只是抢到一目，或者破掉对方一点潜在的空，都可能左右胜负。</p><p>解说员和职业棋手经常用两分来形容双方在实地和外势上潜力相当的局面。就连计算精确的 AI 引擎，也常常把两分的局面标出来，提示胜负仍然充满悬念。</p><h2>两分与和棋</h2><ul><li>两分指的是一盘正在进行、双方几乎持平的棋。</li><li>和棋则是指在允许平局的规则下，最终双方目数完全相同的对局。</li></ul><p>一盘棋可能大半时间都是两分，但最后仍会因为一方下出好手、或者另一方走出致命的错着，而分出明显的胜负。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/star.html">星位</a> · <a href="../open/star-pass.html">白脱先</a></p>
 <h1>星位 · 白脱先</h1>
@@ -42,6 +47,7 @@ B（R16）或者在角上小活，或者切断 R14 一子。
 C（P16）主要用于制造一个大劫材。此外，也可在模样里腾挪，或作为引征。];W[ob]C[定式];B[od];W[pb];B[nb];W[qd];B[qe];W[rd];B[mc]C[白活得太容易。];W[]C[留有可能形成段劫的味道。];B[rb];W[qb];B[rc];W[ra];B[sb];W[qc];B[oa];W[pa];B[sd];W[re];B[rf];W[se];B[sf];W[na];B[ma]C[白以双劫做活。更多背景见这里。])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

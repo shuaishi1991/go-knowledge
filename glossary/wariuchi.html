@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>分投</h1>
 <p class="lead">打散对方阵势的一手</p>
@@ -21,6 +26,7 @@
 __en: White 1 is a splitting move, or a "wariuchi", preventing Black from playing a stone along the right side to connect both corners.__ru:])</script></div>
 <div class="prose"><p>分投的用意，是把对方的棋分开、不让它们连成一片，同时削弱模样的势力。它既能限制对方的实地，也能限制对方的战略构想；配合准确的形势判断，效果尤其明显。 </p><p>在 AI 的影响下，现代围棋的布局里分投已经不那么常见——AI 更偏爱直接的下法或挂角。但只要时机对路，它依然是一手好棋，有时威力不小，在人与人的对局里尤其如此：形势判断和行棋方向始终举足轻重。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

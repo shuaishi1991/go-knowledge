@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>骗着</h1>
 <p class="stars">★</p>
@@ -22,6 +27,7 @@
 __en: Black 1 is a hamete, aiming to confuse White and lure them into an inaccurate response.__ru:])</script></div>
 <div class="prose"><p><em>在常见的角部定式里下出带欺骗性的一手，引对方应错，下骗着的一方便可从中得利。</em></p><p><strong>骗着</strong>要靠对方出错才能奏效，有经验的棋手常常一眼看穿，随手就化解掉。对方应对正确的话，下骗着的人自己反而处于不利；即便被破解还能下成两分的骗着，非常少见。有人觉得骗着算不上正经战略，只是钻对方不懂的空子。不过，研究骗着能练计算、长棋感，也提醒我们：定式不能死记硬背，得懂背后的道理。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

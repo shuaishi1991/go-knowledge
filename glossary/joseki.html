@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>定式</h1>
 <p class="stars">★★★</p>
@@ -30,6 +35,7 @@ __en: An example of a difficult joseki. Start with A.__ru:]LB[dp:A];B[dp]C[__Sol
 __en: This is known as "The Flying Dagger"—one of the most complex modern joseki.__ru:];W[do];B[eo];W[ep];B[er];W[fp];B[fo];W[go];B[gn];W[gq];B[ho];W[gp];B[cr];W[bo];B[cl];W[br];B[bs];W[bq];B[gr];W[hr];B[fr];W[hn];B[gm];W[iq];B[ap];W[ar];B[an];W[ao];B[am];W[gs];B[fs];W[hs];B[cs];W[dr];B[eq];W[ds];B[es];W[hm];B[aq];W[dr];B[gl];W[io])</script></div>
 <div class="prose"><p><em>一个吓人的定式，几十手才走完</em></p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

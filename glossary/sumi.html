@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>角</h1>
 <p class="lead">棋盘四角</p>
@@ -21,6 +26,7 @@
 __en: All four corners are occupied.__ru:])</script></div>
 <div class="prose"><p>布局多半从角上开始，最常见的是小目和星位，它们都能为后续发展打下扎实的底子。以此为据点，棋子再向边和中腹铺开，同时把角里的实地牢牢握住。</p><p>怎样利用和守住自己的角，怎样打进对方的角——弄懂这些，棋力才谈得上长进。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

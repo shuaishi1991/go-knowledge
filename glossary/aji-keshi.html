@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>解消余味</h1>
 <p class="stars">★</p>
@@ -22,6 +27,7 @@
 __en: Black 1 is aji-keshi, needlessly helping White solidify their shape by allowing them to play at A.__ru:]PL[W]AE[co][do][dq][cq][cp][bn][gp]AB[dp][hq][ep]AW[fq][fo]LB[ep:1][fp:A];W[fp])</script></div>
 <div class="prose"><p>解消余味是每个棋手都该弄明白的概念：什么时候该把味道留着，什么时候该主动消掉，直接关系到你能不能把一盘棋的长远构思贯彻下去。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

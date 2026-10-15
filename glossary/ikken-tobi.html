@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>单关, 跳</h1>
 <p class="stars">★</p>
@@ -22,6 +27,7 @@
 __en: Black's next move at A is an 'ikken tobi,' a one-point jump.__ru:];B[fo])</script></div>
 <div class="prose"><p>一间跳的可贵之处，在于速度与坚实之间的平衡。小飞、二间跳这类走得更快的手段容易留下断点，一间跳则相对安全，同时还能带着整块棋往前走。</p><p>棋谚说“一间跳无恶手”，正说明即便在复杂局面里，它也是一手可靠的通用好棋。不过，周围子力配置不同，这一跳也可能被对方刺一手，或者干脆断开。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

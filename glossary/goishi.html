@@ -8,16 +8,22 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 规则胜负</p>
 <h1>棋石 / 棋子 / 子</h1>
 <p class="lead">围棋用的黑白棋子</p>
 <div class="prose"><p>棋子是下围棋最基本的用具，样式主要有两种：双面凸（日本和韩国常用），以及单面凸，也叫<em>平底</em>（中国常用）。棋子的材料五花八门，手感和观感各有讲究。有意思的是，黑子会做得比白子略大一点——这是为了抵消视觉上的错觉，让两方看起来一样大。 </p><p>标准尺寸是白子直径 21.9 毫米、黑子 22.2 毫米，厚度一般在 6 到 14 毫米之间。</p><h2><strong>材质与工艺</strong></h2><p>日本的传统棋子最受推崇，用的都是天然材料：黑子取自板岩，白子则由蛤贝磨制而成。做白子的贝壳取自文蛤（Meretrix，日语称 hamaguri）；日本日向的原产贝已近枯竭，如今大多数贝壳白子用的是墨西哥沿海捕捞的蛤，上等的贝壳白子也因此越来越稀有。</p><p>现代棋手最常用的是玻璃棋子，价格、耐用度和手感都很平衡。塑料棋子轻便便宜，很适合初学者，只是缺了传统材料那份分量和质感。高端棋具还会用陶瓷，甚至玉石、水晶这类名贵材料；在中国，平底的<em>云子</em>尤其受欢迎。</p><p>高水平的比赛上，常常还是用传统的板岩蛤贝棋子，看重的是它的美感和工艺。日常下棋则更青睐玻璃子，耐用又便宜。塑料子和陶瓷子在初学者和休闲棋手当中更常见。</p><p>如今的棋子虽然有各种颜色，正式比赛却依旧沿用经典的黑白两色，守住围棋那份历久弥新的雅致。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

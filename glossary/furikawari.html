@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 规则胜负</p>
 <h1>转换</h1>
 <p class="stars">★★</p>
@@ -25,6 +30,7 @@ __en: Black lets White take the corner in exchange for outside influence.__ru:];
 __en: Black sacrifices some stones to get a thicker position.__ru:]LB[ld:A];B[ld]C[__Solution: true];W[lc]LB[ke:A];B[ke];W[jc]LB[if:A];B[if];W[he]LB[hg:A];B[hg];W[ge];B[pi])</script></div>
 <div class="prose"><p>转换考的是全局眼光，而不是某一块的得失。一次交换往往会让整盘棋的走势为之一变，所以你得提前看到后面的发展和机会。什么时候转换、怎么转换，是进阶棋手的一项核心本领，也最能看出一个人的应变与谋划能力。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

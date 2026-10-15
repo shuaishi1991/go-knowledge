@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/komoku.html">小目</a> · <a href="../open/komoku-mokuhazushi.html">白挂目外</a></p>
 <h1>小目 · 白挂目外</h1>
@@ -31,6 +36,7 @@ AlphaGo 之前，人们预期会夹。然而 AI 和当今职业棋手更喜欢�
 A（R17）或 B（Q13）是白棋有力的后续。];W[qc]C[后续];B[pd];W[od];B[pc];W[pb];B[qb];W[qf];B[rf];W[pg];B[qh];W[rc];B[re];W[rb];B[ob];W[qa])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

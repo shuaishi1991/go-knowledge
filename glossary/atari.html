@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>打吃</h1>
 <p class="stars">★★★</p>
@@ -26,6 +31,7 @@ __en: White plays atari at A to start the ladder.__ru:]PL[W];W[fq]C[__Solution: 
 __en: Black will always be in atari and is guaranteed to be captured eventually.__ru:];B[dr];W[cr];B[ds];W[es])</script></div>
 <div class="prose"><h2><strong>注意事项与实用心得</strong></h2><ul><li>过分依赖打吃，时机不对反而会把对方走厚。</li><li>眼前的威胁要和长远的利益权衡，把打吃放进整体构思里去用。</li><li>想把打吃用好，就得预判对方会怎么应，再借这些交换取势或掌握主动。</li></ul><h2><strong>与国际象棋“将军”的比较</strong></h2><p>有人把打吃比作国际象棋里的“将军”，但它的范围要广得多。将军只针对王，而打吃可以针对棋盘上任何一块棋。 </p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

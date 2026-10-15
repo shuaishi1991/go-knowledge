@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>高目</h1>
 <p class="lead">五四位的开局点，重外势轻实地</p>
@@ -23,6 +28,7 @@ __en: Black 1 takes a "high" point above the corrner, a "takamoku".__ru:])</scri
 <div class="gm-host" data-mode="view" data-at="end" data-numbers="1" data-full="1"><script type="text/plain">(;PB[Kitani Minoru]BR[6p]PW[Maeda Nobuaki]WR[6p]RE[B+]DT[1935-05-29]EV[Japan Promotion Tournament, 1935, Spring]HA[0]KM[0]SZ[19]AP[Sabaki:0.52.2]FF[4]GM[1]CA[UTF-8];B[pf];W[dd];B[fp];W[po];B[oc];W[do];B[dq];W[dj];B[oq];W[qq];B[fc];W[jd];B[cf];W[cc];B[ff];W[fd];B[id];W[hd];B[ie];W[ic];B[jc];W[kc];B[hc];W[jb];B[ib];W[jc];B[gd];W[he];B[ed];W[hb];B[gc];W[hf];B[de];W[qh];B[qd];W[lo];B[lq];W[jp];B[dl];W[em];B[el];W[fl];B[ek];W[dm];B[cl];W[gj];B[ej];W[np];B[nq];W[cq];B[cr];W[cp];B[kp];W[ko];B[jq];W[lp];B[kq];W[hp];B[gk];W[iq];B[jo];W[ip];B[go];W[hn];B[gm];W[gn];B[fn];W[fm];B[ho];W[io];B[in];W[hm];B[jn];W[gp];B[fo];W[gq];B[fq];W[hr];B[gl];W[il];B[fk];W[br];B[er];W[km];B[bs];W[jr];B[bq];W[qo];B[qp];W[pp];B[qr];W[rr];B[pq];W[rp];B[kr];W[pr];B[pi];W[ph];B[oh];W[og];B[nh];W[pg];B[qf];W[qi];B[pj];W[jm];B[lh];W[rk];B[cd];W[dc];B[bd];W[ec];B[fe];W[eb];B[qk];W[qj];B[pl];W[ok];B[pk];W[rl];B[bc];W[gb];B[mk];W[fh];B[eh];W[nl];B[jg];W[nc];B[nd];W[ob];B[pc];W[ig];B[jf];W[jh];B[lf];W[mg];B[lg];W[mh];B[mi];W[ng];B[li];W[jj];B[md];W[fi];B[ei];W[nb];B[fb];W[fa];B[da];W[qb];B[oj];W[rc];B[lc];W[lb];B[ea];W[oe];B[of];W[ne];B[nf];W[me];B[mf];W[le];B[ke];W[od];B[ml])</script></div>
 <div class="prose"><p>所以高目既灵活又难驾驭，适合擅长以势取胜的棋手。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

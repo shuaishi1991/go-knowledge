@@ -8,16 +8,22 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 规则胜负</p>
 <h1>倒贴</h1>
 <p class="lead">倒贴目、负的贴目</p>
 <div class="prose"><p>倒贴目（日语：Gyaku Komi）是一种非常规的贴目方式：贴目不给白棋，而是给黑棋。有些比赛和让子棋用它来抹平双方棋力的差距，或者试验别的规则。 </p><p>常规规则下，贴目归白棋（比如 6.5 目），用来平衡黑棋的先行之利。倒贴目正好反过来：贴目算给黑棋，白棋一开局就在目数上吃亏。这也可以记成负的贴目值，比如“-6.5 目”，意思就是黑棋净得 6.5 目。</p><p>传统对局里很少见到倒贴目，但作为调节平衡的手段，它相当灵活，正式比赛和平时下棋都用得上。这也说明围棋本身足够有弹性，可以为不同的棋手和场合改出各种玩法。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

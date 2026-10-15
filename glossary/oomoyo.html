@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>大模样</h1>
 <p class="lead">铺开一大片的模样</p>
@@ -21,6 +26,7 @@
 __en: Black is creating a huge moyo (oomoyo) on the right.__ru:])</script></div>
 <div class="prose"><p>大模样和取势的路数天然相配：自己有厚势时最好用，可以逼着对方在不利的条件下进来侵消。它的短处也很明显——身后没有强子接应，模样就容易被打入打散。</p><p>大模样往往来自重外势、轻实地的布局。走大模样的人，等于用局部的安定换取全局的潜力；而对手通常会赶在模样兑现成实地之前打入或侵消。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

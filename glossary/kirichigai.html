@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>扭断</h1>
 <p class="lead">互相切断的扭十字</p>
@@ -24,6 +29,7 @@ __en: Black 1 is a cross-cut, or a "kirichigai".__ru:])</script></div>
 __en: In response to Black 1, White chose to play a cross-cut at A, aiming to utilize the marked stone effectively. However, this decision would complicate the game.__ru:]LB[ph:A][pi:1]TR[qf];W[ph]C[__Solution: true];B[oh];W[pg];B[qj];W[ri])</script></div>
 <div class="prose"><p>扭断的性格凶悍，落子之前必须算清楚。走错了，可能连战斗的主导权都丢掉；走对了，就能把对方切成两块，逼出对自己有利的交换。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

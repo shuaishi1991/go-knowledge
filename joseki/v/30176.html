@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/komoku.html">小目</a> · <a href="../open/komoku-pass.html">白脱先</a></p>
 <h1>小目 · 白脱先</h1>
@@ -41,6 +46,7 @@ D（R17）偏软。];B[pc];W[qe]C[双方都有断点，但这本来是黑的角�
 C（R18）正是白想要的。];B[re]C[这是在硬打，但现在黑的角出了问题。];W[qg]C[白必须先这样继续，然后才能在角上下子。];B[rf];W[og]C[白补棋。];B[qf];W[pf];B[ph];W[pg]C[黑可以先手冲和刺，但必须回来补角。];B[qb]C[黑拿到了角，但白的着法全在外侧，而布局阶段外侧通常更好。所以这个变化白便宜——尤其因为黑在这里本来就先下了两手。若黑正在右边或中腹构筑模样，这一点就特别重要。这个变化已近乎定式。关键当然在于它如何配合全局。])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

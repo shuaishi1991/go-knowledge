@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 死活对杀</p>
 <h1>长生</h1>
 <p class="lead">永远循环、无法打破的局面</p>
@@ -22,6 +27,7 @@ __en: To save the group, Black playing at A is the only way to create eternal li
 __en: And the infinite loop goes on forever.__ru:])</script></div>
 <div class="prose"><p>这种局面实在太罕见了，与其说是实战里会碰上的东西，不如说是一种理论上的奇观。不过它确实很有意思，让人看到围棋规则背后的深度和复杂。</p>电影《神之一手》结尾处出现的长生<p>日本规则和韩国规则通常把长生判为无胜负：这盘棋作废，双方既不算赢也不算输。中国规则则允许对这类循环做特殊处理，往往需要裁判介入，判出一个公平的结果。而现在许多赛制采用的超级劫规则，直接禁止棋盘上出现完全相同的局面，从根本上杜绝了长生。<br></p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

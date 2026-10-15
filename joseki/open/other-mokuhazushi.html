@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="other.html">其他起手</a></p>
 <h1>其他起手 · 白挂目外</h1>
@@ -21,6 +26,7 @@
 <h2>理想</h2><ul class="lines"><li data-name="黑P13 白P17 黑R16"><a href="../v/15087.html"><span class="tag">理想</span> 3 手</a> <span class="seq">黑P13 白P17 黑R16</span></li><li data-name="黑P13 白P17 黑R17"><a href="../v/15088.html"><span class="tag">理想</span> 3 手</a> <span class="seq">黑P13 白P17 黑R17</span></li><li data-name="黑Q14 白P17 黑Q16 白Q17 黑R17 白R18 黑S18 白M17"><a href="../v/15403.html"><span class="tag">理想</span> 8 手</a> <span class="seq">黑Q14 白P17 黑Q16 白Q17 黑R17 白R18 黑S18 白M17</span></li></ul>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>飞挂</h1>
 <p class="lead">以小飞的距离挂角</p>
@@ -32,6 +37,7 @@ __zh: 这一手意在向右边取势。
 __en: This move aims to create influence toward the right side area.__ru:]))</script></div>
 <div class="prose"><p>选哪种应法，取决于全局形势和自己的作战方针。小飞挂本身被认为是一手灵活而均衡的棋：既能取地，也能取势。 </p><p>小飞挂能不能奏效，要看时机，也要看对方的应对。它用途很广，职业和业余对局里都常见。有时棋手也会选择大飞挂，那是把外势看得比即刻的角上压力更重。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

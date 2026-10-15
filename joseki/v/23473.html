@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/star.html">星位</a> · <a href="../open/star-pass.html">白脱先</a></p>
 <h1>星位 · 白脱先</h1>
@@ -39,6 +44,7 @@ A（R16）会形成劫。
 B（S15）局部杀死白棋，但留下坏味道。];B[qd]C[白这里可以脱先，把三三留作试应手。白应等其他更大的地方下完，再继续处理这个角。];W[pc]C[这是中盘定式。若布局尚未结束，双方都可以在不同时机走到别处，以此来惩罚对方。];B[oc];W[rd];B[re]C[白可以脱先。];W[rb]C[若白在角上下得太早，黑可以脱先。活与劫之间的差别，比起布局要点的价值，只是很小的差距。];B[sd];W[sc]C[劫])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

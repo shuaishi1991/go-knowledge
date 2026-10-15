@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>打入</h1>
 <p class="lead">打进对方的阵地</p>
@@ -21,6 +26,7 @@
 __en: Black 1 commences an invasion, or "uchikomi" to White's upper area.__ru:]PB[Ke Jie]BR[9p]PW[Li Xuanhao]WR[9p]EV[Chinese League A]AB[qd][pf][qf][qg][qh][qi][qj][bb][ca][cd][cc][de][fd][cq][cr][es][hr][iq][ip][ho][gp][gq][fp][ep][dp][fo][en][dn][cm][jn][lm][ro][qp][qq][pq][or][nq][mq][mc]AW[oc][pe][of][pg][ph][pi][pj][cb][eb][dc][dd][hc][he][kf][dr][dq][eq][fq][fr][gr][hs][ir][do][cn][bm][bo][bp][cp][lo][np][op][oq][pp][qo][pn][rn]AE[gc]LB[mc:1])</script></div>
 <div class="prose"><p>和浅浅的侵消不同，<em>打入</em>往往是要在里面做活，或者干脆挑起一场大战。</p><p><em>打入</em>的日语写作打ち込み，字面就是“打进去”“钉进去”，用来形容这种凌厉的战术手段再贴切不过。这个词在英语里除了专业棋书之外很少出现，在日语中却是常用语。</p><p>历史上，<em>打入</em>还指一套调整手合的制度。在贴目（给白棋的补偿）出现之前，棋力不同的人对局要按固定的手合来下。一方净输四盘，就被“打入”到下一档手合——从互先降到先相先（三盘里执两盘黑），再从先相先降到定先（永远执黑），依此类推。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 规则胜负</p>
 <h1>先手</h1>
 <p class="stars">★★★</p>
@@ -34,6 +39,7 @@ __en: White's connection is also sente, threatening to play the atari at A.__ru:
 __en: In this case, A is double sente. Whoever takes it first will gain more points and a potential to reduce opponent's territory.__ru:])</script></div>
 <div class="prose"><p>先手固然好用，但收官阶段并非每一手都得是先手。有些要紧的地方，非走后手（对方可以不应的一手）不能守住。功夫就在先手与后手之间的取舍：既要把便宜占足，又不能留下毛病。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

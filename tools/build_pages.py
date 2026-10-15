@@ -154,14 +154,29 @@ BOOKS = [
 ]
 
 
+MENU_ICON = (
+    '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">'
+    '<path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg>'
+)
+
+
 def chrome(title, body, depth, book=None, extra=""):
     pre = "../" * depth
     label = ""
     footer = "棋盘按 GoMagic 的木纹棋盘和落子操作。"
+    rail = ""
+    toggle = ""
+    scrim = ""
     if book:
         meta = next(item for item in BOOKS if item["id"] == book)
         label = f'<span class="book">{html.escape(meta["title"])}</span>'
         footer = html.escape(meta["source"])
+        toggle = (
+            '<button type="button" class="nav-toggle" aria-controls="rail" '
+            f'aria-expanded="false" aria-label="目录">{MENU_ICON}</button>'
+        )
+        scrim = '<div class="nav-scrim"></div>'
+        rail = '<aside id="rail" class="rail" aria-label="目录"></aside>'
     return f"""<!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
@@ -172,13 +187,19 @@ def chrome(title, body, depth, book=None, extra=""):
 <link rel="stylesheet" href="{pre}assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  {toggle}
   <a class="brand" href="{pre}index.html">围棋书房</a>
   {label}
 </header>
-<main class="wrap">
+{scrim}
+<div class="frame">
+{rail}
+<main id="content" class="wrap">
 {body}
 </main>
+</div>
 <footer class="foot">{footer}</footer>
 <script src="{pre}assets/js/board.js"></script>
 <script src="{pre}assets/js/nav.js"></script>

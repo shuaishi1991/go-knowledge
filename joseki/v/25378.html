@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/komoku.html">小目</a> · <a href="../open/komoku-mokuhazushi.html">白挂目外</a></p>
 <h1>小目 · 白挂目外</h1>
@@ -37,6 +42,7 @@ C（N15）也可以下。
 参见Michael Redmond，《AlphaGo vs. The World》第12局，AlphaGo Master（白）对Wang Haoyang 6p（黑）。];B[nc]LB[me:A][kd:B]C[这一手要求在黑下 A（N15）和 B（L16）之后征子有利。];W[mb];B[me];W[nd];B[kd]C[这需要征子有利。];W[ne]C[白棋可以这样下，以便攻击角上之子。];B[le];W[qf])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

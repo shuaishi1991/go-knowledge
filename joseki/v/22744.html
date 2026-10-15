@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/star.html">星位</a> · <a href="../open/star-san-san.html">白点三三</a></p>
 <h1>星位 · 白点三三</h1>
@@ -42,6 +47,7 @@ B（N18）让白安定，但黑会稍厚一点。
 C（S16）是传统的扳，会让黑变厚。中盘打入之后，它仍可能是最佳一手。];W[pj]LB[od:A]C[走在黑子前面，可以削减黑的外势。之所以走高不走低，是因为黑的形在A（P16）的断点有味道。];B[]LB[oe:A]C[白棋瞄着 A（P15），它可以有效地连回白棋在右边最初的那手棋。];W[oe];B[od];W[pg]C[这样占角并攻击黑，与传统三三打入里占角、把外势厚味让给黑的下法截然不同。])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

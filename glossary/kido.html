@@ -8,16 +8,22 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 历史头衔</p>
 <h1>棋道</h1>
 <p class="lead">“围棋之道”</p>
 <div class="prose"><p>日语中的<em>棋道</em>（Kido）由<strong>棋</strong>（围棋）和<strong>道</strong>（道路、门道）两个字组成，说的是把围棋当作一生的修行——精进棋艺、磨炼谋略，也磨炼自己。日本还有不少同样带“道”的传统，比如<em>剑道</em>（剣道，剑之道）和<em>书道</em>（書道，书法之道）。</p><h2>《棋道》杂志与它在围棋界的位置</h2><p>除了这层哲学意味，<em>棋道</em>还是一本受人尊敬的围棋杂志的名字——由日本棋院出版，前后办了 75 年，刊登职业对局的讲解、棋手访谈和教学内容，是认真下棋的人绕不开的读物。</p><p>《棋道》是那个年代最权威的围棋刊物之一。1999 年停刊之后，接棒的是 <em>Monthly Go World</em>。</p><p>2023 年 9 月，日本棋院推出了 <em>Kido Web</em>（棋道Web） ——一份订阅制的电子杂志，提供职业棋界的内容；部分材料免费开放，让围棋报道以新的形式延续下来。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

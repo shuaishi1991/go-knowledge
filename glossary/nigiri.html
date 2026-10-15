@@ -8,17 +8,23 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 规则胜负</p>
 <h1>猜先</h1>
 <p class="stars">★★★</p>
 <p class="lead">决定谁执黑的流程</p>
 <div class="prose"><p><strong>猜先</strong>是分先对局中决定谁执黑的传统方式。这套做法源自日本，既保证了公平，也像掷硬币一样，给开局添上一点运气的成分。</p><h2><strong>猜先怎么进行</strong></h2><ul><li>一方从棋盒里抓一把白子，握着手放到棋盘上，不让对方看见有多少颗。</li><li>另一方在棋盘上放一颗或两颗黑子，猜这把白子是“单”还是“双”。</li><li>抓子的一方摊开手，数一数是单是双。</li><li>猜对了，猜的一方执黑先行；猜错了，抓子的一方执黑。在有些比赛里，猜对的人可以自己选执黑还是执白，而不是默认拿黑棋。</li></ul><p>猜先只用于分先（不让子）的对局——黑棋先行本身就是优势，所以谁执黑很有讲究。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

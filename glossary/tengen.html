@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>天元</h1>
 <p class="stars">★★</p>
@@ -22,6 +27,7 @@
 __en: Black occupies the tengen.__ru:]AP[Sabaki:0.52.2]CA[UTF-8])</script></div>
 <div class="prose"><p>传统布局很少走天元，但这一手能打乱常规的套路，也能宣示对中腹的控制。开局就下天元，棋局往往会走成罕见而复杂的局面，脱离常见的<em>定式</em>。抛开象征意义不谈，占住天元确实能为经营中腹外势打下厚实的基础——在那些以中腹争夺为核心的对局里，这一点尤其关键。</p><p>在标准的 19×19 棋盘上，天元几乎不会成为第一手；可换到小小的 9×9 棋盘，它的分量就完全不同了——那里天元公认是最好的开局着点。原因很简单：9×9 棋盘上的中心点一子就能照顾到全盘每个角落，起手既均衡又高效。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

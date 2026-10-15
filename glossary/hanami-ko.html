@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 死活对杀</p>
 <h1>无忧劫</h1>
 <p class="lead">打输了损失很小打赢了收获极大的劫</p>
@@ -21,6 +26,7 @@
 __en: Next, if White plays at A, it creates a 'hanami ko'—a situation where White risks almost nothing, while Black can't afford to lose.__ru:]AP[Sabaki:0.52.2]CA[UTF-8];W[ba]C[__Solution: true];B[aa])</script></div>
 <div class="prose"><p>无忧劫常常让对手很为难：这个劫他输不起，只能硬着头皮应。不管是中盘搏杀还是收官阶段，它都是一件利器——一旦不理劫材，代价可能是毁灭性的。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

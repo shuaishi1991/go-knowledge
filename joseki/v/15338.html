@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/other.html">其他起手</a> · <a href="../open/other-komoku.html">白靠小目</a></p>
 <h1>其他起手 · 白靠小目</h1>
@@ -23,6 +28,7 @@
 又称 otakamoku。这个点等于请白棋占角。如今很少把它当作最初的占角点，因为现代更强调占角。它是日本1930年代新布石运动中的试验之着，现代已基本弃用。];W[pc];B[qc];W[qd];B[pd];W[qb];B[rc];W[rb];B[rd];W[qe];B[pe];W[rf];B[oc];W[pb];B[qh])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>袖空</h1>
 <p class="lead">模样底部未封的空当</p>
@@ -21,6 +26,7 @@
 __en: Black's territory isn't fully secured, as White can later play at A to reduce it, thanks to the marked stone. This local weakness is metaphorically called an 'open skirt', or susoaki.__ru:]AE[pj][ok]LB[ro:A]TR[rq]PL[W];W[ro]C[__Solution: true])</script></div>
 <div class="prose"><p>模样看上去挺厚实，可底下一虚，对方轻轻一掏就少了一大块空，严重时连这块棋的死活都要动摇。</p><p>这个概念在中盘尤其有用——中盘正是削减对方模样、压住对方成空的阶段。棋力还不高的人容易小看漏风的杀伤力：补起来通常要走一步后手。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

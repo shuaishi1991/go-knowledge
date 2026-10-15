@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>雪崩</h1>
 <p class="lead">雪崩定式</p>
@@ -23,6 +28,7 @@ __en: Modern variation.__ru:];W[cm];B[bm];W[cl];B[bl];W[fq];B[fr];W[ck];B[em];W[
 __en: Classic variation.__ru:];W[cm];B[cl];W[br];B[er];W[bm];B[bn];W[bl];B[bp];W[fq];B[fr];W[ck];B[em];W[fo];B[gq];W[gp];B[hq];W[hp];B[ip];W[io];B[jo];W[in]))</script></div>
 <div class="prose"><p>过去大家认为雪崩定式的结果对双方都算公平。但随着 AI 分析兴起——尤其是 2018 年之后——人们发现其中一些变化，特别是大雪崩，对白棋略有不利。</p><p>如果不想把局面搅复杂，双方都有办法把定式引向平稳的结果。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

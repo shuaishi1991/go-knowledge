@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/star.html">星位</a> · <a href="../open/star-pass.html">白脱先</a></p>
 <h1>星位 · 白脱先</h1>
@@ -40,6 +45,7 @@ A（P17）严厉。
 B（R17）让白可以在A位退，轻易取得轻灵、有弹性的姿态。];B[qc]LB[kc:A]C[黑在上边已有配置，例如 A（L17）一带有子时，在这里挡可以是好棋。否则这一手让白过于轻松地安定，不推荐。];W[oc];B[qb]LB[ne:A][lc:B][od:C]C[白可以继续下A（O15）、B（M17）或C（P16）。])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/komoku.html">小目</a> · <a href="../open/komoku-mokuhazushi.html">白挂目外</a></p>
 <h1>小目 · 白挂目外</h1>
@@ -41,6 +46,7 @@ B（L17）是传统下法。];W[kc]LB[ic:X]C[拆三
 AI对A的评价好于B。如果还有大的布局点，AI也会脱先。];W[le]LB[oa:A][na:B][ka:C][ja:D]C[A（P19）与 B（O19）交换的效果是，此后白可以先手下 C（L19）或 D（K19）。若上边展开战斗，这一点会很有用。无论如何，白让出了实地，换来了厚势。（第178页）])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

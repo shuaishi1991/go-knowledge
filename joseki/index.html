@@ -8,17 +8,23 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <h1>定式</h1>
 <p class="lead">每一条变化单独一页，页里只有这一条手顺，没有分枝。先按黑棋起手归类，再按白棋应手，最后按这一条的结果分成理想、好棋、骗着、恶手。</p>
 <div class="chapters"><a class="chapter" href="open/star.html"><span class="num">星位</span><strong>2081 条</strong><span>按白棋应手再分成各条直线变化。</span></a><a class="chapter" href="open/komoku.html"><span class="num">小目</span><strong>1669 条</strong><span>按白棋应手再分成各条直线变化。</span></a><a class="chapter" href="open/sansan.html"><span class="num">三三</span><strong>58 条</strong><span>按白棋应手再分成各条直线变化。</span></a><a class="chapter" href="open/mokuhazushi.html"><span class="num">目外</span><strong>175 条</strong><span>按白棋应手再分成各条直线变化。</span></a><a class="chapter" href="open/takamoku.html"><span class="num">高目</span><strong>107 条</strong><span>按白棋应手再分成各条直线变化。</span></a><a class="chapter" href="open/five.html"><span class="num">五五</span><strong>28 条</strong><span>按白棋应手再分成各条直线变化。</span></a><a class="chapter" href="open/tengen.html"><span class="num">天元</span><strong>3 条</strong><span>按白棋应手再分成各条直线变化。</span></a><a class="chapter" href="open/two.html"><span class="num">二二</span><strong>17 条</strong><span>按白棋应手再分成各条直线变化。</span></a><a class="chapter" href="open/tenuki.html"><span class="num">脱先</span><strong>1 条</strong><span>按白棋应手再分成各条直线变化。</span></a><a class="chapter" href="open/other.html"><span class="num">其他起手</span><strong>24 条</strong><span>按白棋应手再分成各条直线变化。</span></a></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

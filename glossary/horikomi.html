@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>扑</h1>
 <p class="lead">往对方棋形里送一子的弃子手筋</p>
@@ -31,6 +36,7 @@ __en: Black can capture some white stones using the throw-in, or the "horikomi",
 __en: Black's throw in, or "Horikomi", at A will create a snapback.__ru:];B[eq]C[__Solution: true];W[ep];B[eq])</script></div>
 <div class="prose"><p>扑和点眼不同：点眼是走进对方的眼位、不让它分成两只眼，而扑是为了不让对方做成眼，或者利用对方棋形上的弱点。与之相关的还有<em>点</em>（日语：Oki，把一子点在要害处），目的是让这颗子发挥最大的作用，或者破坏对方的阵形。<em>扑</em>讲的是弃一子达成战术目的，<em>点</em>讲的是把子摆在最好的位置，图的是长远的便宜。想用好<em>扑</em>，必须把气算清楚，还要提前想好后续手段，才能把效果放到最大。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

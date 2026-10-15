@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>双吃 / 双打 / 双打吃</h1>
 <p class="lead">一手同时打吃两块棋</p>
@@ -21,6 +26,7 @@
 __en: Black playing at A next will create a double atari.__ru:]LB[co:A];B[co]C[__Solution: true](;W[dp];B[bn])(;W[bn];B[dp]))</script></div>
 <div class="prose"><p>手法简单，所以入门阶段很早就会学到。它生动地说明了围棋的一条道理：一手棋兼顾两处威胁，收益最大。既能看出双打吃的机会，也能提前发现自己棋形里的隐患——这是基本的战斗嗅觉。</p><p>高手对双打吃的苗头始终保持警觉：既要抓住它，也要避开它。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

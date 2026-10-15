@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/komoku.html">小目</a> · <a href="../open/komoku-takamoku.html">白挂高目</a></p>
 <h1>小目 · 白挂高目</h1>
@@ -27,6 +32,7 @@
 C（O16）改变方向。AI 出现之前，职业棋手已不再喜欢它；KataGo 认为这是大恶手。];B[pd];W[pc];B[oc];W[nd];B[ob];W[rd];B[rc];W[rb];B[qb];W[sc];B[pb];W[rc];B[qf];W[re];B[ne];W[md];B[lc];W[qg];B[pe];W[rf];B[le];W[me];B[mf];W[nf];B[ld];W[mg];B[lf];W[of];B[mc]C[如果棋盘上没有其他大场，黑可以选择吃掉这些白子，但常常会先留着不定，等到后半盘再处理。])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

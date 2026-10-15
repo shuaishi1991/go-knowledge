@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>过分</h1>
 <p class="lead">走得太过的一手</p>
@@ -21,6 +26,7 @@
 __en: After White 1, Black is supposed to play A. But it's common to see novice players play at B, hoping White will connect and gain an extra point. But B is an overplay, or an "uchisuji"__ru:](;B[er]C[__Solution: true];W[dq];B[dr];W[cr])(;B[dq]C[__Solution: true];W[er];B[ep];W[bq];B[fr];W[cr]))</script></div>
 <div class="prose"><p>过分手多半出于贪心，或者是在没有足够援军的情况下，想从局部捞取太多。</p><p>过分的一手，乍看往往又勇又妙，可只要对方应得对，局部多半就此崩掉，全局也跟着落后。能不能看出一手棋过分，是棋感成熟的标志，中盘战斗和打入的时候尤其如此。</p><p>碰上棋力较弱或者没有准备的对手，这类棋有时确实能得逞，但在正式对局里既冒险又不可靠。老下过分手的人，阵形往往站不稳，等于把反击的机会送到对方手上。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

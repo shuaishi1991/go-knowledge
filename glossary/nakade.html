@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 死活对杀</p>
 <h1>点眼</h1>
 <p class="stars">★★</p>
@@ -24,6 +29,7 @@ __en: White's marked stone is a nakade.__ru:])</script></div>
 <div class="gm-host" data-mode="view" data-at="end" data-numbers="1" data-full="1"><script type="text/plain">(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-23]AE[di][fi][fc][dc][pc][od][lk][pf][of][nf][mf]AB[dr][er][fr][fq][gq][gp][go][fo][fn][en][dn][do][co][cp][cq][dq][mo][nn][on][pn][qo][po][qp][qq][pq][pr][or][nr][mr][mq][mp][no][cb][db][eb][fb][gb][gc][gd][fd][dd][ed][cd][cc][qb][qc][qd][pb][ob][nb][nc][nd][ne][oe][pe][pd][ch][dh][eh][fh][gh][ci][cj][gi][gj][fj][dj][ek][qh][ph][oh][nh][mh][mi][mj][qi][qj][qk][pk][ok][nj][nk][dk][fk]AW[ep][op][oc][ec][ei][oi][bb][ca][da][ea][fa][ga][hb][hd][hc][ge][fe][ee][de][ce][bd][bc][bh][bi][bj][ck][el][cl][dl][fl][gl][gk][hj][hi][hh][gg][fg][eg][dg][cg][mg][ng][og][pg][qg][rh][rj][rk][ri][ql][pl][ol][nl][ml][mk][lj][li][lh][me][md][mc][mb][na][oa][pa][qa][rb][rc][rd][re][qe][mn][lo][lp][ln][lq][lr][ms][ns][os][ps][qr][rr][rq][rp][ro][rn][qn][cn][bn][bo][bp][bq][br][cr][ds][es][fs][gr][hr][hq][hp][hn][ho][gn]TR[ec][ei][ep][oc][oi][op]C[__zh: 所有标记的下法都叫点眼。
 __en: All marked moves are called "nakade".__ru:])</script></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

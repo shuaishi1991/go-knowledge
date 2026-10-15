@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/komoku.html">小目</a> · <a href="../open/komoku-takamoku.html">白挂高目</a></p>
 <h1>小目 · 白挂高目</h1>
@@ -34,6 +39,7 @@ C（P15）是旧定式，2017年以前几乎是唯一的下法；直到 AlphaGo 
 参见 Michael Redmond, AlphaGo vs. The World: Game 35, AlphaGo Master (W) vs. Jiang Weijie 9p (B)，以及 Game 41, AlphaGo Master (W) vs. Kim Jiseok 9p (B)。];B[oc]LB[ld:A][pg:B]C[职业棋里不大这么下，但它并没有因此就那么差。下法与局面26982的标准定式相似，只是A（M16）的黑子限制了白沿上边展开，而B（Q13）的白子把黑压在右边。];W[nc];B[pc]LB[me:A][md:B][nd:C]C[白可以在 A（N15）、B（N16）或 C（O16）防守。])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

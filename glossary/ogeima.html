@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>大飞</h1>
 <p class="stars">★★</p>
@@ -24,6 +29,7 @@ __en: Black playing at A next will form an ōgeima, severely attacking White's w
 <div class="gm-host" data-mode="view" data-at="end" data-numbers="1" data-full="1"><script type="text/plain">(;GM[1]FF[4]CA[UTF-8]AP[Sabaki:0.52.2]KM[6.5]SZ[19]DT[2025-01-23]C[__zh: 切断大飞有好几种办法。
 __en: Several ways to cut an ogeima.__ru:]AB[qd][pd][nc][od][ld][jd][nd][rc][re][pj][qp][oq][jp][cd][ce][cf][ch][dg]AW[sc][rb][qc][pc][oc][nb][mb][ph][mg][dp][fq][cc][dc][dd][hc][df][de][ck]AE[cl]LB[nh:A][oh:B](;B[nh]C[__Solution: true];W[ng](;B[og];W[oh];B[ni])(;B[oh];W[og];B[pg]))(;B[oh]C[__Solution: true];W[og];B[nh];W[ng];B[pg]))</script></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

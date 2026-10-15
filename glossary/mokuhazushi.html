@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>外目</h1>
 <p class="lead">角上的 5-3点</p>
@@ -21,6 +26,7 @@
 __en: All Black stones on the board are placed at 5-3 or 3-5 point. Those are called "mokuhazushi".__ru:])</script></div>
 <div class="prose"><p>这一手让边上的发展很灵活，容易走成大模样，在老式布局里尤其常见。不过它的位置相对松，在现代高水平对局中已经不多见——如今棋手更偏爱紧凑、重实地的布局。</p><p>面对目外，对方通常在三三或小目的位置挂角。由此可以走出各式各样的定式；要是有人选择脱先，局面就会散成更松的战斗。点三三也仍是一个选择，只是往往要把边让出去。这一手我们专门开了一门课：目外入门。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

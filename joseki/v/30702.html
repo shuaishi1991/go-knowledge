@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/komoku.html">小目</a> · <a href="../open/komoku-pass.html">白脱先</a></p>
 <h1>小目 · 白脱先</h1>
@@ -30,6 +35,7 @@
 一般在黑于 A（K16）或 B（R10）附近有拆时使用。如果黑两边都有拆，可能反而帮了黑。];B[re];W[qe];B[rc];W[pd];B[qc];W[rf];B[sd];W[og]C[白以轻形跳出。];B[qf]C[黑若打吃，白应准备弃子。];W[pe];B[qg]C[白的棋形还不算太坏，然而黑自己以厚形冲出。白不好。])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

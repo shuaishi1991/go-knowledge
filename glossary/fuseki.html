@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>布局</h1>
 <p class="stars">★★</p>
@@ -22,6 +27,7 @@
 __en: Traditional Chinese Fuseki.__ru:]LB[pd:A];B[pd]C[__Solution: true];W[dp];B[pq];W[dd];B[qk];W[nc];B[pf];W[pb];B[qc];W[kc];B[fq];W[cn];B[jp];W[po];B[np];W[qq];B[qr];W[qp];B[rr];W[qm])</script></div>
 <div class="prose"><p>在围棋理论中，布局是被研究得最透的一个阶段。日语原词写作“布石”，字面就是把棋子铺开，恰好道出了这个阶段的做法：占住角，向边上展开，再把影响力伸向中腹。目标则是在眼前的实地与将来的发展潜力之间取得平衡。</p><p>在标准的 19×19 棋盘上，布局阶段最看重角——同样多的子，角上围地效率最高。占角之后再向边上拆展，最后经营中腹的影响力，让全盘的子彼此呼应，形成一套完整的构思。传统上有大量成型的下法，也就是定式；不过在 AI 的影响下，如今的思路更强调随机应变和有创意的布子，而不是死守既定的次序。</p><p>布局下得好不好，取决于你能否预见最初这几手将如何影响整盘棋。底子扎实，才有余裕随着对手的招法调整，也才能为中盘的发挥搭好舞台。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

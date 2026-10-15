@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/star.html">星位</a> · <a href="../open/star-pass.html">白脱先</a></p>
 <h1>星位 · 白脱先</h1>
@@ -47,6 +52,7 @@ C（S14）是 AI 的下法，以放弃角部来换取右边的一些力量。];W
 B（Q17）成劫。];B[rd]LB[mc:X]C[如果白在X（N17）没有子，这一手就能杀死白；否则这一手不成立。白活不了。参见《打入小城堡》3:00处。];W[rc];B[re];W[pc];B[ob]LB[mc:X][pd:Y][od:A]C[若白在X（N17）有子，且白能征吃Y（Q16）的黑子，黑就不能这样下。白会在A（P16）断，吃掉三颗黑子。参见《打入小飞守角》3:00处。])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

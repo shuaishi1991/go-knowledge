@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/komoku.html">小目</a> · <a href="../open/komoku-pass.html">白脱先</a></p>
 <h1>小目 · 白脱先</h1>
@@ -40,6 +45,7 @@ C（R15）局部稍亏，但白在局部很难处理。
 D（R17）偏软。];B[pc];W[qe]C[双方都有断点，但这本来是黑的角，所以黑想避免在这里生事。这里打一场混乱的战斗对白有利。];B[od];W[pe];B[rd]C[黑若防守得当，就会这样走，此刻看起来可能对黑不错。白的好后续，多数棋手不容易找到。];W[oe];B[ne];W[nf];B[me];W[mf];B[le];W[qc];B[rc];W[lf];B[ke];W[qi]C[定式])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

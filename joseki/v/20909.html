@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../../index.html">围棋书房</a>
   <span class="book">定式</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="../index.html">定式</a> · <a href="../open/star.html">星位</a> · <a href="../open/star-san-san.html">白点三三</a></p>
 <h1>星位 · 白点三三</h1>
@@ -42,6 +47,7 @@ E（P17）对黑棋没有意思。];B[mb]LB[oc:A][ob:B]C[A（P17）很复杂，�
 B（P18）先手取角，外侧还有战斗余地，但比起A的常见后续，这一手偏软。];W[ob]C[这手软着在某些场合已经够用。参见《征服点三三！》。];B[md];W[od];B[oc];W[rd];B[re];W[rc];B[qf];W[oe];B[pf];W[of]C[作战])</script></div>
 
 </main>
+</div>
 <footer class="foot">定式取自 OGS 定式字典。</footer>
 <script src="../../assets/js/board.js"></script>
 <script src="../../assets/js/nav.js"></script>

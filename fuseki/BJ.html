@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">布局</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 
 <p class="crumb"><a href="index.html">布局</a></p>
 <h1>无忧角＋小目Ｂ</h1>
@@ -21,6 +26,7 @@
 <ul class="lines"><li data-name="第 1 型9 手 · 共 17 谱"><a href="p/BJ4501.html">第 1 型</a> <span class="seq">9 手 · 共 17 谱</span></li><li data-name="第 2 型7 手 · 共 103 谱"><a href="p/BJ4502.html">第 2 型</a> <span class="seq">7 手 · 共 103 谱</span></li><li data-name="第 3 型7 手 · 共 7 谱"><a href="p/BJ4503.html">第 3 型</a> <span class="seq">7 手 · 共 7 谱</span></li><li data-name="第 4 型6 手 · 共 51 谱"><a href="p/BJ4504.html">第 4 型</a> <span class="seq">6 手 · 共 51 谱</span></li><li data-name="第 5 型6 手 · 共 10 谱"><a href="p/BJ4505.html">第 5 型</a> <span class="seq">6 手 · 共 10 谱</span></li><li data-name="第 6 型6 手 · 共 6 谱"><a href="p/BJ4506.html">第 6 型</a> <span class="seq">6 手 · 共 6 谱</span></li><li data-name="第 7 型6 手 · 共 4 谱"><a href="p/BJ4507.html">第 7 型</a> <span class="seq">6 手 · 共 4 谱</span></li><li data-name="第 8 型6 手 · 共 2 谱"><a href="p/BJ4508.html">第 8 型</a> <span class="seq">6 手 · 共 2 谱</span></li><li data-name="第 9 型6 手 · 共 2 谱"><a href="p/BJ4509.html">第 9 型</a> <span class="seq">6 手 · 共 2 谱</span></li><li data-name="第 10 型5 手 · 共 1079 谱"><a href="p/BJ4510.html">第 10 型</a> <span class="seq">5 手 · 共 1079 谱</span></li></ul>
 
 </main>
+</div>
 <footer class="foot">布局取自围棋学研网的布局分类、谱数和黑胜率。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

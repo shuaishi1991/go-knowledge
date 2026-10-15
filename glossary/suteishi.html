@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 行棋手段</p>
 <h1>弃子</h1>
 <p class="lead">主动舍弃的棋子</p>
@@ -21,6 +26,7 @@
 __en: Those marked stones can be sacrificed to gain strategic sente. In Japanese this sacrifice technique is called "suteishi".__ru: ]LB[go:A]TR[gq][gr];B[go]C[__Solution: true];W[hp];B[dq];W[fr];B[er];W[gs])</script></div>
 <div class="prose"><p>弃子体现了围棋更深一层的道理：灵活和长远的眼光，往往胜过眼前的实惠。舍掉一颗看起来很要紧的子，可以留下味道，可以逼对方走出低效的应手，也可以把战场转到对自己更有利的一边。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

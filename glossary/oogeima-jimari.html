@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>大飞守角</h1>
 <p class="lead">用大飞的步子守住角</p>
@@ -21,6 +26,7 @@
 __en: Black 1 makes a large knight's move enclosure to the corner (oogeima-shimari).__ru:])</script></div>
 <div class="prose"><p>从战略上说，它介于稳健的小飞守角和更高、更松的守角（比如一间高守角，小目到五四位）之间。这种弹性让它很适合那些既要实地、又要向外发展的布局构思。</p><p>虽然中间的空当略大，大飞守角面对常见的打入和试应手依然相当结实。在那些崇尚速度与外势、不追求死抠实地的年代，它尤其流行。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

@@ -1,47 +1,47 @@
 (function () {
-  const header = document.querySelector(".top");
-  if (!header) return;
-  document.documentElement.classList.add("nav-ready");
+  const rail = document.getElementById("rail");
+  const toggle = document.querySelector(".nav-toggle");
+  if (!rail || !toggle) return;
 
-  const toggle = document.createElement("button");
-  toggle.type = "button";
-  toggle.className = "nav-toggle";
-  toggle.setAttribute("aria-label", "目录");
-  toggle.setAttribute("aria-expanded", "false");
-  toggle.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg>';
-  header.insertBefore(toggle, header.firstChild);
-
-  const topPath = document.createElement("nav");
-  topPath.className = "top-path";
-  topPath.setAttribute("aria-label", "路径");
-  header.appendChild(topPath);
-
-  const scrim = document.createElement("div");
-  scrim.className = "nav-scrim";
-  const drawer = document.createElement("aside");
-  drawer.className = "nav-drawer";
-  drawer.setAttribute("aria-label", "目录");
-  document.body.append(scrim, drawer);
-
-  let filled = false;
+  const docked = window.matchMedia("(min-width: 1024px) and (min-height: 640px)");
+  const scrim = document.querySelector(".nav-scrim");
   let open = false;
-  const parts = pathParts();
-  renderParts(topPath, parts);
+
+  const path = document.createElement("nav");
+  path.className = "nav-path";
+  path.setAttribute("aria-label", "路径");
+  const list = document.createElement("div");
+  list.className = "nav-list";
+  rail.append(path, list);
+  renderParts(path, pathParts());
+  fill();
 
   function setOpen(next) {
+    if (docked.matches) return;
     open = next;
     document.body.classList.toggle("nav-open", open);
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    if (open && !filled) {
-      filled = true;
-      fill();
+    if (open) {
+      revealCurrent();
+      const current = rail.querySelector(".nav-list [aria-current='page']");
+      const target = current || rail.querySelector("a");
+      if (target) target.focus();
+    } else {
+      toggle.focus();
     }
   }
 
   toggle.addEventListener("click", function () { setOpen(!open); });
-  scrim.addEventListener("click", function () { setOpen(false); });
+  if (scrim) scrim.addEventListener("click", function () { setOpen(false); });
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape" && open) setOpen(false);
+  });
+  docked.addEventListener("change", function () {
+    if (docked.matches) {
+      open = false;
+      document.body.classList.remove("nav-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
   });
 
   function here(href) {
@@ -80,8 +80,7 @@
   }
 
   function renderParts(parent, parts) {
-    parts.forEach(function (part, index) {
-      if (index) parent.appendChild(document.createTextNode(" · "));
+    parts.forEach(function (part) {
       if (part.href) addLink(parent, part.href, part.text);
       else {
         const span = document.createElement("span");
@@ -92,12 +91,29 @@
     });
   }
 
-  function appendNodes(list, nodes, base) {
+  function labelFor(node) {
+    if (node.classList.contains("chapter")) {
+      const num = node.querySelector(".num");
+      return (num || node).textContent;
+    }
+    let text = node.textContent.replace(/\s+/g, " ").trim();
+    const li = node.closest("li");
+    if (!li) return text;
+    const extra = li.querySelector(".seq, .meaning");
+    if (extra && !node.contains(extra)) {
+      const more = extra.textContent.replace(/\s+/g, " ").trim();
+      if (more) text += " · " + more;
+    }
+    return text;
+  }
+
+  function appendNodes(nodes, base) {
     nodes.forEach(function (node) {
       if (node.tagName === "H2") {
-        const h2 = document.createElement("h2");
-        h2.textContent = node.textContent.replace(/\s+/g, " ").trim();
-        list.appendChild(h2);
+        const label = document.createElement("p");
+        label.className = "rail-label";
+        label.textContent = node.textContent.replace(/\s+/g, " ").trim();
+        list.appendChild(label);
         return;
       }
       const ul = list.lastElementChild && list.lastElementChild.tagName === "UL"
@@ -105,9 +121,16 @@
         : list.appendChild(document.createElement("ul"));
       const li = document.createElement("li");
       const href = new URL(node.getAttribute("href"), base).href;
-      addLink(li, href, node.textContent);
+      addLink(li, href, labelFor(node));
       ul.appendChild(li);
     });
+  }
+
+  function revealCurrent() {
+    const current = rail.querySelector('[aria-current="page"]');
+    if (!current) return;
+    const top = current.offsetTop - rail.clientHeight / 3;
+    rail.scrollTop = Math.max(0, top);
   }
 
   function categoryName() {
@@ -118,66 +141,42 @@
     return clone.textContent.replace(/·/g, " ").replace(/\s+/g, " ").trim();
   }
 
+  function outline(doc) {
+    const chapters = doc.querySelectorAll("a.chapter, .chapter > .num > a");
+    if (chapters.length) return chapters;
+    return doc.querySelectorAll("main h2, main .lines > li > a, main .terms > li > a");
+  }
+
   function fill() {
-    const path = document.createElement("nav");
-    path.className = "nav-path";
-    parts.forEach(function (part) {
-      if (part.href) addLink(path, part.href, part.text);
-      else {
-        const span = document.createElement("span");
-        span.textContent = part.text;
-        path.appendChild(span);
-      }
-    });
-    drawer.appendChild(path);
-
-    const list = document.createElement("div");
-    list.className = "nav-list";
-    drawer.appendChild(list);
-
     if (document.querySelector(".chapters")) {
-      const ul = document.createElement("ul");
-      document.querySelectorAll("a.chapter, .chapter > .num > a").forEach(function (a) {
-        const num = a.querySelector(".num");
-        const li = document.createElement("li");
-        addLink(li, a.href, num ? num.textContent : a.textContent);
-        ul.appendChild(li);
-      });
-      if (ul.childElementCount) list.appendChild(ul);
+      appendNodes(document.querySelectorAll("a.chapter, .chapter > .num > a"), location.href);
+      revealCurrent();
       return;
     }
 
     if (document.querySelector("main section[id] > h2") && !document.querySelector(".lines")) {
-      const ul = document.createElement("ul");
+      const links = [];
       document.querySelectorAll("main section[id] > h2").forEach(function (h2) {
-        const li = document.createElement("li");
-        addLink(li, "#" + h2.parentElement.id, h2.textContent);
-        ul.appendChild(li);
+        const a = document.createElement("a");
+        a.href = "#" + h2.parentElement.id;
+        a.textContent = h2.textContent;
+        links.push(a);
       });
-      list.appendChild(ul);
+      appendNodes(links, location.href);
       return;
     }
 
-    const localNodes = document.querySelectorAll("main h2, main .lines > li > a, main .terms > li > a");
-    if (localNodes.length && !document.querySelector(".gm-host")) {
-      appendNodes(list, localNodes, location.href);
-      return;
-    }
-
-    const boardPage = document.querySelector(".gm-host") && !document.querySelector(".prose");
+    const study = document.querySelector(".gm-host") && !document.querySelector(".prose");
     const crumbs = document.querySelectorAll(".crumb a");
     const parent = crumbs[crumbs.length - 1];
-    if (boardPage && parent) {
-      loadFrom(parent.href, list, function (doc) {
-        return doc.querySelectorAll("h2, .lines > li > a, .terms > li > a");
-      });
+    if (study && parent) {
+      loadFrom(parent.href, function (doc) { return outline(doc); });
       return;
     }
 
     const name = categoryName();
-    const index = crumbs[0];
-    if (name && index) {
-      loadFrom(index.href, list, function (doc) {
+    if (name && crumbs[0] && document.querySelector(".prose, .gm-host")) {
+      loadFrom(crumbs[0].href, function (doc) {
         const nodes = [];
         doc.querySelectorAll("main section").forEach(function (section) {
           const h2 = section.querySelector("h2");
@@ -186,22 +185,24 @@
         });
         return nodes;
       });
+      return;
     }
+
+    if (parent) loadFrom(parent.href, function (doc) { return outline(doc); });
   }
 
-  function loadFrom(url, list, pick) {
+  function loadFrom(url, pick) {
     const note = document.createElement("p");
-    note.className = "colophon";
-    note.textContent = "正在读取这一类…";
+    note.className = "rail-note";
+    note.textContent = "正在读取这一级…";
     list.appendChild(note);
     fetch(url).then(function (res) { return res.text(); }).then(function (text) {
       const doc = new DOMParser().parseFromString(text, "text/html");
       note.remove();
-      appendNodes(list, pick(doc), url);
-      const current = list.querySelector('[aria-current="page"]');
-      if (current) current.scrollIntoView({ block: "center" });
+      appendNodes(pick(doc), url);
+      revealCurrent();
     }).catch(function () {
-      note.textContent = "";
+      note.textContent = "这一级没有读出来";
     });
   }
 })();

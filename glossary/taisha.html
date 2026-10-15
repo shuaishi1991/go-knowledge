@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 棋形与模样</p>
 <h1>大斜</h1>
 <p class="lead">大斜，也叫大斜定式</p>
@@ -25,6 +30,7 @@ __en: The Taisha joseki usually arises when Black plays at the 5-3 point and Whi
 __en: One of the variations of the Taisha joseki. Start at A.__ru:]PL[W];W[de]C[__Solution: true];B[dd];W[ed];B[cd];W[ec];B[ee];W[df];B[cc];W[fc];B[ef];W[dg];B[gd];W[hb];B[eg];W[dh];B[eh];W[di];B[hc];W[ib];B[ei];W[dj];B[db];W[eb];B[cb];W[gc];B[fk])</script></div>
 <div class="prose"><p>尽管历史地位显赫，大斜在 AI 时代已经不多见——现代分析常能找到效率更高的下法。但它依然是值得钻研的教材，也让人得以一窥围棋战略的丰饶。</p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>

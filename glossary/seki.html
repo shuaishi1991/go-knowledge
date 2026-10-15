@@ -8,11 +8,16 @@
 <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 <body>
+<a class="skip" href="#content">进入正文</a>
 <header class="top">
+  <button type="button" class="nav-toggle" aria-controls="rail" aria-expanded="false" aria-label="目录"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/></svg></button>
   <a class="brand" href="../index.html">围棋书房</a>
   <span class="book">术语</span>
 </header>
-<main class="wrap">
+<div class="nav-scrim"></div>
+<div class="frame">
+<aside id="rail" class="rail" aria-label="目录"></aside>
+<main id="content" class="wrap">
 <p class="crumb"><a href="index.html">术语</a> · 死活对杀</p>
 <h1>共活</h1>
 <p class="stars">★★★</p>
@@ -26,6 +31,7 @@ __en: There is a weakness inside Black's territory. White can create a seki insi
 __en: Neither player can approach to capture the other, resulting in a seki. White successfully lives within Black's area.__ru:]CR[cs][es])</script></div>
 <div class="prose"><p>双活最能体现围棋的哲学意味：胜利未必来自正面厮杀，也可能来自对平衡与相互牵制的理解。 </p></div>
 </main>
+</div>
 <footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。</footer>
 <script src="../assets/js/board.js"></script>
 <script src="../assets/js/nav.js"></script>
