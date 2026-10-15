@@ -326,6 +326,7 @@
     this.commentEl = host.querySelector(".gm-comment");
     this.menuEl = host.querySelector(".gm-menu");
     this.bind();
+    bindCommentDrag(this.commentEl);
     if (opts.sgf) {
       this.root = parseSGF(opts.sgf);
       this.path = this.root ? [this.root] : [];
@@ -458,15 +459,59 @@
     else if (name === "pass") this.play(null);
   };
 
+  function bindCommentDrag(comment) {
+    if (!comment) return;
+    let lastY = 0;
+    let lastT = 0;
+    let vy = 0;
+    let raf = 0;
+    let active = false;
+    comment.addEventListener("touchstart", function (event) {
+      if (event.touches.length !== 1) return;
+      active = true;
+      lastY = event.touches[0].clientY;
+      lastT = performance.now();
+      vy = 0;
+      if (raf) cancelAnimationFrame(raf);
+    }, { passive: true });
+    comment.addEventListener("touchmove", function (event) {
+      if (!active || event.touches.length !== 1) return;
+      if (comment.scrollHeight <= comment.clientHeight + 1) return;
+      const y = event.touches[0].clientY;
+      const now = performance.now();
+      const dy = lastY - y;
+      const dt = Math.max(8, now - lastT);
+      lastY = y;
+      lastT = now;
+      vy = dy / dt * 16;
+      comment.scrollTop += dy;
+      event.preventDefault();
+    }, { passive: false });
+    function end() {
+      active = false;
+      function glide() {
+        if (Math.abs(vy) < 0.5) return;
+        comment.scrollTop += vy;
+        vy *= 0.9;
+        raf = requestAnimationFrame(glide);
+      }
+      glide();
+    }
+    comment.addEventListener("touchend", end);
+    comment.addEventListener("touchcancel", end);
+  }
+
+  function pageZoomed() {
+    return !!(window.visualViewport && window.visualViewport.scale > 1.01);
+  }
+
   GoBoard.prototype.fit = function () {
     const column = this.canvas && this.canvas.closest(".gm-board");
     const gm = column && column.parentElement;
     if (!column || !gm || document.querySelector(".prose")) return;
-    const comment = this.commentEl;
-    const commentBox = comment ? comment.getBoundingClientRect() : null;
-    const columnBox = column.getBoundingClientRect();
-    const sideBySide = !!(commentBox && Math.abs(commentBox.top - columnBox.top) < 24 && commentBox.left >= columnBox.left);
-    if (!sideBySide) {
+    if (pageZoomed()) return;
+    const portrait = window.matchMedia("(max-width: 820px) and (orientation: portrait)").matches;
+    if (portrait) {
       column.style.width = "";
       this.canvas.style.width = "";
       return;
@@ -479,6 +524,22 @@
     column.style.width = size + "px";
     this.canvas.style.width = "100%";
     this.canvas.style.height = size + "px";
+  };
+
+  GoBoard.prototype.fitComment = function () {
+    const comment = this.commentEl;
+    const column = this.canvas && this.canvas.closest(".gm-board");
+    if (!comment || !column || document.querySelector(".prose") || pageZoomed()) return;
+    const view = window.visualViewport;
+    const viewH = view ? view.height : window.innerHeight;
+    const portrait = window.matchMedia("(max-width: 820px) and (orientation: portrait)").matches;
+    const columnBox = column.getBoundingClientRect();
+    let height = portrait
+      ? Math.floor(viewH - columnBox.bottom - 8)
+      : Math.floor(columnBox.height);
+    height = Math.max(72, height);
+    comment.style.height = height + "px";
+    comment.style.maxHeight = height + "px";
   };
 
   GoBoard.prototype.metrics = function () {
@@ -809,6 +870,7 @@
     }
     (pos.marks || []).forEach(function (mk) { drawMark(ctx, xy(mk.x, mk.y), mk, r, false); });
     if (this.hint) drawMark(ctx, xy(this.hint.x, this.hint.y), { kind: "triangle" }, r, true);
+    this.fitComment();
   };
 
   function catColor(cat) {
@@ -971,13 +1033,49 @@
     hosts.forEach(function (host) { io.observe(host); });
   }
 
-  window.GoBoard = GoBoard;
-  window.gtpPoint = gtpPoint;
-  window.addEventListener("resize", function () {
+  function studyPage() {
+    return document.querySelector(".gm-host") && !document.querySelector(".prose");
+  }
+
+  function redrawBoards() {
     document.querySelectorAll(".gm-host").forEach(function (host) {
       if (host._board) host._board.draw();
     });
+  }
+
+  function settleStudy() {
+    if (!studyPage() || pageZoomed()) return;
+    const y = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const off = window.visualViewport ? window.visualViewport.offsetTop : 0;
+    if (y > 0 || off > 1) {
+      if (off > 1) window.scrollTo(0, off);
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
+  }
+
+  window.GoBoard = GoBoard;
+  window.gtpPoint = gtpPoint;
+  window.addEventListener("resize", function () {
+    if (pageZoomed()) return;
+    settleStudy();
+    redrawBoards();
   });
+  if (window.visualViewport) {
+    visualViewport.addEventListener("resize", function () {
+      if (pageZoomed()) return;
+      settleStudy();
+      redrawBoards();
+    });
+    visualViewport.addEventListener("scroll", settleStudy);
+  }
+  document.addEventListener("touchend", function () {
+    setTimeout(function () {
+      if (pageZoomed()) return;
+      settleStudy();
+    }, 350);
+  }, { passive: true });
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mountAll);
   else mountAll();
 })();
