@@ -517,10 +517,12 @@
       return;
     }
     const bar = column.querySelector(".gm-navbar, .gm-problembar");
-    const limitW = Math.max(96, Math.min(760, gm.clientWidth - 160));
+    const gap = parseFloat(getComputedStyle(gm).columnGap) || 0;
+    const inner = Math.max(0, gm.clientWidth - gap);
+    const maxByRatio = Math.floor(inner * 0.75);
     const barH = bar ? bar.offsetHeight : 0;
-    const room = Math.floor(gm.clientHeight - barH);
-    const size = room > 0 ? Math.min(limitW, room) : limitW;
+    const maxByHeight = Math.floor(gm.clientHeight - barH);
+    const size = Math.max(0, Math.min(maxByRatio, maxByHeight > 0 ? maxByHeight : maxByRatio));
     column.style.width = size + "px";
     this.canvas.style.width = "100%";
     this.canvas.style.height = size + "px";

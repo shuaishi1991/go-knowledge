@@ -240,6 +240,7 @@ body:has(.gm-host):not(:has(.prose)) .gm {
   height: auto;
   overflow: hidden;
   align-items: stretch;
+  column-gap: 0.75rem;
   grid-template-rows: minmax(0, 1fr);
 }
 
@@ -247,7 +248,7 @@ body:has(.gm-host):not(:has(.prose)) .gm-board {
   display: flex;
   flex-direction: column;
   align-self: start;
-  width: min(760px, calc(100vw - 16rem));
+  width: auto;
   height: auto;
   max-height: 100%;
   min-width: 0;
@@ -302,6 +303,8 @@ body:has(.gm-host):not(:has(.prose)) .gm-comment {
   }
 
   body:has(.gm-host):not(:has(.prose)) .wrap {
+    padding-left: max(0.4rem, env(safe-area-inset-left, 0px));
+    padding-right: max(0.4rem, env(safe-area-inset-right, 0px));
     padding-bottom: max(0.85rem, env(safe-area-inset-bottom, 0px));
   }
 }
