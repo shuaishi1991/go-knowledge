@@ -217,50 +217,8 @@ input[type="search"] {
 
 .lead { font-size: 1.12rem; color: var(--ink-soft); }
 
-.grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 0.9rem;
-  width: 100%;
-}
-
-.card {
-  padding: 0.75rem 0.75rem 0.9rem;
-  background: var(--card);
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-}
-
-.card h3 { margin: 0.55rem 0 0.15rem; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.04em; }
-.card p { margin: 0.15rem 0; color: var(--ink-soft); }
-.card .gm { width: 100%; }
-
 .crumb { margin: 0.2rem 0 0.8rem; color: var(--ink-soft); font-size: 0.98rem; }
 .crumb a { color: var(--ink-soft); }
-
-.joseki-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1rem;
-  align-items: start;
-}
-
-.side h2 { margin-top: 0; }
-.moves { list-style: none; margin: 0; padding: 0; }
-.moves button {
-  width: 100%;
-  min-height: 44px;
-  text-align: left;
-  font: inherit;
-  color: var(--ink);
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid var(--rule);
-  padding: 0.45rem 0;
-  cursor: pointer;
-}
-.moves button .tag { margin-right: 0.4rem; color: var(--seal); font-size: 0.9rem; letter-spacing: 0.04em; }
-.path { color: var(--ink-soft); }
 
 .foot {
   max-width: 1200px;
@@ -391,14 +349,12 @@ body.nav-open .rail {
 @media (min-width: 768px) {
   .top, .wrap, .foot { padding-left: 1.5rem; padding-right: 1.5rem; }
   .chapters { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-  .grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
   .terms li {
     grid-template-columns: 9rem 4.2rem minmax(0, 1fr);
     align-items: baseline;
     padding: 0.4rem 0;
   }
   .terms a { min-height: 0; }
-  .joseki-layout { grid-template-columns: minmax(0, 640px) minmax(220px, 1fr); gap: 1.2rem 1.6rem; }
 }
 
 @media (min-width: 1024px) {

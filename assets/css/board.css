@@ -32,6 +32,26 @@
   .gm-comment { width: 100%; }
 }
 
+@media (max-width: 820px) and (orientation: portrait) {
+  body:has(.gm-host):not(:has(.prose)) .gm {
+    grid-template-rows: auto minmax(7.5rem, 1fr);
+    overflow: hidden;
+  }
+
+  body:has(.gm-host):not(:has(.prose)) .gm-board {
+    width: min(100%, calc(100svh - 17rem));
+    margin-inline: auto;
+  }
+
+  body:has(.gm-host):not(:has(.prose)) .gm-comment {
+    align-self: stretch;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+}
+
 @media (max-height: 560px) and (orientation: landscape) {
   .gm {
     grid-template-columns: auto minmax(0, 1fr);
@@ -160,6 +180,15 @@
   user-select: text;
 }
 
+body:has(.gm-host):not(:has(.prose)) .gm-comment {
+  height: 0;
+  min-height: 100%;
+  align-self: stretch;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
 .gm-comment[hidden] {
   display: block !important;
   visibility: hidden;
@@ -262,8 +291,3 @@
 .gm-menu button[aria-pressed="true"]::before {
   content: "✓ ";
 }
-
-.card .gm { width: 100%; margin: 0 0 0.2rem; }
-.card .gm-btn { width: 32px; height: 32px; margin: 1px; }
-.card .gm-btn svg { width: 16px; height: 16px; }
-.card .gm-comment { font-size: 14px; padding: 6px 8px 0; }
