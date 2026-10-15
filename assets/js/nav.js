@@ -25,9 +25,9 @@
       revealCurrent();
       const current = rail.querySelector(".nav-list [aria-current='page']");
       const target = current || rail.querySelector("a");
-      if (target) target.focus();
+      if (target) target.focus({ preventScroll: true });
     } else {
-      toggle.focus();
+      toggle.focus({ preventScroll: true });
     }
   }
 
@@ -129,8 +129,12 @@
   function revealCurrent() {
     const current = rail.querySelector('[aria-current="page"]');
     if (!current) return;
-    const top = current.offsetTop - rail.clientHeight / 3;
-    rail.scrollTop = Math.max(0, top);
+    const railOverflow = getComputedStyle(rail).overflowY;
+    if (railOverflow !== "auto" && railOverflow !== "scroll") return;
+    if (rail.scrollHeight <= rail.clientHeight + 1) return;
+    const railTop = rail.getBoundingClientRect().top;
+    const itemTop = current.getBoundingClientRect().top;
+    rail.scrollTop += itemTop - railTop - rail.clientHeight / 3;
   }
 
   function categoryName() {

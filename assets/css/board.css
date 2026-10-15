@@ -118,7 +118,7 @@
   body:has(.gm-host):not(:has(.prose)) .gm {
     flex: 1 1 auto;
     min-height: 0;
-    height: 100%;
+    height: auto;
     margin: 0;
   }
 
@@ -180,13 +180,96 @@
   user-select: text;
 }
 
+html:has(.gm-host):not(:has(.prose)) {
+  height: 100%;
+  overflow: hidden;
+}
+
+body:has(.gm-host):not(:has(.prose)) {
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  max-height: 100svh;
+  overflow: hidden;
+  overflow-anchor: none;
+}
+
+body:has(.gm-host):not(:has(.prose)) .frame {
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+body:has(.gm-host):not(:has(.prose)) .frame:has(.rail) {
+  align-items: stretch;
+  grid-template-rows: minmax(0, 1fr);
+}
+
+body:has(.gm-host):not(:has(.prose)) .wrap {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body:has(.gm-host):not(:has(.prose)) .gm-host,
+body:has(.gm-host):not(:has(.prose)) .gm {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0;
+}
+
+body:has(.gm-host):not(:has(.prose)) .gm-host {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+body:has(.gm-host):not(:has(.prose)) .gm {
+  height: auto;
+  overflow: hidden;
+  align-items: stretch;
+  grid-template-rows: minmax(0, 1fr);
+}
+
+body:has(.gm-host):not(:has(.prose)) .gm-board {
+  width: min(760px, calc(100vw - 16rem));
+  max-height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
 body:has(.gm-host):not(:has(.prose)) .gm-comment {
-  height: 0;
-  min-height: 100%;
+  min-height: 0;
+  height: auto;
   align-self: stretch;
+  overflow-x: hidden;
   overflow-y: auto;
-  overscroll-behavior: contain;
   touch-action: pan-y;
+}
+
+@media (max-width: 820px) and (orientation: portrait) {
+  body:has(.gm-host):not(:has(.prose)) .gm {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(8rem, 1fr);
+  }
+
+  body:has(.gm-host):not(:has(.prose)) .gm-board {
+    width: min(100%, calc(100svh - 17rem));
+    height: auto;
+    max-height: none;
+    margin-inline: auto;
+  }
+}
+
+@media (max-height: 560px) and (orientation: landscape) {
+  body:has(.gm-host):not(:has(.prose)) .gm {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    align-items: stretch;
+  }
 }
 
 .gm-comment[hidden] {

@@ -338,6 +338,8 @@
     } else if (opts.position) {
       this.setPosition(opts.position);
     }
+    const board = this;
+    requestAnimationFrame(function () { board.draw(); });
   }
 
   GoBoard.prototype.shell = function () {
@@ -456,9 +458,33 @@
     else if (name === "pass") this.play(null);
   };
 
+  GoBoard.prototype.fit = function () {
+    const column = this.canvas && this.canvas.closest(".gm-board");
+    const gm = column && column.parentElement;
+    if (!column || !gm || document.querySelector(".prose")) return;
+    const comment = this.commentEl;
+    const commentBox = comment ? comment.getBoundingClientRect() : null;
+    const columnBox = column.getBoundingClientRect();
+    const sideBySide = !!(commentBox && Math.abs(commentBox.top - columnBox.top) < 24 && commentBox.left >= columnBox.left);
+    if (!sideBySide) {
+      column.style.width = "";
+      this.canvas.style.width = "";
+      return;
+    }
+    const bar = column.querySelector(".gm-navbar, .gm-problembar");
+    const barH = bar ? bar.offsetHeight : 0;
+    const maxW = Math.max(160, Math.min(760, gm.clientWidth - 200));
+    const room = Math.floor(gm.clientHeight - barH - 12);
+    const size = Math.max(160, Math.min(maxW, room > 80 ? room : maxW));
+    column.style.width = size + "px";
+    this.canvas.style.width = "100%";
+    this.canvas.style.height = size + "px";
+  };
+
   GoBoard.prototype.metrics = function () {
     const view = this.view;
     const coord = this.showCoords ? 22 : 0;
+    this.fit();
     const css = this.canvas.clientWidth || this.opts.width || 520;
     const dpr = window.devicePixelRatio || 1;
     const cell = (css - coord * 2) / view.w;
