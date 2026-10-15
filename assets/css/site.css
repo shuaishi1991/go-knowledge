@@ -150,7 +150,7 @@ input[type="search"], select {
 
 .card h3 { margin: 0.55rem 0 0.15rem; font-size: 1.12rem; font-weight: 500; letter-spacing: 0.06em; }
 .card p { margin: 0.15rem 0; color: var(--ink-soft); font-size: 0.95rem; }
-.card .gm { width: 1108px; }
+.card .gm { width: 100%; }
 
 .crumb { margin: 0.2rem 0 0.8rem; color: var(--ink-soft); font-size: 0.95rem; }
 .crumb a { color: var(--ink-soft); }
@@ -190,4 +190,5 @@ input[type="search"], select {
   .chapters, .joseki-layout { grid-template-columns: 1fr; }
   .terms li { grid-template-columns: 6.5rem 3.4rem 1fr; }
   h1 { font-size: 1.8rem; }
+  .top, .wrap, .foot { padding-left: 0.9rem; padding-right: 0.9rem; }
 }

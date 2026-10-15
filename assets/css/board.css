@@ -1,12 +1,7 @@
 .gm {
-  --board: 720px;
-  --note: 300px;
-  --gap: 88px;
   display: grid;
-  grid-template-columns: var(--board) var(--note);
-  column-gap: var(--gap);
   align-items: start;
-  width: calc(var(--board) + var(--gap) + var(--note));
+  width: 100%;
   margin: 1.1rem 0 1.6rem;
   color: #101010;
   font-family: Roboto, Helvetica, Arial, "Noto Sans SC", sans-serif;
@@ -16,7 +11,31 @@
 }
 
 .gm-board {
-  width: var(--board);
+  width: 100%;
+  min-width: 0;
+  container-type: inline-size;
+}
+
+@media (orientation: landscape) {
+  .gm {
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: clamp(1.4rem, 4.5vw, 5.5rem);
+  }
+  .gm-board {
+    width: min(70vw, calc(100vh - 8.5rem), 760px);
+    width: min(70vw, calc(100svh - 8.5rem), 760px);
+  }
+}
+
+@media (orientation: portrait) {
+  .gm {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.7rem;
+  }
+  .gm-board,
+  .gm-comment {
+    width: 100%;
+  }
 }
 
 .gm-stage {
@@ -51,7 +70,8 @@
 }
 
 .gm-comment {
-  width: var(--note);
+  width: auto;
+  min-width: 0;
   padding: 0;
   text-align: left;
   font-weight: 400;
@@ -67,6 +87,7 @@
 .gm-navbar,
 .gm-problembar {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   width: 100%;
   position: relative;
@@ -89,15 +110,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  margin: 4px;
+  flex: 0 0 auto;
+  width: 3.6rem;
+  height: 3.6rem;
+  width: 13cqi;
+  height: 13cqi;
+  max-width: 4.6rem;
+  max-height: 4.6rem;
+  margin: 0;
   padding: 0;
   border: 0;
   border-radius: 50%;
   background: transparent;
   color: #333;
   cursor: pointer;
+}
+
+.gm-btn svg {
+  width: 52%;
+  height: 52%;
 }
 
 .gm-btn:hover {
@@ -141,7 +172,7 @@
   content: "✓ ";
 }
 
-.card .gm { width: calc(var(--board) + var(--gap) + var(--note)); margin: 0 0 0.2rem; }
+.card .gm { width: 100%; margin: 0 0 0.2rem; }
 .card .gm-btn { width: 32px; height: 32px; margin: 1px; }
 .card .gm-btn svg { width: 16px; height: 16px; }
 .card .gm-comment { font-size: 14px; padding: 6px 8px 0; }
