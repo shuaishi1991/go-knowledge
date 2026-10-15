@@ -181,6 +181,7 @@ def chrome(title, body, depth, book=None, extra=""):
 </main>
 <footer class="foot">{footer}</footer>
 <script src="{pre}assets/js/board.js"></script>
+<script src="{pre}assets/js/nav.js"></script>
 {extra}
 </body>
 </html>
