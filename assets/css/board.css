@@ -203,10 +203,19 @@ body:has(.gm-host):not(:has(.prose)) {
   overflow-anchor: none;
 }
 
+body:has(.gm-host):not(:has(.prose)) .top,
+body:has(.gm-host):not(:has(.prose)) .frame,
+body:has(.gm-host):not(:has(.prose)) .foot,
+body:has(.gm-host):not(:has(.prose)) .wrap {
+  max-width: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 body:has(.gm-host):not(:has(.prose)) .frame {
   flex: 1 1 0;
   min-height: 0;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -266,7 +275,10 @@ body:has(.gm-host):not(:has(.prose)) .gm-problembar {
 }
 
 body:has(.gm-host):not(:has(.prose)) .gm-comment {
+  width: auto;
+  min-width: 0;
   min-height: 0;
+  justify-self: stretch;
   align-self: start;
   overflow-x: hidden;
   overflow-y: scroll;
