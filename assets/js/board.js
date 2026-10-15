@@ -131,6 +131,55 @@
     return out;
   }
 
+  function neighbors(x, y, size) {
+    const out = [];
+    if (x > 0) out.push([x - 1, y]);
+    if (y > 0) out.push([x, y - 1]);
+    if (x + 1 < size) out.push([x + 1, y]);
+    if (y + 1 < size) out.push([x, y + 1]);
+    return out;
+  }
+
+  function removeIfDead(stones, x, y, size) {
+    const start = stones.get(x + "," + y);
+    if (!start) return;
+    const color = start.c;
+    const seen = {};
+    const stack = [[x, y]];
+    const group = [];
+    while (stack.length) {
+      const cur = stack.pop();
+      const id = cur[0] + "," + cur[1];
+      if (seen[id]) continue;
+      seen[id] = true;
+      const stone = stones.get(id);
+      if (!stone || stone.c !== color) continue;
+      group.push(id);
+      const adj = neighbors(cur[0], cur[1], size);
+      for (let i = 0; i < adj.length; i++) {
+        const nx = adj[i][0];
+        const ny = adj[i][1];
+        const nid = nx + "," + ny;
+        if (seen[nid]) continue;
+        const other = stones.get(nid);
+        if (!other) return;
+        if (other.c === color) stack.push([nx, ny]);
+      }
+    }
+    group.forEach(function (id) { stones.delete(id); });
+  }
+
+  function captureAround(stones, x, y, size) {
+    const played = stones.get(x + "," + y);
+    if (!played) return;
+    const enemy = played.c === "B" ? "W" : "B";
+    neighbors(x, y, size).forEach(function (n) {
+      const stone = stones.get(n[0] + "," + n[1]);
+      if (stone && stone.c === enemy) removeIfDead(stones, n[0], n[1], size);
+    });
+    removeIfDead(stones, x, y, size);
+  }
+
   function buildPosition(path) {
     let size = 19;
     const stones = new Map();
@@ -153,6 +202,7 @@
       if (mv && mv.pt) {
         moveNo += 1;
         stones.set(mv.pt.x + "," + mv.pt.y, { x: mv.pt.x, y: mv.pt.y, c: mv.c, n: moveNo });
+        captureAround(stones, mv.pt.x, mv.pt.y, size);
       } else if (mv && !mv.pt) {
         moveNo += 1;
       }
@@ -237,7 +287,7 @@
     const common = 'viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"';
     const paths = {
       start: '<path fill="currentColor" d="M6 5h2v14H6zm3.5 7 8.5 6V6z"/>',
-      fastPrev: '<path fill="currentColor" d="M11 6v12l-8.5-6zm1 0 8.5 6-8.5 6z"/>',
+      fastPrev: '<path fill="currentColor" d="M11 6v12l-8.5-6zm9 0v12l-8.5-6z"/>',
       prev: '<path fill="currentColor" d="M16 6v12L7.5 12z"/>',
       next: '<path fill="currentColor" d="M8 6v12l8.5-6z"/>',
       fastNext: '<path fill="currentColor" d="M4 6v12l8.5-6zm9 0v12l8.5-6z"/>',
@@ -279,7 +329,10 @@
     if (opts.sgf) {
       this.root = parseSGF(opts.sgf);
       this.path = this.root ? [this.root] : [];
-      if (this.root) this.fixedView = viewportFor(parseInt((this.root.props.SZ || ["19"])[0], 10) || 19, allPoints(this.root));
+      if (this.root) {
+        const size = parseInt((this.root.props.SZ || ["19"])[0], 10) || 19;
+        this.fixedView = opts.full ? { x: 0, y: 0, w: 19, h: 19 } : viewportFor(size, allPoints(this.root));
+      }
       if (this.mode === "view" && opts.at === "end") this.toEnd();
       else this.refresh();
     } else if (opts.position) {
@@ -317,9 +370,11 @@
         "</div>";
     }
     return '<div class="gm">' +
+      '<div class="gm-board">' +
       '<div class="gm-stage"><canvas></canvas><div class="gm-flash"></div></div>' +
       bar +
-      (still ? "" : '<div class="gm-comment"></div>') +
+      "</div>" +
+      (still ? '<div class="gm-comment" hidden></div>' : '<div class="gm-comment"></div>') +
       "</div>";
   };
 
@@ -580,6 +635,7 @@
   GoBoard.prototype.refresh = function () {
     if (!this.path.length) return;
     this.position = buildPosition(this.path);
+    if (this.opts.full) this.position.size = 19;
     this.view = this.fixedView || viewportFor(this.position.size, this.position.stones.concat(this.position.marks));
     if (this.mode === "view") {
       const kids = this.current().children || [];
@@ -631,18 +687,8 @@
     const raw = (this.position && this.position.comment) || "";
     const status = this.status || "";
     const shown = status || raw;
-    const spoken = raw.replace(/\s+/g, " ").trim();
     this.commentEl.innerHTML = esc(shown).replace(/\n/g, "<br>");
-    if (spoken && !status) {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "speak";
-      button.setAttribute("data-speak", spoken);
-      button.setAttribute("aria-label", "朗读");
-      button.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 9v6h4l5 4V5L8 9H4zm11.5 3a3.5 3.5 0 0 0-1.8-3.1v6.2A3.5 3.5 0 0 0 15.5 12z"/></svg>';
-      this.commentEl.appendChild(button);
-    }
-    this.commentEl.style.display = shown ? "" : "none";
+    this.commentEl.hidden = !shown;
   };
 
   GoBoard.prototype.draw = function () {
@@ -878,6 +924,7 @@
       at: host.getAttribute("data-at") || "",
       numbers: numbersAttr == null ? null : numbersAttr === "1",
       width: parseInt(host.getAttribute("data-width") || "520", 10),
+      full: host.getAttribute("data-full") === "1",
     });
     host.setAttribute("data-ready", "1");
   }

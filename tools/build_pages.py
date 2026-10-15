@@ -4,12 +4,9 @@
 import html
 import json
 import re
-import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from utterances import prose_with_speech, speak_button
 GROUPS = [
     ("moves", "行棋手段", "局部手段、接触战和手筋。"),
     ("shape", "棋形与模样", "棋形、点位、模样和定式名称。"),
@@ -134,13 +131,37 @@ def load_json(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def chrome(title, body, depth, current, extra=""):
+# 增删一本书：改这份清单。id 对应站点目录和下面的 build 函数。
+BOOKS = [
+    {
+        "id": "glossary",
+        "title": "术语",
+        "num": "壹",
+        "source": "术语取自 Go Magic 中文术语表，只保留中文。",
+    },
+    {
+        "id": "joseki",
+        "title": "定式",
+        "num": "贰",
+        "source": "定式取自 OGS 定式字典。",
+    },
+    {
+        "id": "fuseki",
+        "title": "布局",
+        "num": "叁",
+        "source": "布局取自围棋学研网的布局分类、谱数和黑胜率。",
+    },
+]
+
+
+def chrome(title, body, depth, book=None, extra=""):
     pre = "../" * depth
-    def link(slug, label):
-        href = pre + "index.html" if slug == "home" else f"{pre}{slug}/index.html"
-        mark = ' aria-current="page"' if slug == current else ""
-        return f'<a href="{href}"{mark}>{label}</a>'
-    nav = link("glossary", "术语") + link("joseki", "定式") + link("fuseki", "布局")
+    label = ""
+    footer = "棋盘按 GoMagic 的木纹棋盘和落子操作。"
+    if book:
+        meta = next(item for item in BOOKS if item["id"] == book)
+        label = f'<span class="book">{html.escape(meta["title"])}</span>'
+        footer = html.escape(meta["source"])
     return f"""<!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
@@ -153,14 +174,13 @@ def chrome(title, body, depth, current, extra=""):
 <body>
 <header class="top">
   <a class="brand" href="{pre}index.html">围棋书房</a>
-  <nav>{nav}</nav>
+  {label}
 </header>
 <main class="wrap">
 {body}
 </main>
-<footer class="foot">术语取自 Go Magic 中文术语表，只保留中文。定式取自 OGS 定式字典。布局取自围棋学研网的布局分类、谱数和黑胜率。棋盘按 GoMagic 的木纹棋盘和落子操作。</footer>
+<footer class="foot">{footer}</footer>
 <script src="{pre}assets/js/board.js"></script>
-<script src="{pre}assets/js/audio.js"></script>
 {extra}
 </body>
 </html>
@@ -183,12 +203,14 @@ def with_zh_comments(sgf):
     return re.sub(r"__en:\s*(.*?)(?=__|\])", repl, sgf, flags=re.S)
 
 
-def board_html(sgf, mode="view", at="", numbers=None):
+def board_html(sgf, mode="view", at="", numbers=None, full=False):
     attrs = [f'data-mode="{mode}"']
     if at:
         attrs.append(f'data-at="{at}"')
     if numbers is not None:
         attrs.append(f'data-numbers="{1 if numbers else 0}"')
+    if full:
+        attrs.append('data-full="1"')
     safe = (sgf or "").replace("</", "<\\/")
     return f'<div class="gm-host" {" ".join(attrs)}><script type="text/plain">{safe}</script></div>'
 
@@ -209,17 +231,31 @@ def write(path, text):
     path.write_text(text, encoding="utf-8")
 
 
+def book_blurb(book_id, counts):
+    if book_id == "glossary":
+        return f"{counts['terms']} 条中文术语，分成六类。带谱的条目可以一手一手翻看。"
+    if book_id == "joseki":
+        return f"{counts['lines']} 条变化，每条单独成页，只含这一条手顺。"
+    if book_id == "fuseki":
+        return f"{counts['fuseki']} 个大类，其下 {counts['patterns']} 个开局型，每型单独成页。"
+    return ""
+
+
 def build_home(counts):
+    cards = []
+    for book in BOOKS:
+        cards.append(
+            f'<a class="chapter" href="{book["id"]}/index.html">'
+            f'<span class="num">{html.escape(book["num"])}</span>'
+            f'<strong>{html.escape(book["title"])}</strong>'
+            f'<span>{html.escape(book_blurb(book["id"], counts))}</span></a>'
+        )
     body = f"""
 <h1>围棋书房</h1>
-<p class="colophon">三卷分开查阅。术语按中文分类，定式每条变化单独成页，布局按四十个大类收各型。</p>
-<div class="chapters">
-  <a class="chapter" href="glossary/index.html"><span class="num">壹</span><strong>术语</strong><span>{counts['terms']} 条中文术语，分成六类。带谱的条目可以一手一手翻看。</span></a>
-  <a class="chapter" href="joseki/index.html"><span class="num">贰</span><strong>定式</strong><span>{counts['lines']} 条变化，每条单独成页，只含这一条手顺。</span></a>
-  <a class="chapter" href="fuseki/index.html"><span class="num">叁</span><strong>布局</strong><span>{counts['fuseki']} 个大类，其下 {counts['patterns']} 个开局型，附谱数和黑胜率。</span></a>
-</div>
+<p class="colophon">每本书单独成册。从这里进入一本之后，只在这本书里查阅。</p>
+<div class="chapters">{''.join(cards)}</div>
 """
-    write(ROOT / "index.html", chrome("围棋书房", body, 0, "home"))
+    write(ROOT / "index.html", chrome("围棋书房", body, 0, None))
 
 
 def build_glossary():
@@ -287,84 +323,187 @@ document.getElementById("by-name").onclick = () => {{
         bits = []
         stars = "★" * int(term.get("importance") or 0)
         bits.append(f'<p class="crumb"><a href="index.html">术语</a> · {dict((k,t) for k,t,_ in GROUPS).get(term["category"], "")}</p>')
-        bits.append(f'<h1>{html.escape(term["name"])}{speak_button(term["name"])}</h1>')
+        bits.append(f'<h1>{html.escape(term["name"])}</h1>')
         if stars:
             bits.append(f'<p class="stars">{stars}</p>')
         if term.get("meaning"):
-            bits.append(f'<p class="lead">{html.escape(term["meaning"])}{speak_button(term["meaning"])}</p>')
+            bits.append(f'<p class="lead">{html.escape(term["meaning"])}</p>')
         for block in term.get("blocks") or []:
             if block["type"] == "html":
-                prose, _ = prose_with_speech(block["html"])
-                bits.append(f'<div class="prose">{prose}</div>')
+                bits.append(f'<div class="prose">{block["html"]}</div>')
             elif block["type"] == "board" and block.get("sgf"):
-                bits.append(board_html(with_zh_comments(block["sgf"]), mode="view", at="end", numbers=True))
+                bits.append(board_html(with_zh_comments(block["sgf"]), mode="view", at="end", numbers=True, full=True))
         write(ROOT / "glossary" / f'{term["slug"]}.html', chrome(f'{term["name"]} · 术语', "\n".join(bits), 1, "glossary"))
     return len(terms)
 
 
-def build_fuseki():
-    data = load_json(ROOT / "data" / "fuseki.json")
-    pages = {}
-    for code, page in data.items():
-        pages[code] = page
+def sgf_moves(sgf):
+    letters = "ABCDEFGHJKLMNOPQRST"
+    moves = []
+    for color, pt in re.findall(r";([BW])\[([a-s]{2})\]", sgf or ""):
+        x = ord(pt[0]) - 97
+        y = ord(pt[1]) - 97
+        if not (0 <= x < 19 and 0 <= y < 19):
+            continue
+        who = "黑" if color == "B" else "白"
+        moves.append(f"{who}{letters[x]}{19 - y}")
+    return moves
 
-    def render_item(item):
-        sgf = normalize_sgf(item.get("sgf"))
-        board = board_html(sgf, mode="view", at="end", numbers=True) if sgf else ""
-        stats = []
-        if item.get("kifus") is not None:
-            stats.append(f'共 {item["kifus"]} 谱')
-        if item.get("win") is not None:
-            stats.append(f'黑胜 {item["win"]}%')
-        extra = ""
-        if item.get("continues") and item.get("code"):
-            extra = f'<p><a href="{item["code"]}.html">继续分类</a></p>'
-        label = html.escape(item.get("name") or item.get("code") or "")
-        return (
-            f'<article class="card" data-name="{html.escape(item.get("name","") + item.get("en",""), quote=True)}">'
-            f"{board}<h3>{label}{speak_button(item.get('name') or '')}</h3>"
-            f'<p>{" · ".join(stats)}</p>{extra}</article>'
-        )
+
+def fuseki_stats(item):
+    bits = []
+    if item.get("kifus") is not None:
+        bits.append(f'共 {item["kifus"]} 谱')
+    if item.get("win") is not None:
+        bits.append(f'黑胜 {item["win"]}%')
+    return " · ".join(bits)
+
+
+def build_fuseki():
+    import shutil
+
+    data = load_json(ROOT / "data" / "fuseki.json")
+    pages = {code: page for code, page in data.items()}
+    parent = {}
+    for code, page in pages.items():
+        if code == "root":
+            continue
+        for item in page.get("items") or []:
+            if item.get("code"):
+                parent[item["code"]] = code
+
+    def is_branch(item):
+        code = item.get("code")
+        return bool(item.get("continues") and code and code in pages)
+
+    def leaf_count(code):
+        total = 0
+        for item in pages.get(code, {}).get("items") or []:
+            if is_branch(item):
+                total += leaf_count(item["code"])
+            else:
+                total += 1
+        return total
+
+    def crumb(codes, leaf=False):
+        parts = ['<a href="{0}index.html">布局</a>'.format("../" if leaf else "")]
+        for code in codes:
+            name = html.escape((pages.get(code) or {}).get("name") or code)
+            href = f"../{code}.html" if leaf else f"{code}.html"
+            parts.append(f'<a href="{href}">{name}</a>')
+        return '<p class="crumb">' + " · ".join(parts) + "</p>"
+
+    def ancestors(code):
+        chain = []
+        seen = set()
+        while code and code not in seen and code != "root":
+            seen.add(code)
+            chain.append(code)
+            code = parent.get(code)
+        chain.reverse()
+        return chain
+
+    pdir = ROOT / "fuseki" / "p"
+    shutil.rmtree(pdir, ignore_errors=True)
+    pdir.mkdir(parents=True, exist_ok=True)
+    used_ids = set()
+
+    def leaf_id(page_code, item, index):
+        code = item.get("code") or ""
+        base = code if code and code != page_code else f"{page_code}-{index + 1}"
+        ident = base
+        n = 2
+        while ident in used_ids:
+            ident = f"{base}-{n}"
+            n += 1
+        used_ids.add(ident)
+        return ident
 
     root_items = pages.get("root", {}).get("items", [])
     cards = []
     for item in root_items:
-        sgf = normalize_sgf(item.get("sgf"))
-        board = board_html(sgf, mode="view", at="end", numbers=True) if sgf else ""
-        href = f'{item["code"]}.html' if item.get("code") else "index.html"
-        stats = []
-        if item.get("kifus") is not None:
-            stats.append(f'共 {item["kifus"]} 谱')
-        if item.get("win") is not None:
-            stats.append(f'黑胜 {item["win"]}%')
+        code = item.get("code") or ""
+        name = item.get("name") or code
+        count = leaf_count(code) if is_branch(item) else 1
+        stats = fuseki_stats(item)
         cards.append(
-            f'<article class="card" data-name="{html.escape(item.get("name",""), quote=True)}">'
-            f'{board}<h3><a href="{html.escape(href)}">{html.escape(item.get("name") or "")}</a>{speak_button(item.get("name") or "")}</h3>'
-            f'<p>{" · ".join(stats)}</p></article>'
+            f'<div class="chapter" data-name="{html.escape(name, quote=True)}">'
+            f'<span class="num"><a href="{html.escape(code)}.html">{html.escape(name)}</a></span>'
+            f'<a href="{html.escape(code)}.html"><strong>{count} 型</strong>'
+            f'<span>{html.escape(stats) if stats else "点进去看各型。"}</span></a></div>'
         )
     body = f"""
 <h1>布局</h1>
-<p class="lead">四十个大类。点进一类，可以看到各型的手顺；写着继续分类的，还能再往下分。棋盘可以前后翻看每一手。</p>
-<div class="tools"><input type="search" data-filter placeholder="搜索布局" aria-label="搜索布局"></div>
-<div class="grid">{''.join(cards)}</div>
+<p class="lead">四十个大类。点进一类，再点到具体的型。每一型单独一页，页里只有这一条手顺。</p>
+<div class="chapters">{''.join(cards)}</div>
 """
-    write(ROOT / "fuseki" / "index.html", chrome("布局 · 围棋书房", body, 1, "fuseki", '<script src="../assets/js/list.js"></script>'))
+    write(ROOT / "fuseki" / "index.html", chrome("布局 · 围棋书房", body, 1, "fuseki"))
+
     patterns = 0
     for code, page in pages.items():
         if code == "root":
             continue
         items = page.get("items") or []
-        patterns += sum(1 for item in items if not item.get("continues"))
-        grid = "".join(render_item(item) for item in items)
-        parent = '<p class="crumb"><a href="index.html">布局</a></p>'
-        body = f"""
-{parent}
-<h1>{html.escape(page.get('name') or code)}{speak_button(page.get('name') or '')}</h1>
-<p class="lead">{len(items)} 型。手数标在棋子上，也可以用下面的按钮一手一手看。</p>
-<div class="tools"><input type="search" data-filter placeholder="在本类中搜索" aria-label="搜索"></div>
-<div class="grid">{grid}</div>
+        rows = []
+        for index, item in enumerate(items):
+            name = item.get("name") or item.get("code") or ""
+            child = item.get("code") or ""
+            stats = fuseki_stats(item)
+            if is_branch(item):
+                href = f"{child}.html"
+                note = f"继续分类 · {leaf_count(child)} 型"
+                if stats:
+                    note = stats + " · " + note
+            else:
+                patterns += 1
+                child = leaf_id(code, item, index)
+                href = f"p/{child}.html"
+                moves = sgf_moves(normalize_sgf(item.get("sgf")) or "")
+                note = f"{len(moves)} 手" if moves else "没有手顺"
+                if stats:
+                    note = f"{note} · {stats}"
+                chain = ancestors(code)
+                links = []
+                for i, step in enumerate(chain):
+                    step_name = html.escape((pages.get(step) or {}).get("name") or step)
+                    links.append(f'<a href="../{step}.html">{step_name}</a>')
+                trail = '<p class="crumb"><a href="../index.html">布局</a> · ' + " · ".join(links) + "</p>"
+                lead = html.escape(note)
+                seq = f'<p class="seq">{html.escape(" ".join(moves))}</p>' if moves else ""
+                board = ""
+                sgf = normalize_sgf(item.get("sgf"))
+                if sgf:
+                    board = board_html(sgf, mode="view", at="end", numbers=True, full=True)
+                leaf = f"""
+{trail}
+<h1>{html.escape(name)}</h1>
+<p class="lead">{lead}</p>
+{seq}
+{board}
 """
-        write(ROOT / "fuseki" / f"{code}.html", chrome(f"{page.get('name') or code} · 布局", body, 1, "fuseki", '<script src="../assets/js/list.js"></script>'))
+                write(
+                    pdir / f"{child}.html",
+                    chrome(f"{name} · 布局", leaf, 2, "fuseki"),
+                )
+            rows.append(
+                f'<li data-name="{html.escape(name + note, quote=True)}">'
+                f'<a href="{html.escape(href)}">{html.escape(name)}</a>'
+                f' <span class="seq">{html.escape(note)}</span></li>'
+            )
+        chain = ancestors(parent.get(code))
+        trail = crumb(chain) if chain else '<p class="crumb"><a href="index.html">布局</a></p>'
+        title = page.get("name") or code
+        body = f"""
+{trail}
+<h1>{html.escape(title)}</h1>
+<p class="lead">{len(items)} 项。点开一型，单独看这一条手顺。标着继续分类的，还能再往下分。</p>
+<div class="tools"><input type="search" data-filter placeholder="在本类中搜索" aria-label="搜索"></div>
+<ul class="lines">{''.join(rows)}</ul>
+"""
+        write(
+            ROOT / "fuseki" / f"{code}.html",
+            chrome(f"{title} · 布局", body, 1, "fuseki", '<script src="../assets/js/list.js"></script>'),
+        )
     return len(root_items), patterns
 
 
@@ -646,7 +785,7 @@ def build_joseki():
 <h1>{html.escape(names[oid])} · {html.escape(ap["name"])}</h1>
 <p class="lead">{line["n"]} 手 · {html.escape(line["qname"])}</p>
 <p class="seq">{html.escape(line["seq"])}</p>
-{board_html(line["sgf"], mode="view", at="end", numbers=True)}
+{board_html(line["sgf"], mode="view", at="end", numbers=True, full=True)}
 """
                 write(
                     vdir / f"{line['id']}.html",
