@@ -182,20 +182,23 @@
 
 html:has(.gm-host):not(:has(.prose)) {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 100svh;
   overflow: hidden;
 }
 
 body:has(.gm-host):not(:has(.prose)) {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  max-height: none;
+  height: 100svh;
+  max-height: 100svh;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   overflow: hidden;
   overflow-anchor: none;
 }
@@ -241,10 +244,24 @@ body:has(.gm-host):not(:has(.prose)) .gm {
 }
 
 body:has(.gm-host):not(:has(.prose)) .gm-board {
+  display: flex;
+  flex-direction: column;
   width: min(760px, calc(100vw - 16rem));
+  height: 100%;
   max-height: 100%;
   min-width: 0;
   min-height: 0;
+}
+
+body:has(.gm-host):not(:has(.prose)) .gm-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 100%;
+}
+
+body:has(.gm-host):not(:has(.prose)) .gm-navbar,
+body:has(.gm-host):not(:has(.prose)) .gm-problembar {
+  flex: 0 0 auto;
 }
 
 body:has(.gm-host):not(:has(.prose)) .gm-comment {
@@ -270,6 +287,11 @@ body:has(.gm-host):not(:has(.prose)) .gm-comment {
     max-height: none;
     margin-inline: auto;
   }
+
+  body:has(.gm-host):not(:has(.prose)) .gm-stage {
+    flex: none;
+    max-height: none;
+  }
 }
 
 @media (max-height: 560px) and (orientation: landscape) {
@@ -277,6 +299,10 @@ body:has(.gm-host):not(:has(.prose)) .gm-comment {
     grid-template-columns: auto minmax(0, 1fr);
     grid-template-rows: minmax(0, 1fr);
     align-items: stretch;
+  }
+
+  body:has(.gm-host):not(:has(.prose)) .wrap {
+    padding-bottom: max(0.85rem, env(safe-area-inset-bottom, 0px));
   }
 }
 

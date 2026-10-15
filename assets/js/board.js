@@ -517,10 +517,11 @@
       return;
     }
     const bar = column.querySelector(".gm-navbar, .gm-problembar");
+    const limitW = Math.max(96, Math.min(760, gm.clientWidth - 160));
+    column.style.width = limitW + "px";
     const barH = bar ? bar.offsetHeight : 0;
-    const maxW = Math.max(160, Math.min(760, gm.clientWidth - 200));
-    const room = Math.floor(gm.clientHeight - barH - 12);
-    const size = Math.max(160, Math.min(maxW, room > 80 ? room : maxW));
+    const room = Math.floor(column.clientHeight - barH);
+    const size = room > 0 ? Math.min(limitW, room) : limitW;
     column.style.width = size + "px";
     this.canvas.style.width = "100%";
     this.canvas.style.height = size + "px";
@@ -1043,6 +1044,16 @@
     });
   }
 
+  function placeStudy() {
+    if (!studyPage() || pageZoomed()) return;
+    const view = window.visualViewport;
+    if (!view) return;
+    document.body.style.top = Math.max(0, view.offsetTop) + "px";
+    document.body.style.left = Math.max(0, view.offsetLeft) + "px";
+    document.body.style.width = view.width + "px";
+    document.body.style.height = view.height + "px";
+  }
+
   function settleStudy() {
     if (!studyPage() || pageZoomed()) return;
     const y = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -1053,6 +1064,7 @@
       document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
     }
+    placeStudy();
   }
 
   window.GoBoard = GoBoard;
@@ -1062,6 +1074,7 @@
     settleStudy();
     redrawBoards();
   });
+  placeStudy();
   if (window.visualViewport) {
     visualViewport.addEventListener("resize", function () {
       if (pageZoomed()) return;
