@@ -518,9 +518,8 @@
     }
     const bar = column.querySelector(".gm-navbar, .gm-problembar");
     const limitW = Math.max(96, Math.min(760, gm.clientWidth - 160));
-    column.style.width = limitW + "px";
     const barH = bar ? bar.offsetHeight : 0;
-    const room = Math.floor(column.clientHeight - barH);
+    const room = Math.floor(gm.clientHeight - barH);
     const size = room > 0 ? Math.min(limitW, room) : limitW;
     column.style.width = size + "px";
     this.canvas.style.width = "100%";
